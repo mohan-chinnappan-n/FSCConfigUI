@@ -1,10 +1,9 @@
 <aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
   
-     <p> 
+     <lightning:card>
          <lightning:icon iconName="utility:settings" alternativeText="FSC UI Config" variant="settings"/>
      FSC Config - UI
-    </p>  
-    
+    </lightning:card>  
     
     <aura:attribute name="addGroupButton"  default="false" type="Boolean" />
     <aura:attribute name="addBackButton"  default="false"  type="Boolean" />
