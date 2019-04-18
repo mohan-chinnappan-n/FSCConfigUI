@@ -1,0 +1,10 @@
+<design:component>
+    <design:attribute name="addGroupButton" default="false" label="Disable Add Group Button"  description="Disable Add Group Button " />
+    <design:attribute name="addBackButton"  default="false"  label="Disable Back Button" description="Disable Back Button " />
+    
+    <design:attribute name="addDropdownMenu"  default="false"  label="Disable DropDown Menus" description="Disable DropDown Menus" />
+    <design:attribute name="addPopup"  default="false"  label="Disable Popups" description="Disable Popups" />
+  
+    <design:attribute name="applyUICustomConfig"  default="false" label="Apply UI Custom Config" description="Toggle Apply UI Custom Config " />
+    
+</design:component>
