@@ -5,6 +5,5 @@
     <design:attribute name="addDropdownMenu"  default="false"  label="Disable DropDown Menus" description="Disable DropDown Menus" />
     <design:attribute name="addPopup"  default="false"  label="Disable Popups" description="Disable Popups" />
   
-    <design:attribute name="applyUICustomConfig"  default="false" label="Apply UI Custom Config" description="Toggle Apply UI Custom Config " />
     
 </design:component>
