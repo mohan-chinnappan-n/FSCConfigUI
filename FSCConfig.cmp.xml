@@ -31,10 +31,6 @@
     </aura:if>
     
     
-       
-    <aura:if isTrue="{!v.applyUICustomConfig}">
-        <ltng:require styles="{!$Resource.FSCConfig}" />   
-    </aura:if>
   
     
 </aura:component>
