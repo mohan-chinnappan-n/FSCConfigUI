@@ -1,0 +1,41 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+  
+     <p> 
+         <lightning:icon iconName="utility:settings" alternativeText="FSC UI Config" variant="settings"/>
+     FSC Config - UI
+    </p>  
+    
+    
+    <aura:attribute name="addGroupButton"  default="false" type="Boolean" />
+    <aura:attribute name="addBackButton"  default="false"  type="Boolean" />
+    
+    <aura:attribute name="addDropdownMenu" default="false"  type="Boolean" />
+    <aura:attribute name="addPopup" default="false"  type="Boolean" />
+    
+    <aura:attribute name="applyUICustomConfig" default="false"  type="Boolean" />
+    
+    
+    <aura:if isTrue="{!v.addGroupButton}">
+        <ltng:require styles="{!$Resource.FSCConfigAddGroup}" />    
+    </aura:if>
+    
+    <aura:if isTrue="{!v.addBackButton}">
+        <ltng:require styles="{!$Resource.FSCConfigWizBackBtn }" />        
+    </aura:if>
+    
+    <aura:if isTrue="{!v.addDropdownMenu}">
+        <ltng:require styles="{!$Resource.FSCConfigDropdownMenu}" />  
+    </aura:if>
+    
+     <aura:if isTrue="{!v.addPopup}">
+        <ltng:require styles="{!$Resource.FSCConfigPopup}" />  
+    </aura:if>
+    
+    
+       
+    <aura:if isTrue="{!v.applyUICustomConfig}">
+        <ltng:require styles="{!$Resource.FSCConfig}" />   
+    </aura:if>
+  
+    
+</aura:component>
