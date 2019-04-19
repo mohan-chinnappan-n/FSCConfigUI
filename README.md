@@ -4,6 +4,7 @@
 
 ### Install using SFDX
 
+- Download the zip from this Repo
 - Merge force-app folder content into your DX project
 
 - For Sandbox/DE/PROD: Establish connection with:
