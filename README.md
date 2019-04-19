@@ -8,5 +8,5 @@
 - Deploy  using SFDX
 ```
  sfdx force:source:deploy -u username@email.com -p force-app/main/default/aura
- sfdx force:source:deploy -u mohan.chinnappan.n-azyj@force.com -p force-app/main/default/staticresources
+ sfdx force:source:deploy -u username@email.com -p force-app/main/default/staticresources
  ```
