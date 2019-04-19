@@ -1,0 +1,10 @@
+div.actionMenu.uiMenuList--left.uiMenuList--default.popupTargetContainer.uiPopupTarget.uiMenuList.uiPopupTarget.uiMenuList.uiMenuList--default
+        > div > ul > li:nth-child(1) > a > div {
+
+            display:none;
+        }
+div.actionMenu.uiMenuList--left.uiMenuList--default.popupTargetContainer.uiPopupTarget.uiMenuList.uiPopupTarget.uiMenuList.uiMenuList--default
+> div > ul > li:nth-child(2) > a > div {
+
+    display:none;
+}
