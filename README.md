@@ -11,7 +11,7 @@
    - In case of  PROD or DE use : ```   sfdx force:auth:web:login -r https://login.salesforce.com ```
 
 
-- Deploy  using SFDX (for:  -u <put your login username>)
+- Deploy  using SFDX (for:  -u --put your login username--)
 ```
  sfdx force:source:deploy -u loginUsername@email.com -p force-app/main/default/aura
  sfdx force:source:deploy -u loginUsername@email.com -p force-app/main/default/staticresources
