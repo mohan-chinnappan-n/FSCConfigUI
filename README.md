@@ -8,8 +8,10 @@
 - Merge force-app folder content into your DX project
 
 - For Sandbox/DE/PROD: Establish connection with:
-   - In the case of sandbox  use :    ```   sfdx force:auth:web:login -r https://test.salesforce.com ```
-   - In the case of  PROD or DE use : ```   sfdx force:auth:web:login -r https://login.salesforce.com ```
+   - In the case of sandbox  use :   
+    ```   sfdx force:auth:web:login -r https://test.salesforce.com ```
+   - In the case of  PROD or DE use : 
+    ```   sfdx force:auth:web:login -r https://login.salesforce.com ```
 
 
 - Deploy  using SFDX (for  -u --put your login username--)
