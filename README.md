@@ -24,6 +24,17 @@
  sfdx force:source:deploy -u loginUsername@email.com -p force-app/main/default/staticresources
  ```
 
+
+###  Install without using SFDX
+
+In case you want to install this without SFDX:
+
+-  Create FSCConfig component (FSCConfig.cmp) and its design (FSCConfig.design) using Developer Console
+
+-  Create static resources using Salesforce UI for the css file in force-app/main/default/aura/staticresources folder
+
+<hr/>
+
  - Install this component using App Builder by **Edit Page** :
 
  ![Editing Page](img/relMap-edit-page.png)
