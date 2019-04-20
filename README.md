@@ -22,6 +22,6 @@
 
  ![Editing Page](img/relMap-edit-page.png)
 
- - Drag and Drop **FSCCOnfig** component in the page:
+ - Drag and Drop **FSCConfig** component in the page:
 
  ![Adding Component](img/fsc-config-ui-appbuilder.png)
