@@ -35,6 +35,8 @@ In case you want to install this without using SFDX:
 
 <hr/>
 
+### How to wire this component in the Lightning Page
+
  - Install this component using App Builder by **Edit Page** :
 
  ![Editing Page](img/relMap-edit-page.png)
