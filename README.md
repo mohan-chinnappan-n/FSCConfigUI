@@ -33,7 +33,7 @@ In case you want to install this without using SFDX:
 
 ![dev-console](img/dev-console-1.png)
 
--  Create static resources using Salesforce UI for the css files in ``` force-app/main/default/aura/staticresources``` folder
+-  Create **static resources** using Salesforce UI for the css files in ``` force-app/main/default/aura/staticresources``` folder
 
 ![dev-console](img/staticresoures-1.png)
 
