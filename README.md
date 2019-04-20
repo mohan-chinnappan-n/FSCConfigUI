@@ -35,6 +35,8 @@ In case you want to install this without using SFDX:
 
 -  Create static resources using Salesforce UI for the css files in ``` force-app/main/default/aura/staticresources``` folder
 
+![dev-console](img/staticresoures-1.png)
+
 <hr/>
 
 ### How to wire this component in the Lightning Page
