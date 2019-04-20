@@ -29,9 +29,9 @@
 
 In case you want to install this without using SFDX:
 
--  Create FSCConfig component (FSCConfig.cmp) and its design (FSCConfig.design) using Developer Console
+-  Create FSCConfig component (```force-app/main/default/aura/FSCConfig/FSCConfig.cmp```) and its design (```force-app/main/default/aura/FSCConfig/FSCConfig.design``) using Developer Console
 
--  Create static resources using Salesforce UI for the css files in force-app/main/default/aura/staticresources folder
+-  Create static resources using Salesforce UI for the css files in ``` force-app/main/default/aura/staticresources``` folder
 
 <hr/>
 
