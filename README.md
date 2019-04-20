@@ -18,7 +18,10 @@
  sfdx force:source:deploy -u loginUsername@email.com -p force-app/main/default/staticresources
  ```
 
- - Install this component using App Builder by **Edit Page** 
+ - Install this component using App Builder by **Edit Page** :
 
  ![Editing Page](img/relMap-edit-page.png)
+
+ - Drag and Drop **FSCCOnfig** component in the page:
+
  ![Adding Component](img/fsc-config-ui-appbuilder.png)
