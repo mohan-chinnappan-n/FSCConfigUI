@@ -12,6 +12,10 @@
     
     <aura:attribute name="addDropdownMenu" default="false"  type="Boolean" />
     <aura:attribute name="addPopup" default="false"  type="Boolean" />
+
+     <aura:attribute name="addRemoveMember" default="false"  type="Boolean" />
+  
+
     
      
     
@@ -30,6 +34,11 @@
     
      <aura:if isTrue="{!v.addPopup}">
         <ltng:require styles="{!$Resource.FSCConfigPopup}" />  
+    </aura:if>
+
+
+       <aura:if isTrue="{!v.addRemoveMember}">
+        <ltng:require styles="{!$Resource.FSCConfigRemoveMember}" />  
     </aura:if>
     
        

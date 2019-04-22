@@ -1,0 +1,34 @@
+div > table > tbody:nth-child(4) > tr > td:nth-child(6) > button {
+    display: none;
+}
+
+div > table > tbody:nth-child(5) > tr > td:nth-child(6) > button {
+    display: none;
+}
+
+div > table > tbody:nth-child(6) > tr > td:nth-child(6) > button {
+    display: none;
+}
+div > table > tbody:nth-child(7) > tr > td:nth-child(6) > button {
+    display: none;
+}
+
+div > table > tbody:nth-child(8) > tr > td:nth-child(6) > button {
+    display: none;
+}
+
+
+div > table > tbody:nth-child(9) > tr > td:nth-child(6) > button {
+    display: none;
+}
+
+
+div > table > tbody:nth-child(10) > tr > td:nth-child(6) > button {
+    display: none;
+}
+
+
+div > table > tbody:nth-child(11) > tr > td:nth-child(6) > button {
+    display: none;
+}
+
