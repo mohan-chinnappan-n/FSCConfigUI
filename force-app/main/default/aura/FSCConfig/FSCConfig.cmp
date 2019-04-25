@@ -13,10 +13,9 @@
     <aura:attribute name="addDropdownMenu" default="false"  type="Boolean" />
     <aura:attribute name="addPopup" default="false"  type="Boolean" />
 
-     <aura:attribute name="addRemoveMember" default="false"  type="Boolean" />
-  
+    <aura:attribute name="addRemoveMember" default="false"  type="Boolean" />
 
-    
+     <lightning:button label="Refresh" variant="brand" title="Refresh" onclick="{! c.refresh }"/>
      
     
     <aura:if isTrue="{!v.addGroupButton}">
