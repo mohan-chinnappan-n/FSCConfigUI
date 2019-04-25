@@ -1,15 +1,19 @@
 div.actionMenu.uiMenuList--left.uiMenuList--default.popupTargetContainer.uiPopupTarget.uiMenuList.uiPopupTarget.uiMenuList.uiMenuList--default
-        > div > ul > li:nth-child(1) 
+        > div > ul > li:nth-child(1) >a[title="undefined"] 
        /* > a > div */
        {
 
             display:none;
         }
+
+
 div.actionMenu.uiMenuList--left.uiMenuList--default.popupTargetContainer.uiPopupTarget.uiMenuList.uiPopupTarget.uiMenuList.uiMenuList--default
-> div > ul > li:nth-child(2) 
+> div > ul > li:nth-child(2) >a[title="undefined"] 
 /* > a > div  */
 
 {
 
     display:none;
 }
+
+
