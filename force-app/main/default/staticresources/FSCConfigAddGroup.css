@@ -1,3 +1,6 @@
 .FinServRelationshipMap button.slds-popover.slds-button--neutral {
     display: none;
 }
+div:nth-child(1) > div > div > ul > li > li > ul > ul > li:nth-child(1) > span > div > div.slds-p-horizontal--x-small.slds-p-bottom--small > div > button[title="+ Add Group"] {
+    display: none;    
+}
