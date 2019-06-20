@@ -1,0 +1,11 @@
+/*
+
+document.querySelector('div.oneWorkspace>div.oneConsoleTabset>section>div.oneWorkspaceTabWrapper>div.spinnerWrapper.forceComponentSpinner').setAttribute('style', 'display:none2')
+
+
+
+*/
+
+div.oneWorkspace>div.oneConsoleTabset>section>div.oneWorkspaceTabWrapper>div.spinnerWrapper.forceComponentSpinner {
+    display: none;
+}

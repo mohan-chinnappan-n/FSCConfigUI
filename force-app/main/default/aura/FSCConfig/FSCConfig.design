@@ -6,8 +6,6 @@
     <design:attribute name="addPopup"  default="false"  label="Disable Popups" description="Disable Popups" />
 
     <design:attribute name="addRemoveMember"  default="false"  label="Disable  Remove Member" description="Disable  Remove Member" />
+    <design:attribute name="addSpinner"  default="false"  label="Disable  Spinner" description="Disable  Spinner" />
   
-
-  
-    
 </design:component>

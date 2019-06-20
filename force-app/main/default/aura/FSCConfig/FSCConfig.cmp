@@ -15,6 +15,9 @@
 
     <aura:attribute name="addRemoveMember" default="false"  type="Boolean" />
 
+    <aura:attribute name="addSpinner" default="false"  type="Boolean" />
+
+
      <lightning:button label="Refresh" variant="brand" title="Refresh" onclick="{! c.refresh }"/>
      
     
@@ -38,6 +41,10 @@
 
        <aura:if isTrue="{!v.addRemoveMember}">
         <ltng:require styles="{!$Resource.FSCConfigRemoveMember}" />  
+    </aura:if>
+
+        <aura:if isTrue="{!v.addSpinner}">
+        <ltng:require styles="{!$Resource.FSCConfigSpinner}" />  
     </aura:if>
     
        
