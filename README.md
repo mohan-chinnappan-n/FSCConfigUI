@@ -20,8 +20,9 @@
 
 - Deploy  using SFDX (for  -u --put your login username--)
 ```
- sfdx force:source:deploy -u loginUsername@email.com -p force-app/main/default/aura
  sfdx force:source:deploy -u loginUsername@email.com -p force-app/main/default/staticresources
+ sfdx force:source:deploy -u loginUsername@email.com -p force-app/main/default/aura
+
  ```
 
 
