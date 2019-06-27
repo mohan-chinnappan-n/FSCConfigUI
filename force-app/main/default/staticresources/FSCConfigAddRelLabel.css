@@ -1,0 +1,22 @@
+div[data-component-id=FinServ_relationshipMap]>div>div>
+ul>li.tree-leaf>div>
+div.slds-popover.FinServRelationshipsTreeLeaf>div.slds-p-horizontal--x-small.slds-p-bottom--small>div
+>button {
+   visibility:hidden;
+}
+
+div[data-component-id=FinServ_relationshipMap]>div>div>
+ul>li.tree-leaf>div>
+div.slds-popover.FinServRelationshipsTreeLeaf>div.slds-p-horizontal--x-small.slds-p-bottom--small>div
+>button::after {
+   content: "Add/Update";
+   visibility:visible;
+   border:1px solid steelblue;
+   border-radius: 2px;
+   padding-left: -60px;
+   margin-left:-60px;
+   background-color: white;
+   padding: 4px;
+   
+
+}

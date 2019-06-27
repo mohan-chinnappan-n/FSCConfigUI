@@ -18,6 +18,8 @@
     <aura:attribute name="addSpinner" default="false"  type="Boolean" />
 
 
+    <aura:attribute name="addRelButtonLabelChange" default="false"  type="Boolean" />
+
      <lightning:button label="Refresh" variant="brand" title="Refresh" onclick="{! c.refresh }"/>
      
     
@@ -43,8 +45,13 @@
         <ltng:require styles="{!$Resource.FSCConfigRemoveMember}" />  
     </aura:if>
 
-        <aura:if isTrue="{!v.addSpinner}">
+    <aura:if isTrue="{!v.addSpinner}">
         <ltng:require styles="{!$Resource.FSCConfigSpinner}" />  
+    </aura:if>
+
+
+     <aura:if isTrue="{!v.addRelButtonLabelChange}">
+        <ltng:require styles="{!$Resource.FSCConfigAddRelLabel}" />  
     </aura:if>
     
        
