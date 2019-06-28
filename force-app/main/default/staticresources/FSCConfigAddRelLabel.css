@@ -3,19 +3,23 @@ ul>li.tree-leaf>div>
 div.slds-popover.FinServRelationshipsTreeLeaf>div.slds-p-horizontal--x-small.slds-p-bottom--small>div
 >button {
    visibility:hidden;
+   text-align: center;
 }
 
 div[data-component-id=FinServ_relationshipMap]>div>div>
 ul>li.tree-leaf>div>
 div.slds-popover.FinServRelationshipsTreeLeaf>div.slds-p-horizontal--x-small.slds-p-bottom--small>div
 >button::after {
-   content: "Add/Update Household";
+   content: " Add/Update Household ";
    visibility:visible;
    border:1px solid steelblue;
-   border-radius: 2px;
+   border-radius: 4px;
    background-color: white;
-   padding: 4px;
-   display: block;
-   
+   padding: 3px;
+   display:  inline-block;
+   margin-top:-20px;
+   text-align: center;
+   white-space: pre;
+
 
 }
