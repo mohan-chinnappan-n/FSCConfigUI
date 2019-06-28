@@ -13,10 +13,9 @@ div.slds-popover.FinServRelationshipsTreeLeaf>div.slds-p-horizontal--x-small.sld
    visibility:visible;
    border:1px solid steelblue;
    border-radius: 2px;
-   padding-left: -60px;
-   margin-left:-60px;
    background-color: white;
    padding: 4px;
+   display: block;
    
 
 }
