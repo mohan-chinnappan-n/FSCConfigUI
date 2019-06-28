@@ -9,7 +9,7 @@ div[data-component-id=FinServ_relationshipMap]>div>div>
 ul>li.tree-leaf>div>
 div.slds-popover.FinServRelationshipsTreeLeaf>div.slds-p-horizontal--x-small.slds-p-bottom--small>div
 >button::after {
-   content: "Add/Update";
+   content: "Add/Update Household";
    visibility:visible;
    border:1px solid steelblue;
    border-radius: 2px;
