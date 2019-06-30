@@ -7,5 +7,98 @@ document.querySelector('div.oneWorkspace>div.oneConsoleTabset>section>div.oneWor
 */
 
 div.oneWorkspace>div.oneConsoleTabset>section>div.oneWorkspaceTabWrapper>div.spinnerWrapper.forceComponentSpinner {
+   visibility: hidden;
+}
+
+
+div.oneWorkspace>div.oneConsoleTabset>section>div.oneWorkspaceTabWrapper
+>div.spinnerWrapper.forceComponentSpinner::after {
+    
+
+   visibility: visible;
+   content: 'Told you not to click the X Button after Save!';
+   border:1px solid #f0ad4e;
+   border-radius: 4px;
+   background-color: #f0ad4e;
+   color:white;
+   white-space: space normal;
+   padding: 10px;
+   padding-top: 0px;
+   padding-bottom: 0px;
+   opacity: .8;
+   margin-top:10px;
+   
+   margin-top:-20px;
+   text-align: center;
+   white-space: pre;
+   
+
+}
+
+.uiModal--medium.forceModal.DESKTOP.uiModal.forceModal.open.active
+>div.panel.slds-modal.slds-fade-in-open>div.modal-container.slds-modal__container>div.modal-footer.slds-modal__footer
+>div.slds-grid.slds-grid--align-spread.FinServWizardFooter
+>div.slds-order--3.slds-align-middle.slds-size--3-of-7
+>button>span{
+ visibility: hidden;
+}
+
+.uiModal--medium.forceModal.DESKTOP.uiModal.forceModal.open.active
+>div.panel.slds-modal.slds-fade-in-open>div.modal-container.slds-modal__container>div.modal-footer.slds-modal__footer
+>div.slds-grid.slds-grid--align-spread.FinServWizardFooter
+>div.slds-order--3.slds-align-middle.slds-size--3-of-7
+>button>span::before{
+    content: " Don't click X button after clicking Save ";
+    visibility:visible;
+   border:1px solid #f0ad4e;
+   border-radius: 4px;
+   background-color: #f0ad4e;
+   color:white;
+   white-space: space normal;
+   padding: 10px;
+   padding-top: 0px;
+   padding-bottom: 0px;
+   opacity: .8;
+   margin-top:10px;
+   
+   margin-top:-20px;
+   text-align: center;
+   white-space: pre;
+}
+.uiModal--medium.forceModal.DESKTOP.uiModal.forceModal.open.active
+>div.panel.slds-modal.slds-fade-in-open>div.modal-container.slds-modal__container>div.modal-footer.slds-modal__footer
+>div.slds-grid.slds-grid--align-spread.FinServWizardFooter
+>div.slds-order--3.slds-align-middle.slds-size--3-of-7
+>button::after{
+    content: "Save";
+    visibility:visible;
+   border:1px solid steelblue;
+   border-radius: 4px;
+   background-color:white;
+   padding: 0px;
+   display: block;
+   color: black;
+   padding-top:10px;
+   
+   margin-top:-20px;
+   text-align: center;
+   white-space: pre;
+
+}
+
+.uiModal--medium.forceModal.DESKTOP.uiModal.forceModal.open.active
+>div.panel.slds-modal.slds-fade-in-open>div.modal-container.slds-modal__container>div.modal-footer.slds-modal__footer
+>div.slds-grid.slds-grid--align-spread.FinServWizardFooter
+>div.slds-order--1.slds-align-middle.slds-size--3-of-7
+>button
+{
     display: none;
 }
+
+
+
+
+
+ 
+
+

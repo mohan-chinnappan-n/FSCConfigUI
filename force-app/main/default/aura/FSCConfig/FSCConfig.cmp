@@ -1,6 +1,9 @@
 <aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" 
                 access="global" >
-  
+
+      <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+
+   
       <lightning:card>
          <lightning:icon iconName="utility:settings" alternativeText="FSC UI Config" variant="settings"/>
      FSC Config - UI
@@ -47,6 +50,7 @@
 
     <aura:if isTrue="{!v.addSpinner}">
         <ltng:require styles="{!$Resource.FSCConfigSpinner}" />  
+         <ltng:require styles="{!$Resource.FSCConfigSaveButton}" />  
     </aura:if>
 
 
