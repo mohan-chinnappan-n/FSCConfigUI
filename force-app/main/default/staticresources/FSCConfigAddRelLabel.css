@@ -23,3 +23,28 @@ div.slds-popover.FinServRelationshipsTreeLeaf>div.slds-p-horizontal--x-small.sld
 
 
 }
+
+/* Primary Group Label Change*/
+
+div.modal-body.scrollable.slds-modal__content.slds-p-around--medium>div>div.FinServInputDataGrid:nth-child(1)>div>div>div>div.slds-form.slds-form_stacked
+>table>thead>tr>th:nth-child(5) {
+    visibility:hidden;
+    text-align: center;
+
+}
+
+div.modal-body.scrollable.slds-modal__content.slds-p-around--medium>div
+>div.FinServInputDataGrid:nth-child(1)>div>div>div>div.slds-form.slds-form_stacked
+>table>thead>tr>th:nth-child(5)::after { 
+    content: " Matt's Grp Name";
+    visibility:visible;
+    background-color: white;
+    padding: 0px;
+    display:  inline-block;
+    margin-top:-20px;
+    text-align: center;
+    white-space: pre;
+    margin-left:-60px;
+
+ 
+}
