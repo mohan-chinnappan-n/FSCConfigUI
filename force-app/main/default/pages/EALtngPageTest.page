@@ -10,7 +10,7 @@
               { query : q },
               "lightningDiv",
               function(cmp) {
-                console.log("Aura component EALtngOut. Do something with it ");
+                console.log("Aura component EALtngOut created. Do something with it ");
               }
           );
         });
