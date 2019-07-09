@@ -1,0 +1,2 @@
+- Create the component EALtngOUt
+    - sfdx force:lightning:component:create  -d aura -n EALtngOut -d force-app/main/default/aura/
