@@ -1,7 +1,7 @@
 <aura:component>
     <aura:attribute name="query" type="String" />
     <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
-    <textarea rows="10" cols="80">
+    <textarea class="query" rows="2" cols="80" >
         {!v.query}
     
     </textarea>

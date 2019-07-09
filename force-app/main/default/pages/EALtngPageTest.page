@@ -1,0 +1,18 @@
+<apex:page >
+    <apex:includeLightning />
+    <div id="lightningDiv" />
+     
+ <script>
+        var q = "{!$CurrentPage.parameters.q}";
+        console.log(q);
+        $Lightning.use("c:EALtngOutApp", function() {
+          $Lightning.createComponent("c:EALtngOut",
+              { query : q },
+              "lightningDiv",
+              function(cmp) {
+                console.log("Aura component EALtngOut. Do something with it ");
+              }
+          );
+        });
+    </script>
+</apex:page>
