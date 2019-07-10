@@ -50,7 +50,6 @@
 
     <aura:if isTrue="{!v.addSpinner}">
         <ltng:require styles="{!$Resource.FSCConfigSpinner}" />  
-         <ltng:require styles="{!$Resource.FSCConfigSaveButton}" />  
     </aura:if>
 
 
