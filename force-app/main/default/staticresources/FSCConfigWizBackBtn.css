@@ -2,3 +2,13 @@
 body > div.desktop.container.forceStyle.oneOne.lafStandardLayoutContainer.lafAppLayoutHost.forceAccess.forceStyle.oneOne > div.DESKTOP.uiContainerManager > div > div.panel.slds-modal.slds-fade-in-open > div > div.modal-footer.slds-modal__footer > div > div.slds-order--1.slds-size--3-of-7.slds-align-middle.slds-text-align--left {
     display: none; 
 }
+
+.uiModal--medium.forceModal.DESKTOP.uiModal.forceModal.open.active
+>div.panel.slds-modal.slds-fade-in-open>div.modal-container.slds-modal__container>div.modal-footer.slds-modal__footer
+>div.slds-grid.slds-grid--align-spread.FinServWizardFooter
+>div.slds-order--1.slds-align-middle.slds-size--3-of-7
+>button
+{
+    display: none;
+}
+

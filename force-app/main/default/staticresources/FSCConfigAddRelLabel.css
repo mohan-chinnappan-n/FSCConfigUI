@@ -15,12 +15,14 @@ div.slds-popover.FinServRelationshipsTreeLeaf>div.slds-p-horizontal--x-small.sld
    border:1px solid steelblue;
    border-radius: 4px;
    background-color: white;
-   padding: 0px;
    display:  inline-block;
    margin-top:-20px;
    text-align: center;
    white-space: pre;
 
+   padding-left: 10px;
+   padding-right:10px;
+   margin-left:-10px;
 
 }
 
@@ -36,7 +38,7 @@ div.modal-body.scrollable.slds-modal__content.slds-p-around--medium>div>div.FinS
 div.modal-body.scrollable.slds-modal__content.slds-p-around--medium>div
 >div.FinServInputDataGrid:nth-child(1)>div>div>div>div.slds-form.slds-form_stacked
 >table>thead>tr>th:nth-child(5)::after { 
-    content: " Matt's Grp Name";
+    content: " Primary Household";
     visibility:visible;
     background-color: white;
     padding: 0px;
@@ -48,3 +50,79 @@ div.modal-body.scrollable.slds-modal__content.slds-p-around--medium>div
 
  
 }
+
+
+/* Role in Group  Change*/
+
+div.modal-body.scrollable.slds-modal__content.slds-p-around--medium>div>div.FinServInputDataGrid:nth-child(1)>div>div>div>div.slds-form.slds-form_stacked
+>table>thead>tr>th:nth-child(2) {
+    visibility:hidden;
+    text-align: center;
+
+}
+
+div.modal-body.scrollable.slds-modal__content.slds-p-around--medium>div
+>div.FinServInputDataGrid:nth-child(1)>div>div>div>div.slds-form.slds-form_stacked
+>table>thead>tr>th:nth-child(2)::after { 
+    content: " Role in Household";
+    visibility:visible;
+    background-color: white;
+    padding: 0px;
+    display:  inline-block;
+    margin-top:-20px;
+    text-align: center;
+    white-space: pre;
+    margin-left:-70px;
+
+ 
+}
+
+
+/* Add to Group  Change*/
+
+div.modal-body.scrollable.slds-modal__content.slds-p-around--medium>div>div.FinServInputDataGrid:nth-child(2)>div>div>div>div.slds-form.slds-form_stacked
+>table>thead>tr>th:nth-child(4) {
+    visibility:hidden;
+    text-align: center;
+
+}
+
+div.modal-body.scrollable.slds-modal__content.slds-p-around--medium>div
+>div.FinServInputDataGrid:nth-child(2)>div>div>div>div.slds-form.slds-form_stacked
+>table>thead>tr>th:nth-child(4)::after { 
+    content: " Add to Household";
+    visibility:visible;
+    background-color: white;
+    padding: 0px;
+    display:  inline-block;
+    margin-top:-20px;
+    text-align: center;
+    white-space: pre;
+    margin-left:-70px;
+
+}
+
+
+
+
+
+/* Who are the members of this Group change*/
+
+div.FinServInputDataGrid:nth-child(1)>div>div.test-id__section.slds-section.slds-is-open.forcePageBlockSection.forcePageBlockSectionView>h3.slds-section__title.slds-text-heading--small.test-id__section-header-container>button
+>span {
+    visibility:hidden;
+
+}
+
+div.FinServInputDataGrid:nth-child(1)>div>div.test-id__section.slds-section.slds-is-open.forcePageBlockSection.forcePageBlockSectionView>h3.slds-section__title.slds-text-heading--small.test-id__section-header-container
+>button
+> span::after{
+    content: " Who Are the Members of This Household?";
+    visibility:visible;
+    padding: 0px;
+    display:  inline-block;
+    white-space: pre;
+    margin-left: -280px;
+
+}
+

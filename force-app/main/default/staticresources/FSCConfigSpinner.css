@@ -8,6 +8,9 @@ document.querySelector('div.oneWorkspace>div.oneConsoleTabset>section>div.oneWor
 
 div.oneWorkspace>div.oneConsoleTabset>section>div.oneWorkspaceTabWrapper>div.spinnerWrapper.forceComponentSpinner {
    visibility: hidden;
+   /* if you do not want the Spinner  uncomment the following line */
+  
+   /* display: none; */
 }
 
 
@@ -56,14 +59,10 @@ div.oneWorkspace>div.oneConsoleTabset>section>div.oneWorkspaceTabWrapper
    color:white;
    white-space: space normal;
    padding: 10px;
-   padding-top: 0px;
-   padding-bottom: 0px;
-   opacity: .8;
-   margin-top:10px;
-   
-   margin-top:-20px;
+   opacity: 1;
    text-align: center;
    white-space: pre;
+   
 }
 .uiModal--medium.forceModal.DESKTOP.uiModal.forceModal.open.active
 >div.panel.slds-modal.slds-fade-in-open>div.modal-container.slds-modal__container>div.modal-footer.slds-modal__footer
@@ -75,16 +74,17 @@ div.oneWorkspace>div.oneConsoleTabset>section>div.oneWorkspaceTabWrapper
    border:1px solid steelblue;
    border-radius: 4px;
    background-color:white;
-   padding: 0px;
    display: block;
    color: black;
    padding-top:10px;
    
-   margin-top:-20px;
+   margin-top:-10px;
    text-align: center;
    white-space: pre;
 
 }
+
+/* remove back button */
 
 .uiModal--medium.forceModal.DESKTOP.uiModal.forceModal.open.active
 >div.panel.slds-modal.slds-fade-in-open>div.modal-container.slds-modal__container>div.modal-footer.slds-modal__footer
