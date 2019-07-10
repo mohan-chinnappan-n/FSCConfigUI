@@ -1,0 +1,4 @@
+div.modal-body.scrollable.slds-modal__content.slds-p-around--medium>div
+>div.FinServInputDataGrid:nth-child(3) {
+    display: none;
+}

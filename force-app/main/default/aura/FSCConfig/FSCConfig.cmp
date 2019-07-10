@@ -23,6 +23,13 @@
 
     <aura:attribute name="addRelButtonLabelChange" default="false"  type="Boolean" />
 
+
+    <aura:attribute name="addRemoveRelContactSection" default="false"  type="Boolean" />
+
+
+
+
+
      <lightning:button label="Refresh" variant="brand" title="Refresh" onclick="{! c.refresh }"/>
      
     
@@ -52,10 +59,15 @@
         <ltng:require styles="{!$Resource.FSCConfigSpinner}" />  
     </aura:if>
 
-
      <aura:if isTrue="{!v.addRelButtonLabelChange}">
         <ltng:require styles="{!$Resource.FSCConfigAddRelLabel}" />  
     </aura:if>
+
+
+     <aura:if isTrue="{!v.addRemoveRelContactSection}">
+        <ltng:require styles="{!$Resource.FSCConfigRelContact}" />  
+    </aura:if>
+
     
        
     

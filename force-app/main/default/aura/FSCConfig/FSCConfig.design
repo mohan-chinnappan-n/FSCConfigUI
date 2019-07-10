@@ -9,6 +9,8 @@
     <design:attribute name="addSpinner"  default="false"  label="Disable  Spinner" description="Disable  Spinner" />
 
     <design:attribute name="addRelButtonLabelChange"  default="false"  label="Rename Add Relationship Button"  description="Rename Add Relationship Button" />
+ 
+    <design:attribute name="addRemoveRelContactSection"  default="false"  label="Remove Related Contacts Section"  description="Remove Related Contacts Section" />
   
-  
+
 </design:component>
