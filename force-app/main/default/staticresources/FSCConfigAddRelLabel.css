@@ -26,6 +26,34 @@ div.slds-popover.FinServRelationshipsTreeLeaf>div.slds-p-horizontal--x-small.sld
 
 }
 
+/* another selector for the same button */
+
+div[data-component-id=FinServ_relationshipMap]>div>div.tree>ul>li.tree-leaf>li>ul>ul.tree-branch>li:nth-child(1)>span>div
+>div.slds-p-horizontal--x-small.slds-p-bottom--small>div>button {
+    visibility:hidden;
+    text-align: center; 
+}
+
+div[data-component-id=FinServ_relationshipMap]>div>div.tree>ul>li.tree-leaf>li>ul>ul.tree-branch>li:nth-child(1)>span>div
+>div.slds-p-horizontal--x-small.slds-p-bottom--small>div>button::after {
+    content: " Add/Update Household ";
+    visibility:visible;
+    border:1px solid steelblue;
+    border-radius: 4px;
+    background-color: white;
+    display:  inline-block;
+    margin-top:-20px;
+    text-align: center;
+    white-space: pre;
+ 
+    padding-left: 10px;
+    padding-right:10px;
+    margin-left:-10px;
+}
+
+
+
+
 /* Primary Group Label Change*/
 
 div.modal-body.scrollable.slds-modal__content.slds-p-around--medium>div>div.FinServInputDataGrid:nth-child(1)>div>div>div>div.slds-form.slds-form_stacked
