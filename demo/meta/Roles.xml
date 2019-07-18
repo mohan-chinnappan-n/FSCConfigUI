@@ -2,6 +2,7 @@
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
     <fields>
         <fullName>AccountContactRelation.Roles</fullName>
+        <type>multipicklist</type> 
         <picklist>
             <picklistValues>
                 <label>Client</label>
