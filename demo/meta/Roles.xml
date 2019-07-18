@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>AccountContactRelation.Roles</fullName>
+        <picklist>
+            <picklistValues>
+                <label>Client</label>
+                <value>Client</value>
+                <active>true</active>
+                <validFor>null</validFor>
+                <defaultValue>true</defaultValue>
+              </picklistValues>
+
+            <picklistValues>
+                <label>Dependent</label>
+                <value>Dependent</value>
+                <active>true</active>
+                <validFor>null</validFor>
+                <defaultValue>false</defaultValue>
+              </picklistValues>
+
+            <picklistValues>
+                <label>Domestic Partner</label>
+                <value>Domestic Partner</value>
+                <active>true</active>
+                <validFor>null</validFor>
+                <defaultValue>false</defaultValue>
+             </picklistValues>
+ 
+       </picklist>
+    </fields>
+<CustomObject>
+
