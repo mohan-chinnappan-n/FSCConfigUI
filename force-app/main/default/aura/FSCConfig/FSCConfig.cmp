@@ -42,7 +42,7 @@
     </aura:if>
     
     <aura:if isTrue="{!v.addDropdownMenu}">
-        <ltng:require styles="{!$Resource.FSCConfigMenu}" />  
+        <ltng:require styles="{!$Resource.FSCConfigDropdownMenu}" />  
    
     </aura:if>
     

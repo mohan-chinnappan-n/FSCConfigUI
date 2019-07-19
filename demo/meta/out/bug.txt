@@ -1,0 +1,13 @@
+force:mdapi:retrieve is not retrieving metadata for the fields picklist valueset
+
+Here is the example: https://raw.githubusercontent.com/mohan-chinnappan-n/FSCConfigUI/master/demo/meta/out/unpackaged/objects/AccountContactRelation.object
+
+it is missing the valueSet for the field "AccountContactRelation.Roles" -- empty
+
+but for the another picklist fileld: AccountContactRelation.FinServ__Rollups__c it has retrieved the picklist values
+
+package.xml: https://raw.githubusercontent.com/mohan-chinnappan-n/FSCConfigUI/master/demo/meta/package.xml
+cmd used: sfdx force:mdapi:retrieve -u username@force.com -k package.xml -r ./out
+
+Abhisek and CT found this bug. I just verified it in my trial org.
+
