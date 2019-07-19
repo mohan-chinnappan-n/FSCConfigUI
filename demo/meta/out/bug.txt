@@ -9,5 +9,4 @@ but for the another picklist fileld: AccountContactRelation.FinServ__Rollups__c 
 package.xml: https://raw.githubusercontent.com/mohan-chinnappan-n/FSCConfigUI/master/demo/meta/package.xml
 cmd used: sfdx force:mdapi:retrieve -u username@force.com -k package.xml -r ./out
 
-Abhisek and CT found this bug. I just verified it in my trial org.
 
