@@ -12,5 +12,6 @@
  
     <design:attribute name="addRemoveRelContactSection"  default="false"  label="Remove Related Contacts Section"  description="Remove Related Contacts Section" />
   
-
+    <design:attribute name="makeRelMapRO"  default="false"  label="Make Rel Map RO"  description="Make Rel Map RO" />
+  
 </design:component>

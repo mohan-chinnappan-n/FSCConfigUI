@@ -4,38 +4,3 @@
 }
 */
 
-/* disable all the drop drowns in the rel map */
-div.FinServRelationshipMap a.slds-button.slds-button--icon-border-filled.slds-button--icon-x-small {
-    display: none;
-}
-
-div[data-component-id=FinServ_relationshipMap]>div>div.tree>ul>li.tree-leaf>li>ul>ul.tree-branch>li:nth-child(1)>span>div
->div.slds-p-horizontal--x-small.slds-p-bottom--small>div>button {
-    display: none;
-}
-
-div[data-component-id=FinServ_relationshipMap]>div>div>
-ul>li.tree-leaf>div>
-div.slds-popover.FinServRelationshipsTreeLeaf>div.slds-p-horizontal--x-small.slds-p-bottom--small>div
->button{
-  display: none;
-}
-
-
-   
-button[title="+ Add Contact"] {
-    display: none;
-   }
-
-button[title="+ Add Account"] {
- display: none;
-}
-
-button[title="+ Add Contact"] {
- display: none;
-}
-
-
-
-
-

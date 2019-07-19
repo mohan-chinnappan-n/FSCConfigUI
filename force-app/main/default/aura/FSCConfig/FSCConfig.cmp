@@ -26,6 +26,10 @@
 
     <aura:attribute name="addRemoveRelContactSection" default="false"  type="Boolean" />
 
+    <aura:attribute name="makeRelMapRO" default="false"  type="Boolean" />
+
+
+
 
 
 
@@ -66,6 +70,10 @@
 
      <aura:if isTrue="{!v.addRemoveRelContactSection}">
         <ltng:require styles="{!$Resource.FSCConfigRelContact}" />  
+    </aura:if>
+
+     <aura:if isTrue="{!v.makeRelMapRO}">
+        <ltng:require styles="{!$Resource.FSCConfigMakeRelMapRO}" />  
     </aura:if>
 
     
