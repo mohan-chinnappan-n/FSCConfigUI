@@ -1,3 +1,9 @@
 div[title="Change Owner"]{
     display:none;
 }
+
+a[title="Change Owner"]{
+    visibility: hidden;
+}
+
+
