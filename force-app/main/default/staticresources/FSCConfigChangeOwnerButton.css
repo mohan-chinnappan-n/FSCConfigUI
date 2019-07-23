@@ -6,4 +6,9 @@ a[title="Change Owner"]{
     visibility: hidden;
 }
 
+button[title="Change Owner"]{
+    visibility: hidden;
+}
+
+
 
