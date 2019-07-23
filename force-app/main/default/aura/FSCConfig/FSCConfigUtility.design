@@ -1,0 +1,15 @@
+<design:component>
+    <design:attribute name="addGroupButton" default="false" label="Disable Add Group Button"  description="Disable Add Group Button " />
+    <design:attribute name="addBackButton"  default="false"  label="Disable Back Button" description="Disable Back Button " />
+    
+    <design:attribute name="addDropdownMenu"  default="false"  label="Disable DropDown Menus" description="Disable DropDown Menus" />
+    <design:attribute name="addPopup"  default="false"  label="Disable Popups" description="Disable Popups" />
+
+    <design:attribute name="addRemoveMember"  default="false"  label="Disable  Remove Member" description="Disable  Remove Member" />
+    <design:attribute name="addRelButtonLabelChange"  default="false"  label="Rename Add Relationship Button"  description="Rename Add Relationship Button" />
+ 
+    <design:attribute name="addRemoveRelContactSection"  default="false"  label="Remove Related Contacts Section"  description="Remove Related Contacts Section" /> 
+    <design:attribute name="makeRelMapRO"  default="false"  label="Make Rel Map RO"  description="Make Rel Map RO" />
+    <design:attribute name="addRemoveChangeOwnerButton"  default="false"  label="Disable Change Owner Button"  description="Disable Change Owner Button" />
+    
+</design:component>

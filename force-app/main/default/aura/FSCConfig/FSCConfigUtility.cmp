@@ -1,0 +1,49 @@
+<aura:component implements="lightning:backgroundUtilityItem,flexipage:availableForAllPageTypes" 
+                access="global" >
+  <!--	Last Modified for FSC	__--> 
+    <aura:attribute name="addGroupButton"  default="false" type="Boolean" />
+    <aura:attribute name="addBackButton"  default="false"  type="Boolean" />
+    <aura:attribute name="addDropdownMenu" default="false"  type="Boolean" />
+    <aura:attribute name="addPopup" default="false"  type="Boolean" />
+    <aura:attribute name="addRemoveMember" default="false"  type="Boolean" /> 
+	<aura:attribute name="addRelButtonLabelChange" default="false"  type="Boolean" />
+	<aura:attribute name="addRemoveRelContactSection" default="false"  type="Boolean" /> 
+    <aura:attribute name="makeRelMapRO" default="false"  type="Boolean" />
+    <aura:attribute name="addRemoveChangeOwnerButton" default="false"  type="Boolean" />
+    
+    <aura:if isTrue="{!v.addGroupButton}">
+        <ltng:require styles="{!$Resource.FSCConfigAddGroup}" />    
+    </aura:if>
+    
+    <aura:if isTrue="{!v.addBackButton}">
+        <ltng:require styles="{!$Resource.FSCConfigWizBackBtn }" />        
+    </aura:if>
+    
+    <aura:if isTrue="{!v.addDropdownMenu}">
+        <ltng:require styles="{!$Resource.FSCConfigMenu}" />
+    </aura:if>
+    
+     <aura:if isTrue="{!v.addPopup}">
+        <ltng:require styles="{!$Resource.FSCConfigPopup}" />  
+    </aura:if>
+
+    <aura:if isTrue="{!v.addRemoveMember}">
+        <ltng:require styles="{!$Resource.FSCConfigRemoveMember}" />  
+    </aura:if>
+    
+    <aura:if isTrue="{!v.addRelButtonLabelChange}">
+        <ltng:require styles="{!$Resource.FSCConfigAddRelLabel}" />  
+    </aura:if>
+
+     <aura:if isTrue="{!v.addRemoveRelContactSection}">
+        <ltng:require styles="{!$Resource.FSCConfigRelContact}" />  
+    </aura:if>
+    
+     <aura:if isTrue="{!v.makeRelMapRO}">
+        <ltng:require styles="{!$Resource.FSCConfigMakeRelMapRO}" />  
+    </aura:if>
+    <aura:if isTrue="{!v.addRemoveChangeOwnerButton}">
+        <ltng:require styles="{!$Resource.FSCConfigChangeOwnerButton}" />  
+    </aura:if>
+    
+</aura:component>
