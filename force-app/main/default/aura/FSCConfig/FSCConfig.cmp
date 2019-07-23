@@ -27,6 +27,7 @@
     <aura:attribute name="addRemoveRelContactSection" default="false"  type="Boolean" />
 
     <aura:attribute name="makeRelMapRO" default="false"  type="Boolean" />
+    <aura:attribute name="addRemoveChangeOwnerButton" default="false"  type="Boolean" />
 
 
 
@@ -63,18 +64,25 @@
         <ltng:require styles="{!$Resource.FSCConfigSpinner}" />  
     </aura:if>
 
-     <aura:if isTrue="{!v.addRelButtonLabelChange}">
+    <aura:if isTrue="{!v.addRelButtonLabelChange}">
         <ltng:require styles="{!$Resource.FSCConfigAddRelLabel}" />  
     </aura:if>
 
 
-     <aura:if isTrue="{!v.addRemoveRelContactSection}">
+    <aura:if isTrue="{!v.addRemoveRelContactSection}">
         <ltng:require styles="{!$Resource.FSCConfigRelContact}" />  
     </aura:if>
 
-     <aura:if isTrue="{!v.makeRelMapRO}">
+    <aura:if isTrue="{!v.makeRelMapRO}">
         <ltng:require styles="{!$Resource.FSCConfigMakeRelMapRO}" />  
     </aura:if>
+
+
+    <aura:if isTrue="{!v.addRemoveChangeOwnerButton}">
+        <ltng:require styles="{!$Resource.FSCConfigChangeOwnerButton}" />  
+    </aura:if>
+
+
 
     
        

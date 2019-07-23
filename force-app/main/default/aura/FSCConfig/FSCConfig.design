@@ -13,5 +13,8 @@
     <design:attribute name="addRemoveRelContactSection"  default="false"  label="Remove Related Contacts Section"  description="Remove Related Contacts Section" />
   
     <design:attribute name="makeRelMapRO"  default="false"  label="Make Rel Map RO"  description="Make Rel Map RO" />
+
+    <design:attribute name="addRemoveChangeOwnerButton"  default="false"  label="Disable Change Owner Button"  description="Disable Change Owner Button" />
+  
   
 </design:component>
