@@ -1,3 +1,4 @@
+/*
 div[title="Change Owner"]{
     display:none;
 }
@@ -9,6 +10,12 @@ a[title="Change Owner"]{
 button[title="Change Owner"]{
     visibility: hidden;
 }
+*/
 
+div.container.showchangeOwnerLink.forceOutputOwnerIdLookupWithChangeLink
+>button {
+    display: none;
+}
+ 
 
 
