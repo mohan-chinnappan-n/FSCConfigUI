@@ -16,6 +16,21 @@ div.container.showchangeOwnerLink.forceOutputOwnerIdLookupWithChangeLink
 >button {
     display: none;
 }
+
+ul>li.uiMenuItem>a[title="Change Owner"] {
+     display: none;
+  
+}
+
+
+div.forceModalActionContainer--footerAction.forceModalActionContainer>button[title="Change Owner"] {
+     display: none;
+}
+
+
+
+
+
  
 
 
