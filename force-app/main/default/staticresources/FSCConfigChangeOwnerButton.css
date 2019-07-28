@@ -2,7 +2,7 @@
 div.test-id__record-layout-container.riseTransitionEnabled>div>div>div.test-id__section-content.slds-section__content.section__content.slds-p-top--none>div.slds-form.slds-form_stacked >div.slds-grid.slds-gutters_small.full.cols-2.forcePageBlockSectionRow:nth-child(3)>div>div>div.slds-form-element__control.slds-grid.itemBody>span>div
 >button[title="Change Owner"] {
     display: none;
-    pointer-events: none;
+
 
 }
 div.test-id__record-layout-container.riseTransitionEnabled>div>div
@@ -25,18 +25,19 @@ div.test-id__record-layout-container.riseTransitionEnabled>div>div
     pointer-events: none;
 }
 
+/*  list view */
 
-/*
-div.slds-form-element.slds-form-element_readonly.slds-grow.slds-hint-parent.override--slds-form-element {
-   border-bottom: 1px solid red;
-   pointer-events: none;
+div.test-listViewManager.slds-grid.slds-grid--vertical.forceListViewManager>div>div.slds-grid>
+div.slds-col.slds-has-flexi-truncate.firstHeaderRow>div.slds-media.slds-no-space.slds-grow>div.slds-media__figure>span
+>div>span>img[alt="Accounts"] {
+    /* display:none;*/
 }
 
- 
- div.modal-footer.slds-modal__footer>div.forceModalActionContainer--footerAction.forceModalActionContainer>button[title="Change Owner"]{
-     display: none;
+div.branding-actions.actionMenu
+>ul.scrollable>li.uiMenuItem:nth-child(3)>a[title="Change Owner"]{
+   display:none;
 }
-*/
+
 
 
  	
