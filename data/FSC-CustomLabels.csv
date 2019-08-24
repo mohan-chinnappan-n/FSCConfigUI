@@ -1,0 +1,424 @@
+Name,Description,Value,
+Managed - Installed,Button_Label_Add_Account,Add Account button in visualization component,+ Add Account
+Managed - Installed,Button_Label_Add_Contact,Add Contact button in visualization component,+ Add Contact
+Managed - Installed,Button_Label_Add_Group,New Group button in visualization component,+ Add Group
+Managed - Installed,Button_Label_Add_Member,Add Member button in visualization component,+ Add Member
+Managed - Installed,Button_Label_Add_Relationship,Add Relationship button in visualization component,+ Add Relationship
+Managed - Installed,Button_Label_Back,Back button,Back
+Managed - Installed,Button_Label_Cancel,Cancel button,Cancel
+Managed - Installed,Button_Label_Delete,Used for delete option in modal.,Delete
+Managed - Installed,Button_Label_Disabled,Disabled button,Disabled
+Managed - Installed,Button_Label_Edit,Edit Button,Edit
+Managed - Installed,Button_Label_Enabled,Enabled button,Enabled
+Managed - Installed,Button_Label_Hide_Group_Members,Collapse component to hide group members,Hide group members
+Managed - Installed,Button_Label_More_Info,Used for tooltip button.,More Information
+Managed - Installed,Button_Label_New,New button,New
+Managed - Installed,Button_Label_New_Row,Used for new row.,Add Row
+Managed - Installed,Button_Label_Next,Next button,Next
+Managed - Installed,Button_Label_Remove,Used for remove option in modal.,Remove
+Managed - Installed,Button_Label_Save,Save button,Save
+Managed - Installed,Button_Label_SaveAndNew,Save & New button,Save & New
+Managed - Installed,Button_Label_SaveAndNext,Save & Next button,Save & Next
+Managed - Installed,Button_Label_ShowHide_Group_Members,Assistive text for toggling visibility of group members,Show/Hide Group Members
+Managed - Installed,Button_Label_Show_Group_Members,Expand component to display group members,Show group members
+Managed - Installed,Detail_Dialog_Household_Member_Remove,Remove membership dialog text on Relationships tab of profiles,"When you remove a member, you remove the member's related accounts from this relationship group."
+Managed - Installed,Detail_Dialog_Household_Relationship_Delete,Delete relationship dialog text on Relationships tab of profiles,"When you delete a relationship, you delete the member's relationship to this group from Salesforce."
+Managed - Installed,Entity_Clients_Lowercase,"Lowercase, plural ""clients""",clients
+Managed - Installed,Entity_Clients_Uppercase,"Uppercase, plural ""Clients""",Clients
+Managed - Installed,Entity_Client_Lowercase,"Lowercase, singular ""client""",client
+Managed - Installed,Entity_Client_Uppercase,"Uppercase, singular ""Client""",Client
+Managed - Installed,Entity_Households_Lowercase,"Lowercase, plural ""households""",households
+Managed - Installed,Entity_Households_Uppercase,"Uppercase, plural ""Households""",Households
+Managed - Installed,Entity_Household_Lowercase,"Lowercase, singular ""household""",household
+Managed - Installed,Entity_Household_Uppercase,"Uppercase, singular ""Household""",Household
+Managed - Installed,Header_Component_Assigned_Referrals,List of referrals (by name) assigned to a user,Referrals Assigned to Me ({0})
+Managed - Installed,Header_Component_Cases,Cases component header on Home page,Cases
+Managed - Installed,Header_Component_Create_Individual,Individual Client component header,Create Individual
+Managed - Installed,Header_Component_Leads,Leads component header on Home page,Leads ({0})
+Managed - Installed,Header_Component_Opportunities,Opportunities component header on Home page,Opportunities ({0})
+Managed - Installed,Header_Component_Tasks,Tasks component header on Home page,Tasks ({0})
+Managed - Installed,Header_Dialog_Client_Create,Header for new client dialog box,Create Client
+Managed - Installed,Header_Dialog_Create,"Prefix for headers in new record dialog boxes, such as Create client",Create
+Managed - Installed,Header_Dialog_Edit,"  Prefix for headers in edit record dialog boxes, such as Edit client",Edit
+Managed - Installed,Header_Dialog_Household_Member_Create,New member dialog box on Relationships tab of client and household profiles,Create Household Member
+Managed - Installed,Header_Dialog_Household_Member_ ,Edit membership dialog box on Relationships tab of client and household profiles,Edit Household Membership
+Managed - Installed,Header_Dialog_Household_Member_Remove,Remove membership dialog header on Relationships tab of profiles,Remove member from group?
+Managed - Installed,Header_Dialog_Household_Relationship_Delete,Delete relationship dialog header on Relationships tab of profiles,Delete relationship?
+Managed - Installed,Header_Page_Client,Page header on client profile,Client
+Managed - Installed,Header_Page_Household,Page header on household profile,Household
+Managed - Installed,Header_Page_Households,Page header on Households list,Households
+Managed - Installed,Header_Panel_Financial_Summary,Summary panel header on Financials tab of client and household profiles,Financial Summary
+Managed - Installed,Header_Panel_Goals_Summary,Summary panel header on Goals tab of client and household profiles,Goals Summary
+Managed - Installed,Header_Panel_Group_Create,Header for Create Relationship Group panel.,Create Relationship Group: {0}
+Managed - Installed,Header_Panel_Group_ ,Header for Edit Relationship Group panel.,Edit {0}
+Managed - Installed,Header_Panel_Group_New,Header for new relationship group panel.,New Relationship Group
+Managed - Installed,Header_Panel_Household_Summary,Summary panel header on Relationships tab of client and household profiles,Household Summary
+Managed - Installed,Header_Panel_Individual_Create,Header for Create Individual panel.,New Account: {0}
+Managed - Installed,Header_Panel_Individual_New,Header for new individual panel.,New Individual
+Managed - Installed,Header_Section_Assets_Liabilities,Assets and Liabilities header on Financials tab of client and household profiles,Assets and Liabilities
+Managed - Installed,Header_Section_Bank_Accounts,Bank Accounts header on Financials tab of client and household profiles,Bank Accounts
+Managed - Installed,Header_Section_Financial_Account_Roles,Financial Account Roles header on Financials tab of client profile,Financial Account Roles
+Managed - Installed,Header_Section_Group_Name,Group name section header on the visualization component,{0} ({1})
+Managed - Installed,Header_Section_Household_Members,Household Members header on Relationships tab of client and household profiles,Group Members
+Managed - Installed,Header_Section_Insurance_Policies,Insurance Policies header on Financials tab of client and household profiles,Insurance Policies
+Managed - Installed,Header_Section_Investment_Accounts,Investment Accounts on Financials tab of client and household profiles,Investment Accounts
+Managed - Installed,Header_Section_Primary_Group,Primary Group header on Relationships tab of client and household profiles,Primary Group
+Managed - Installed,Header_Section_Related_Accounts,Related Accounts section header on Relationships tab of household profiles,Related Accounts
+Managed - Installed,Header_Section_Related_Contacts,Related Contacts header on Relationships tab of client and household profiles,Related Contacts
+Managed - Installed,Header_Section_Related_Groups,Related Groups section header in the visualization component,Related Groups
+Managed - Installed,Header_Wizard_New_Client,Enter client information header in the new client setup dialog.,Enter Your Client's Information
+Managed - Installed,Header_Wizard_New_Client_Group,Enter group information header in the new client setup dialog.,Enter Your Client's Group Information
+Managed - Installed,Label_Account_Field_Set,Name of the field set to display summary fields from account.,Field Set for Account
+Managed - Installed,Label_Account_Field_Set_Description,Description for Account Field Set.,Name of the field set to display summary fields from account.
+Managed - Installed,Label_Action_Dropdown_ListView_Table,Assistive text for action dropdown to allow edits and deletes in List View Table,Actions
+Managed - Installed,Label_All_Options_Selected,Indicates all options selected,All Options Selected
+Managed - Installed,Label_All_Users_Submit,Bypasses CRUD and Field Level Security checks on the Lead object.,Let All Users Submit Form
+Managed - Installed,Label_All_Users_Submit_Description,Description for All Users Submit Form.,Bypasses CRUD and Field Level Security checks on the Lead object.
+Managed - Installed,Label_Client_Name_Assets_Liabilities,Custom label for client name in Assets and Liabilities section of Financials tab,Client Name
+Managed - Installed,Label_Client_Name_Bank_Accounts,Custom label for client name in Bank Accounts section of Financials tab,Client Name
+Managed - Installed,Label_Client_Name_Insurance_Policies,Custom label for client name in Insurance Policies section of Financials tab,Client Name
+Managed - Installed,Label_Client_Name_Investment_Accounts,Custom label for client name in Investment Accounts section of Financials tab,Client Name
+Managed - Installed,Label_Client_Permanent_Address,Custom label for permanent address section on client profile,Permanent Address
+Managed - Installed,Label_Client_Permanent_City,Custom label for permanent address city field on client profile,Permanent City
+Managed - Installed,Label_Client_Permanent_Country,Custom label for permanent address country field on client profile,Permanent Country
+Managed - Installed,Label_Client_Permanent_Postal_Code,Custom label for permanent address postal code field on client profile,Permanent Zip/Postal Code
+Managed - Installed,Label_Client_Permanent_State,Custom label for permanent address state field on client profile,Permanent State/Province
+Managed - Installed,Label_Client_Permanent_Street,Custom label for permanent address street field on client profile,Permanent Street
+Managed - Installed,Label_Client_Primary_Address_Permanent,Custom label for primary address field (permanent address) on client profile,Primary Address (Permanent)
+Managed - Installed,Label_Client_Primary_Address_Seasonal,Custom label for primary address field (seasonal address) on client profile,Primary Address (Seasonal)
+Managed - Installed,Label_Client_Referral_Summary_All_Time,Custom label for all time field on Referrals tab.,All Time
+Managed - Installed,Label_Client_Referral_Summary_Average_Conversion_Rate,Custom label for average conversion rate of referrers on Referrals tab.,Average Conversion Rate of Referrers
+Managed - Installed,Label_Client_Referral_Summary_Converted,Custom label for converted referrals field on Referrals tab.,Referrals Converted
+Managed - Installed,Label_Client_Referral_Summary_Made,Custom label for referrals made,Referrals Made
+Managed - Installed,Label_Client_Referral_Summary_Membership,Custom label for average membership of converted referrals on Referrals tab.,Average Membership of Converted Referrals
+Managed - Installed,Label_Client_Referral_Summary_MTD,Custom label for MTD field on Referrals tab.,MTD
+Managed - Installed,Label_Client_Referral_Summary_QTD,Custom label for YTD field on Referrals tab.,QTD
+Managed - Installed,Label_Client_Referral_Summary_Received,Custom label for received referrals field on Referrals tab.,Referrals Received
+Managed - Installed,Label_Client_Referral_Summary_Referrals,Custom label for referrals from client field on Referrals tab.,Referrals
+Managed - Installed,Label_Client_Referral_Summary_Rejected,Custom label for rejected referrals field on Referrals tab.,Referrals Rejected
+Managed - Installed,Label_Client_Referral_Summary_Revenue,Custom label for revenue from referrals field on Referrals tab.,Revenue Generated
+Managed - Installed,Label_Client_Referral_Summary_Score,Custom label for referrer score field on Referrals tab.,Referrer Score
+Managed - Installed,Label_Client_Referral_Summary_Title,Summary of referrals made by a banker; includes Referrer Score in some views.,Referrer Summary
+Managed - Installed,Label_Client_Referral_Summary_YTD,Custom label to be displayed for owner's name field.,YTD
+Managed - Installed,Label_Client_Related_Contact_Name,Custom label for contact name in Related Accounts section of Relationships tab,Related Contact
+Managed - Installed,Label_Client_Related_Contact_Role,Custom label for contact's role in Related Contacts section of Relationships tab,Role
+Managed - Installed,Label_Client_Seasonal_Address,Custom label for seasonal address section on client profile,Seasonal Address
+Managed - Installed,Label_Client_Seasonal_City,Custom label for seasonal address city field on client profile,Seasonal City
+Managed - Installed,Label_Client_Seasonal_Country,Custom label for seasonal address country field on client profile,Seasonal Country
+Managed - Installed,Label_Client_Seasonal_Postal_Code,Custom label for seasonal address postal code field on client profile,Seasonal Zip/Postal Code
+Managed - Installed,Label_Client_Seasonal_State,Custom label for seasonal address state field on client profile,Seasonal State/Province
+Managed - Installed,Label_Client_Seasonal_Street,Custom label for seasonal address street field on client profile,Seasonal Street
+Managed - Installed,Label_Collapse_Arrow_Assistive,Assistive text when collapsing the expandArrowIcon.,Collapse row
+Managed - Installed,Label_Dialog_Client_Create_Field_Household,Custom label for household field when creating a client,Household
+Managed - Installed,Label_Dialog_Client_Create_Field_Primary_Member,Custom label for primary member field when creating a client,Primary Member
+Managed - Installed,Label_Dialog_Client_Create_Field_RollUp_Summary,Custom label for roll-up summary field when creating a client,Include in Household Roll-Up Summary
+Managed - Installed,Label_Display_View_All_Link,Label for Display View All Link,Display View All Link
+Managed - Installed,Label_Expand_Arrow_Assistive,Assistive text when expanding the expandArrowIcon.,Expand row
+Managed - Installed,Label_Field_Set,Name of the field set used to render this component.,Fieldset
+Managed - Installed,Label_Field_Set_Addresses,Custom label for Addresses field set on client profile,Addresses
+Managed - Installed,Label_Field_Set_Client_Header,Custom label for field set on client profile's page header,Client Header
+Managed - Installed,Label_Field_Set_Client_Info,Custom label for Client Information field set on client profile,Client Information
+Managed - Installed,Label_Field_Set_Client_Services,Custom label for Client Services field set on client and household profiles,Client Services
+Managed - Installed,Label_Field_Set_Description,Description of field set name,Name of the field set used to render this component.
+Managed - Installed,Label_Field_Set_Employment_Info,Custom label for Employment Information field set on client profile,Employment Information
+Managed - Installed,Label_Field_Set_Financial_Accounts_Summary,Custom label for field set on client and household profiles' Financials tabs,Financial Accounts Summary
+Managed - Installed,Label_Field_Set_Financial_Summary,Custom label for Financial Summary field set on client and household profiles,Financial Summary
+Managed - Installed,Label_Field_Set_Group_Members,Name of the field set for group members.,Field Set for Group Members
+Managed - Installed,Label_Field_Set_Household_Header,Custom label for field set on household profile's page header,Household Header
+Managed - Installed,Label_Field_Set_Household_Info,Custom label for field set on household profile's Details tab,Household Information
+Managed - Installed,Label_Field_Set_Household_Info_Create_Client,Custom label for Household Information field set when creating a client,Household Information
+Managed - Installed,Label_Field_Set_Household_Info_Create_Household_Member,Custom label for Household Information field set when adding a household member,Household Information
+Managed - Installed,Label_Field_Set_Household_Info_Edit_Membership,Custom label for Household Information field set when editing a household member,Household Information
+Managed - Installed,Label_Field_Set_Household_Summary,Custom label for field set on client and household profiles' Relationships tabs,Household Summary
+Managed - Installed,Label_Field_Set_Know_Your_Client,Custom label for Know Your Client field set on client and household profiles,Know Your Client
+Managed - Installed,Label_Field_Set_Mailing_Address,Custom label for Mailing Address field set when adding or editing a client,Mailing Address
+Managed - Installed,Label_Field_Set_Member_Info_Create_Household_Member,Custom label for Member Information field set when adding a household member,Member Information
+Managed - Installed,Label_Field_Set_Other_Address,Custom label for Other Address field set when adding or editing a client,Other Address
+Managed - Installed,Label_Field_Set_Permanent_Address,Custom label for Permanent Address field set when adding or editing a client,Permanent Address
+Managed - Installed,Label_Field_Set_Phone_and_Email,Custom label for Phone and Email field set on client profile,Phone and Email
+Managed - Installed,Label_Field_Set_Referrals_Expressed_Interest,List of referrals' expressed interest.,Expressed Interests
+Managed - Installed,Label_Field_Set_Referrals_Made,Related list of referrals made by an individual.,Referrals Made
+Managed - Installed,Label_Field_Set_Referral_Form,Form for creating a referral.,New Referral
+Managed - Installed,Label_Field_Set_Relationship_Groups,Custom label for relationship groups field set on client profile,Relationship Groups
+Managed - Installed,Label_Field_Set_Seasonal_Address,Custom label for Seasonal Address field set on client profile,Seasonal Address
+Managed - Installed,Label_Field_Set_System_Info,Custom label for System Information field set on client profile,System Information
+Managed - Installed,Label_Financial_Account_Field_Set,Name of the field set to display financial account details.,Field Set for Financial Account
+Managed - Installed,Label_Financial_Account_Field_Set_Description,Description for Financial Account Field Set.,Name of the field set to display financial account details.
+Managed - Installed,Label_Financial_Account_Record_Types,Comma separated list of financial account record types to display.,Financial Account Record Types
+Managed - Installed,Label_Financial_Account_Record_Types_Description,Description for Financial Account Record Types.,Comma separated list of financial account record types to display.
+Managed - Installed,Label_Financial_Account_Roles,Comma separated list of financial account roles to display.,Financial Account Roles
+Managed - Installed,Label_Financial_Account_Roles_Description,Description for Financial Account Roles.,Comma separated list of financial account roles to display.
+Managed - Installed,Label_Financial_Account_Role_Field_Set,Name of the field set to display financial account role details.,Field Set for Financial Account Role
+Managed - Installed,Label_Financial_Account_Role_Field_Set_Description,Description for Financial Account Role Field Set.,Name of the field set to display financial account role details.
+Managed - Installed,Label_Financial_Holding_Field_Set,Name of the field set to display financial holding details.,Field Set for Financial Holding
+Managed - Installed,Label_Financial_Holding_Field_Set_Description,Description for Financial Holding Field Set.,Name of the field set to display financial holding details.
+Managed - Installed,Label_First_Step_Description,Show contact details first,Display contact details as the first step of the wizard.
+Managed - Installed,Label_Goal_Detail_Description,Description of the client goal progress doughnut chart for screen readers.,The client has achieved {0} percent of their goal.
+Managed - Installed,Label_Groups_Members_Details,Custom label for group members and details component on Relationships tab,Group Members and Details
+Managed - Installed,Label_Group_Account_Name,Custom label for account name column on relationship group setup dialog,Account Name
+Managed - Installed,Label_Group_Activities_Objects_Rollup,Custom label for activities & objects to roll up on relationship group setup,Activities & Objects to Roll Up
+Managed - Installed,Label_Group_Add_To_Group,Custom label for add to group column on relationship group setup dialog,Add to Group
+Managed - Installed,Label_Group_Contact_Name,Custom label for contact name column on relationship group setup dialog,Contact Name
+Managed - Installed,Label_Group_Member_Name,Custom label for member name column on relationship group setup dialog,Member Name
+Managed - Installed,Label_Group_Member_Role,Custom label for member role column on relationship group setup dialog,Member Role
+Managed - Installed,Label_Group_Primary_Group,Custom label for primary group column on relationship group setup dialog,Primary Group
+Managed - Installed,Label_Group_Primary_Member,Custom label for primary member column on relationship group setup dialog,Primary Member
+Managed - Installed,Label_Group_Related_Member,Custom label for related member column on relationship group setup dialog,Related Member
+Managed - Installed,Label_Group_Related_Role,Custom label for related role column on relationship group setup dialog,Related Role
+Managed - Installed,Label_Group_Role_In_Group,Custom label for role in group column on relationship group setup dialog,Role in Group
+Managed - Installed,Label_Group_Setup_Accounts,The second section header in the group setup dialog,Do the Members Have Relationships with Other Accounts?
+Managed - Installed,Label_Group_Setup_Contacts,The third section header in the group setup dialog,Do the Members Have Relationships with Other People?
+Managed - Installed,Label_Group_Setup_Members,The first section header in the group setup dialog,Who Are the Members of This Group?
+Managed - Installed,Label_Household_Goal_Primary_Owner,Custom label for primary owner field on Goals tab of household profile,Primary Owner
+Managed - Installed,Label_Household_Membership_Edit_Field_Household,Custom label for household field when editing a household member,Household
+Managed - Installed,Label_Household_Member_Age,Field for household member's age on Relationships tab,Age
+Managed - Installed,Label_Household_Member_Email,Field for household member's email on Relationships tab,Email
+Managed - Installed,Label_Household_Member_Field_Household,Custom label for household field when adding a household member,Existing Household
+Managed - Installed,Label_Household_Member_Field_Name,Custom label for member's name field when adding or editing a household member,Name
+Managed - Installed,Label_Household_Member_Field_Primary_Member,Custom label for primary member field when adding or editing a household member,Primary Member
+Managed - Installed,Label_Household_Member_Field_RollUp_Summary,Custom label for roll-up summary field when adding or editing a household member,Include in Household Roll-Up Summary
+Managed - Installed,Label_Household_Member_Last_Interaction,Field for household member's last interaction on Relationships tab,Last Interaction
+Managed - Installed,Label_Household_Member_Mobile,Field for household member's mobile number on Relationships tab,Mobile
+Managed - Installed,Label_Household_Member_Next_Interaction,Field for household member's next interaction on Relationships tab,Next Interaction
+Managed - Installed,Label_Household_Member_Phone,Field for household member's phone number on Relationships tab,Phone
+Managed - Installed,Label_Household_Member_Roles,Field for household member's roles on Relationships tab,Roles
+Managed - Installed,Label_Household_Related_Account_Name,Custom label for account name in Related Accounts section of Relationships tab,Related Account
+Managed - Installed,Label_Household_Related_Account_Role,Custom label for account's role in Related Contacts section of Relationships tab,Role
+Managed - Installed,Label_Household_Related_Contact_Name,Custom label for contact name in Related Contacts section of Relationships tab,Related Contact
+Managed - Installed,Label_Household_Related_Contact_Related_To,Custom label for related member in Related Contacts section of Relationships tab,Related to
+Managed - Installed,Label_Household_Related_Contact_Role,Custom label for contact's role in Related Contacts section of Relationships tab,Role
+Managed - Installed,Label_Icon_Style,Component icon name.,Icon Style
+Managed - Installed,Label_Icon_Style_Description,Descriptiom for Icon Style,Component icon name.
+Managed - Installed,Label_Invalid_Individual,Denotes that the individual is constructed improperly,Some data isn't ready yet. Check back soon.
+Managed - Installed,Label_Leads,Plural label for leads object.,Leads
+Managed - Installed,Label_Lead_Field_Set,Fieldset name for lead,Lead Field Set Name for Create Referral Form
+Managed - Installed,Label_Link_Pagination_First,Custom label for navigating to first page of list view items,First
+Managed - Installed,Label_Link_Pagination_Last,Custom label for navigating to last page of list view items,Last
+Managed - Installed,Label_Link_Pagination_Next,Custom label for navigating to next page of list view items,Next
+Managed - Installed,Label_Link_Pagination_Previous,Custom label for navigating to previous page of list view items,Previous
+Managed - Installed,Label_Loading_Alternative_Text,Custom label for loading alternative text,Loading
+Managed - Installed,Label_Member_Activity_Counts,Custom label for a group member's activity count on the Relationships tab,{0} {1}
+Managed - Installed,Label_Member_Fields,Custom label for member fields on the Relationships tab,{0}:
+Managed - Installed,Label_MenuButton_Select_Period,Alternative text of the dropdown menu button to select a period.,Select Period
+Managed - Installed,Label_New_Client,Custom label for New Client,New Client
+Managed - Installed,Label_New_Client_Create_Household_Member,Custom label for New Client option when adding a household member,New Client
+Managed - Installed,Label_New_Household_Create_Client,Custom label for New Household option when creating a client,New Household
+Managed - Installed,Label_New_Household_Create_Household_Member,Custom label for New Household option when adding a household member,New Household
+Managed - Installed,Label_New_Household_Edit_Household_Member,Custom label for New Household option when editing a household member,New Household
+Managed - Installed,Label_Not_Applicable,Text for not applicable,[not applicable]
+Managed - Installed,Label_Number_Records,Number of records to show in the component.,Number of Records
+Managed - Installed,Label_Of_My_Top_Referrers_Dashboard,"Assistive text after ""View more"" link for ""My Top Referrers Dashboard""",My Top Referrers Dashboard
+Managed - Installed,Label_Open_Referrals_Im_Assigned,"Assistive text for ""View All"" link for ""Open Referrals I'm Assigned"" list view.",Open Referrals I'm Assigned
+Managed - Installed,Label_Opportunities,Plural label for opportunities object.,Opportunities
+Managed - Installed,Label_Options_Selected,Indicates number of options selected,{0} Options Selected
+Managed - Installed,Label_Panel_Group_New,Custom label for selecting a record type on new relationship group panel.,Select a record type
+Managed - Installed,Label_Read_Only,Don't allow referrals to be edited.,Read Only
+Managed - Installed,Label_Read_Only_Description,Description for Read Only field.,Don't allow referrals to be edited.
+Managed - Installed,Label_Referrals,Referrals,Referrals
+Managed - Installed,Label_Referrals_Converted,Label for Referrals Converted,Referrals Converted
+Managed - Installed,Label_Referrals_Converted_Household_Average,Average referrals converted per household.,"Referrals Converted, Average per Household"
+Managed - Installed,Label_Referrals_I_Am_Assigned,"As a Banker, Summary of referrals assigned to a user.",Referrals Assigned to Me
+Managed - Installed,Label_Referrals_Received,Label for Referrals Received,Referrals Received
+Managed - Installed,Label_Referrals_Rejected,Label for Referrals Rejected,Referrals Rejected
+Managed - Installed,Label_Referral_Field_Set,Name of the field set to display referral details.,Field Set for Referral
+Managed - Installed,Label_Referral_Field_Set_Description,Description for Referral Field Set.,Name of the field set to display referral details.
+Managed - Installed,Label_Referral_Performance_Chart,Label for Chart listing referrals made by an individual.,Referral Performance
+Managed - Installed,Label_Referral_Performance_Chart_Empty,Label for referral performance chart empty state.,"Add a referral, then come back here to view the performance of referrals you've created."
+Managed - Installed,Label_Referral_Record_Type,The record type of the referral created.,Referral Record Type
+Managed - Installed,Label_Referral_Record_Type_Description,Description for the record type picklist on the Create Referral form.,The record type of the referral created.
+Managed - Installed,Label_Referrers_Summary_Converted,Label for Converted in referrer summary,Converted
+Managed - Installed,Label_Referrers_Summary_Converted_Amount,Referrals Converted in certain period.,{0} Referrals Converted
+Managed - Installed,Label_Referrers_Summary_Made,Label for Made in referrer summary,Made
+Managed - Installed,Label_Referrers_Summary_Made_Amount,Referrals Made in certain period.,{0} Referrals Made
+Managed - Installed,Label_Referrers_Summary_Open,Label for Open in referrer summary,Open
+Managed - Installed,Label_Referrers_Summary_Rejected,Label for Rejected in referrer summary,Rejected
+Managed - Installed,Label_Referrers_Summary_Revenue,Label for Revenue in referrer summary,Revenue
+Managed - Installed,Label_Referrers_Summary_Revenue_Amount,Revenues generated within certain period.,{0} Revenue Generated
+Managed - Installed,Label_Referrer_Average_Conversion_Rate,Average referrals converted.,Referrer Average Conversion Rate
+Managed - Installed,Label_Referrer_Score,The referrer score.,Referrer Score
+Managed - Installed,Label_Revenue_Generated,Label for Revenue Generated,Revenue Generated
+Managed - Installed,Label_RMD_Days_Away,Custom label for number of days away from RMD in the RMD component,Days Away: {0}
+Managed - Installed,Label_RMD_Month,Month Label for RMD Card,{0} month(s)
+Managed - Installed,Label_RMD_Year,Year Label for RMD Card,{0} years
+Managed - Installed,Label_Selected_Summary_Period_View,Label for displaying selected period view,{0} View
+Managed - Installed,Label_Selected_Summary_Sorted_By,Label for Displaying different Sorting selection Views,Sorted By {0}
+Managed - Installed,Label_Select_Period_All_Time,Custom label for All Time field on drop down menu of the card.,All-Time
+Managed - Installed,Label_Select_Period_MTD,Custom label for MTD field on drop down menu of the card.,Month-To-Date
+Managed - Installed,Label_Select_Period_QTD,Custom label for QTD field on drop down menu of the card.,Quarter-To-Date
+Managed - Installed,Label_Select_Period_YTD,Custom label for YTD field on drop down menu of the card.,Year-To-Date
+Managed - Installed,Label_ShowHide_Members_ListView_Table,Assistive text for Show/Hide members in List View Table,Show/Hide members
+Managed - Installed,Label_Show_Contact_Details,Show contact details first,Show Contact Details First
+Managed - Installed,Label_Show_Contact_Section,Show contact section first,Show Contact Section First
+Managed - Installed,Label_Show_Related_Accounts,Show Related Accounts checkbox on Relationship Map component,Show Related Accounts
+Managed - Installed,Label_Show_Related_Accounts_Description,Description for Show Related Accounts checkbox on Relationship Map component,Displays Related Accounts on the Relationship Map and Group Builder
+Managed - Installed,Label_Show_Related_Contacts,Show Related Contacts checkbox on Relationship Map component,Show Related Contacts
+Managed - Installed,Label_Show_Related_Contacts_Description,Description for Show Related Contacts checkbox on Relationship Map component,Displays Related Contacts on the Relationship Map and Group Builder
+Managed - Installed,Label_Sort_Criteria,Criteria for sorting referrers.,Sort Criteria
+Managed - Installed,Label_Sort_Criteria_Description,Description for Sort Criteria,Choose a criteria for sorting referrers.
+Managed - Installed,Label_Star_Rating,Describes the rating from hot to cold,This rating is {0}
+Managed - Installed,Label_Summary,"Label for the word ""Summary"" in Referrals Assigned to me - Summary component.",Summary
+Managed - Installed,Label_Tasks,Plural label for tasks object.,Tasks
+Managed - Installed,Label_Text_List_View_Items_Count_Separator,Custom label for symbol displayed with count of list view items on current page,-0
+Managed - Installed,Label_Text_List_View_Items_Count_Total,"Custom label for ""of"" preceding count of total list view items",of
+Managed - Installed,Label_Timeline,The default timeline for the chart.,Timeline
+Managed - Installed,Label_Timeline_Description,Description for default timeline in referral made chart.,The default timeline for the chart.
+Managed - Installed,Label_Title,An alternative title to display as the component header.,Title
+Managed - Installed,Label_Title_Description,An alternative title description to display as the component header.,"An alternative title, to display as the component header."
+Managed - Installed,Label_Tooltip_Visibility,Boolean for showing or hiding tooltip.,Show/Hide Tooltip
+Managed - Installed,Label_Top_Expressed_Interest,"As a Banker, Most of my Referrals Expressed Interest.",Top Expressed Interest
+Managed - Installed,Label_Top_Referrer,The User that most of my Referrals Are coming from,Top Referrer
+Managed - Installed,Label_Top_Referrers_Summary_External,External Referrers that have brought business to us.,External Referrers
+Managed - Installed,Label_Top_Referrers_Summary_Internal,Internal Referrers (Employees) that have brought business to us.,Internal Referrers
+Managed - Installed,Label_Top_Referrers_Summary_Title,"As a Banker, Ranked list of (Top) individuals who've made referrals to a banker.",My Top Referrers
+Managed - Installed,Label_Top_Referrer_Type,The User Type that most of my Referrals Are coming from,Top Referrer Type
+Managed - Installed,Label_Upcoming_Birthdays_Next_7_Days,"Assistive text after ""View All"" link for ""Upcoming Birthdays"" list view.",Birthdays in the next 7 days
+Managed - Installed,Label_Upcoming_RMDs_Next_7_Days,"Assistive text for ""View All"" link for ""Upcoming RMDs (Next 7 Days)"" list view.",Upcoming Required Minimum Distributions in the next 7 days
+Managed - Installed,Label_View_More_Link_Visibility,Boolean for showing or hiding View More.,Show/Hide View More Link
+Managed - Installed,Label_Visualization_Primary_Group,Custom label for primary group label used in the Visualization component,Primary Group
+Managed - Installed,Label_Visualization_Primary_Member,Custom label for primary member label used in the Visualization component,Primary Member
+Managed - Installed,Link_Calls,Calls link on Relationships tab of client and household profiles,Calls
+Managed - Installed,Link_Emails,Emails link on Relationships tab of client and household profiles,Emails
+Managed - Installed,Link_Events,Events link on Relationships tab of client and household profiles,Events
+Managed - Installed,Link_Tasks,Tasks link on Relationships tab of client and household profiles,Tasks
+Managed - Installed,Link_View_All,View All link,View All
+Managed - Installed,Link_View_More,View more link,View more
+Managed - Installed,Menu_Item_Group_ ,Edit Group,Edit Group
+Managed - Installed,Menu_Item_Household_Membership_Delete,Menu item in Household Members section of client and household profiles,Delete Relationship
+Managed - Installed,Menu_Item_Household_Membership_ ,Menu item in Household Members section of client and household profiles,Edit Relationship
+Managed - Installed,Menu_Item_Household_Membership_Remove,Menu item in Household Members section of client and household profiles,Remove Member
+Managed - Installed,Menu_Item_Relationship_Remove,Menu item for Relationships tab of client and relationship group profiles,Remove Relationship
+Managed - Installed,Msg_Action_Variable_Create,"""Create"" action verb used in system messages",Create
+Managed - Installed,Msg_Action_Variable_Delete,"""Delete"" action verb used in system messages",Delete
+Managed - Installed,Msg_Action_Variable_Read,"""Read"" action verb used in system messages",Read
+Managed - Installed,Msg_Action_Variable_Update,"""Update"" action verb used in system messages",Update
+Managed - Installed,Msg_Cannot_Complete_Actions,Error message when a user accesses a field without the appropriate permission,"To complete this action, ask your Salesforce admin to give you access to the required fields:"
+Managed - Installed,Msg_Community_User_Greeting,User greeting for a community user.,Aloha
+Managed - Installed,Msg_Component_Has_NoAccess,Error message when user has no access to the UI component,"To access this component, ask your Salesforce admin for the required Financial Services Cloud permission set license."
+Managed - Installed,Msg_Component_ObjectAccess_Invalid,Error message when user has no access to the object used in the component,You donâ€™t have access to this functionality.
+Managed - Installed,Msg_Confirm_Remove,Message when alert is being removed.,Are you sure you want to remove this?
+Managed - Installed,Msg_Error_ACR_Account_Invalid,Error message when a person is entered as the account in an ACR.,Can't choose a person as the account in this relationship.
+Managed - Installed,Msg_Error_Add_Member_Household_Invalid,Error message when the selected account is not a household,"The selected account must be a household, not an individual or business account."
+Managed - Installed,Msg_Error_Alerts_Cannot_Load,Error thrown when when errors failed to load,Can't load alerts. Refresh your page or ask your Salesforce admin for help.
+Managed - Installed,Msg_Error_Alerts_Cannot_Remove,Error message when user cannot deactivate an alert,Can't remove alert. Refresh your page or ask your Salesforce admin for help.
+Managed - Installed,Msg_Error_Cannot_Access_Fields,Error message when a user accesses object fields without appropriate permission,"To complete this action, ask your Salesforce admin for {0} access to {1} on {2}."
+Managed - Installed,Msg_Error_Changing_Record_Types,Error message when record type is modified once created.,This record type can't be changed.
+Managed - Installed,Msg_Error_Company_Name_Invalid,Error message when the company name doesn't match the B2C lead's name.,"For the selected record type, Company must be the same as the lead name, {0} {1}"
+Managed - Installed,Msg_Error_Component_Deprecated,Error message when component is deprecated.,This component has been deprecated. Ask your Salesforce administrator for help.
+Managed - Installed,Msg_Error_Component_Invalid,Error message when a component is configured incorrectly,You can add this component to the {0} page only.
+Managed - Installed,Msg_Error_Contact_Invalid_Record_Type,Error message when a Contact of Individual Record Type is created,A contact record cannot be created with an Individual record type.
+Managed - Installed,Msg_Error_FieldSets_Cannot_Load,Error thrown when loading field sets that are not configured.,Can't load information. Ask your Salesforce admin to configure field sets.
+Managed - Installed,Msg_Error_Field_Value_Null,Error message when the required value for a field has been cleared,The value of {0} canâ€™t be null. Restore it to the original value.
+Managed - Installed,Msg_Error_File_Size,The file should not be bigger than maximum allowed size.,File size cannot exceed {0} bytes. Selected file size: {1}
+Managed - Installed,Msg_Error_Filter_Criteria_Invalid,{0} isn't valid. Check your filter criteria.,Error message when filter criteria are invalid on client or household list views
+Managed - Installed,Msg_Error_FinancialAccountRoleList_InvalidFieldSet,Validation error message for fieldset,Enter a field set that is related to this object
+Managed - Installed,Msg_Error_FinancialAccountRoleList_InvalidRecordTypes,Validation error message for record types,Enter a relevant record type for this object
+Managed - Installed,Msg_Error_FinancialAccountRoleList_InvalidRoles,Validation error message for roles,Enter a relevant role for this object
+Managed - Installed,Msg_Error_FinancialAccountRole_Delete,Error message when a FAR corresponding to a FA's Primary Owner is deleted,"You canâ€™t delete a Financial Account Role with an active primary owner. To delete it, assign a new primary owner for the Financial Account."
+Managed - Installed,Msg_Error_General,Error message when a general error occurs,"Something's not quite right. Try your action again, and if the issue continues, contact your administrator for help."
+Managed - Installed,Msg_Error_Group_Account_Duplicate,The error message when a duplicate account is selected.,The selected account already has a relationship with this member.
+Managed - Installed,Msg_Error_Group_Acr_No_Delete,Error message when trying to delete a group ACR record,"Canâ€™t delete AccountContactRelation records. Instead, you can deactivate it."
+Managed - Installed,Msg_Error_Group_Business_Primary_Invalid,Error message when a business is a primary group or primary member in an ACR.,Can't choose a business as a primary group or primary member.
+Managed - Installed,Msg_Error_Group_Cannot_Include_Business,Error message when including a business in more than one group.,Can't include a business in more than one group.
+Managed - Installed,Msg_Error_Group_Member_Duplicate,The error message when a duplicate member is selected.,The selected member already has a relationship with this group.
+Managed - Installed,Msg_Error_Group_Record_Type_Not_Unique,Error message when the Group record type is not unique,There is more than one Group record type for Account. The record type must be unique. Contact your administrator for help.
+Managed - Installed,Msg_Error_Household_Existing_Membership,Error message when adding a household member who already belongs to a household,We can't add this person to this household because the person already belongs to a household.
+Managed - Installed,Msg_Error_Household_Primary_Member,Error message when designating a second primary household member,We can't designate this person as primary. Someone else is already the primary household member.
+Managed - Installed,Msg_Error_Inactive_RollupRule,Error message when user tries to run rollups for an inactive rollup rule.,Rollup Rules: {0} not Active. Activate to run recalculation.
+Managed - Installed,Msg_Error_IncludeInGroup_Invalid,Error message when include in group is selected for a group account in an ACR.,Can't include a group in a group.
+Managed - Installed,Msg_Error_Individual_Multiple_Contact,Error message when an Individual is being associated with multiple contacts,The selected account has an Individual record type and can't have additional contacts associated with it.
+Managed - Installed,Msg_Error_Insufficient_Permission_Set_Privileges,Error message when user do not have permission set to perform operation,"To complete this action, ask your Salesforce admin for the required Financial Services Cloud permission set license."
+Managed - Installed,Msg_Error_Insufficient_Privileges,Error message when user has insufficient level of access,You don't have the level of access required to complete this action. Please contact your administrator for help.
+Managed - Installed,Msg_Error_Invalid_Attribute,Message for invalid argument for a method call,Invalid input argument {0}
+Managed - Installed,Msg_Error_Invalid_Group_Record_Type,Error message when the Group record type is not found,"Your account record type is missing, a duplicate, or invalid. Ask your admin to check the group record type configurations in Setup."
+Managed - Installed,Msg_Error_Invalid_Household_Member_Account,Error message when a non-Person Account is added to the household,Only person accounts can be added as members of a household.
+Managed - Installed,Msg_Error_Invalid_Person_Account_Record_Type,Error message when the Person Account record type is not found,The Person Account record type isn't available. Contact your administrator for help.
+Managed - Installed,Msg_Error_Invalid_Query,Message for invalid query,Invalid query {0}
+Managed - Installed,Msg_Error_Invalid_Record_Type,Error message when the Individual record type is not found,"Your account record type is missing, a duplicate, or invalid. Ask your admin to check the individual record type configurations in Setup."
+Managed - Installed,Msg_Error_Invalid_Referral_Record_Type,Error message when the Referral record type is not found,"Hmm, that didnâ€™t work. Let your Salesforce admin know that there's an invalid lead record type on the referral mapping."
+Managed - Installed,Msg_Error_Invalid_Report,Error message when an invalid report is selected from Client/Household List,Can't access this report. View it in Reports.
+Managed - Installed,Msg_Error_Invalid_RollupRules,Error message when user tries to run rollups with invalid IDs.,Rollup Rules: Some records or IDs don't meet our criteria. Review your records and IDs and try again.
+Managed - Installed,Msg_Error_Invalid_Use_Of_Individual_RT,Invalid use of Individual Record Type,You can't create an account or contact using an Individual record type because your org has enabled Person accounts. Create the account or contact using a different record type instead.
+Managed - Installed,Msg_Error_Inverse_Role_Needed,Error message when the inverse reciprocal role record is not existing.,We can't save this record because the selected role is missing required information. Ask your administrator to define its inverse role.
+Managed - Installed,Msg_Error_Lead_Conversion,Error message when lead can't be converted to individual,This lead couldn't be converted to an Individual. Please try again.
+Managed - Installed,Msg_Error_Lead_Convert_Account_Record_Type_Invalid,Error message when converting a B2C lead and the account record type is invalid,Select an Individual record type.
+Managed - Installed,Msg_Error_Lead_Convert_ContactType_Invalid,Error message on lead conversion when invalid contact type is selected,Select an individual contact for an individual account.
+Managed - Installed,Msg_Error_Lead_Convert_Contact_Invalid,Error message on lead conversion when existing contact is selected,Select Create New Contact to create an individual account.
+Managed - Installed,Msg_Error_Lead_Convert_ExpressedInterest_Invalid,Error message on expressed interest lead conversion to a new account,We can't convert the lead to an unrelated account. Choose a related account.
+Managed - Installed,Msg_Error_Lead_Convert_Individual_Invalid,Error msg on lead conversion when account/contact is from different individual,The account and contact must be associated with the same individual.
+Managed - Installed,Msg_Error_Lead_Convert_MixedType_Invalid,Error msg on lead conversion when invalid account or contact type is selected,"Select a contact thatâ€™s not associated with an individual, or select an individual account."
+Managed - Installed,Msg_Error_Lead_Record_Type_Not_Unique,Error message when Lead record types are not unique,Duplicates found for Lead Record Type: {0}.
+Managed - Installed,Msg_Error_Multi_Group_Migration,Error message when multiple relationship groups for contacts is being enabled,We're enabling multiple relationship groups for contacts. Try again in a few minutes.
+Managed - Installed,Msg_Error_One_Primary_Group_For_Contact,Error message when enabling more than one primary group for a contact.,A contact can have only one primary group.
+Managed - Installed,Msg_Error_Operation_Entity,Error message about an unsuccessful operation on an entity,We could not {0} this {1}. Please try again.
+Managed - Installed,Msg_Error_Page_Not_Configured,Error message when page is configured incorrectly.,This page isn't configured. Ask your Salesforce administrator for help.
+Managed - Installed,Msg_Error_RBLConfig_Delete_Active_Rule,Error message when deleting a RBLFC record with active RBLC parent,Deactivate the configuration to delete a record.
+Managed - Installed,Msg_Error_RBLConfig_Duplicate_Rule,Error message when creating a duplicate RBLC object,"The combination of {0}, {1}, and {2} must be unique across your active configurations."
+Managed - Installed,Msg_Error_RBLConfig_Edit_Active_Rule,Error message when editing an active RBLC object,Deactivate the configuration to modify a field.
+Managed - Installed,Msg_Error_RBLConfig_Invalid_Field,Error message when an RBLC field to roll up from/to is invalid,Enter a valid field name for {0}.
+Managed - Installed,Msg_Error_RBLConfig_Invalid_Lookup_Field,Error message when an RBLC lookup field is invalid,Enter a valid lookup field that belongs to {0}.
+Managed - Installed,Msg_Error_RBLConfig_Invalid_Object,Error message when an RBLC from/to object is invalid,Enter a valid object name.
+Managed - Installed,Msg_Error_RBLConfig_Invalid_Operation,Error message when an RBLC operation is invalid,Select a valid operator for the {0} field type.
+Managed - Installed,Msg_Error_RBLConfig_Invalid_Record_Type,Error message when an RBLC from/to record type is invalid,Enter a valid record type related to {0}.
+Managed - Installed,Msg_Error_RBLConfig_Maximum_Active_Rules,Error message when an RBLC active limit is reached,You''ve reached the maximum of {0} active configuration items.
+Managed - Installed,Msg_Error_RBLConfig_Where_Clause_Formatting,Error message when creating a RBLC with improperly formatted Where Clause,This expression isn't correctly formatted.
+Managed - Installed,Msg_Error_RBLConfig_Where_Clause_Numbers,Error message when creating a RBLC Where Clause field unreferenced filters,The where clause references undefined filter criteria: {0}.
+Managed - Installed,Msg_Error_RBLFilterCriteria_Delete_With_Active_Config,Error message when deleting a RBLFC record with active RBLC parent,Deactivate the parent configuration to delete a record.
+Managed - Installed,Msg_Error_RBLFilterCriteria_Edit_With_Active_Config,Error message when editing a RBLFC record with active RBLC parent,Deactivate the parent configuration to modify a field.
+Managed - Installed,Msg_Error_RBLFilterCriteria_Invalid_Operation,Error message when an RBLFC operation is invalid,Select a supported operator.
+Managed - Installed,Msg_Error_RBLFilterCriteria_Invalid_RBLConfig,Error message when an RBLFC config is invalid,Select a valid parent configuration.
+Managed - Installed,Msg_Error_Record_Type_Not_Unique,Error message when the Individual record type is not unique,There is more than one Individual record type for Account or Contact. The record type must be unique. Contact your administrator for help.
+Managed - Installed,Msg_Error_Referral_Record_Type_Not_Unique,Error message when the Referral record type is not unique,"Hmm, that didnâ€™t work. Let your Salesforce admin know that the lead record type on the referral mapping is already in use."
+Managed - Installed,Msg_Error_RelationshipSummary_Component_Deprecated,Error message when relationship summary is deprecated.,This summary information has been moved into the group members section on this page. Ask your Salesforce admin for help with removing this message.
+Managed - Installed,Msg_Error_Remove_Member_Household,Error message when a household member can't be removed,We couldn't remove this household member.
+Managed - Installed,Msg_Error_Required_Fields,Error message when missing required fields while adding a household member,These required fields must be completed: {0}
+Managed - Installed,Msg_Error_Required_Field_Missing,Error message when a required field is missing,{0} is required.
+Managed - Installed,Msg_Error_RollupRecal_Running,Error message when a Rollup recal job is already running.,You can't run a recalculation while another recalculation is in progress. Try again later.
+Managed - Installed,Msg_Error_RollupRules_NotSelected,Error message when no rollup rules are selected for running.,Select at least one rollup rule.
+Managed - Installed,Msg_Error_Service_Not_Found,Error message service is not found for a feature,Service not found for feature {0}
+Managed - Installed,Msg_Help_Average_Conversion_Rate,Custom label for average conversion rate help on Referrals tab.,A referrerâ€™s average conversion rate.
+Managed - Installed,Msg_Help_Referrer_Score,Custom label for referrer score help on Referrals tab.,A value of 0 to 100. A high score reflects a high rate of referral conversion.
+Managed - Installed,Msg_Help_Top_Referrers,Custom label for Top Referrers help on Referrals tab.,"See your Top Referrers by Revenue, Referrals Made, or Referrals Converted."
+Managed - Installed,Msg_Info_List_Display_Limit,Message when the items in a list view exceed the number that we can display,(We can display the first {0} items only.)
+Managed - Installed,Msg_Info_List_Empty,Message when a list view has no records,No items to display. Try adjusting filters or try a different list view.
+Managed - Installed,Msg_Success_Client_Created,Message confirms client was created,Client created.
+Managed - Installed,Msg_Success_Client_Updated,Message confirms client has been updated,Client updated.
+Managed - Installed,Msg_Success_Member_Removed,Message confirms membership has been removed,Member was removed.
+Managed - Installed,Msg_Success_Referral_Created,Message confirms referral was created,Referral was created.
+Managed - Installed,Msg_Success_Relationship_Deleted,Message confirms relationship has been deleted,Relationship was deleted.
+Managed - Installed,Msg_Success_Task_Updated,Message confirms task updated,Task updated.
+Managed - Installed,Msg_Text_Lookup_NoResults,Error message when no results are available,No results found
+Managed - Installed,Not_Valid_Field_Error,This field is not valid for object,Specify valid field name(s) that exists in {0}.
+Managed - Installed,Not_Valid_Object_Error,This object is not a valid in your organization,Object name must be valid for your organization.
+Managed - Installed,Pill_Primary,Indicator of primary household member on client and household profiles,Primary
+Managed - Installed,Tab_Activity,Activity tab on client and household profiles,Activity
+Managed - Installed,Tab_Collaborate,Collaborate tab on client and household profiles,Collaborate
+Managed - Installed,Tab_Details,Details tab on client and household profiles,Details
+Managed - Installed,Tab_Financials,Financials tab on client and household profiles,Financials
+Managed - Installed,Tab_Goals,Goals tab on client and household profiles,Goals
+Managed - Installed,Tab_More,More tab on client and household profiles,More
+Managed - Installed,Tab_Related,Related tab on client and household profiles,Related
+Managed - Installed,Tab_Relationships,Relationships tab on client and household profiles,Relationships
+Managed - Installed,Tab_Tear_Sheet,Tear Sheet tab on client and household profiles,Tear Sheet
+Managed - Installed,Text_Birthdays,Birthday card header,Birthdays ({0})
+Managed - Installed,Text_External_Referrer,Text for External Referrer for Referrals Assigned To Me Summary Card.,External
+Managed - Installed,Text_Financials_Owner_Joint,Indicates joint ownership,Joint
+Managed - Installed,Text_Financials_Owner_Primary,Indicates primary ownership,Primary
+Managed - Installed,Text_No_Leads,Message when the Home page Leads component has no items to show.,No leads to show.
+Managed - Installed,Text_No_Opportunities,Message when the Home page Opportunities component has no items to show.,No opportunities to show.
+Managed - Installed,Text_No_Option_Selected,Label For None,None
+Managed - Installed,Text_No_Referrals,Message for empty Referrals List,No referrals.
+Managed - Installed,Text_No_Tasks,Message when the Home page Tasks component has no items to show.,No tasks to show.
+Managed - Installed,Text_No_Upcoming_Birthdays,Message for empty upcoming Birthday List,No upcoming birthdays.
+Managed - Installed,Text_No_Upcoming_RMD,Message for empty upcoming RMD List,No upcoming RMDs.
+Managed - Installed,Text_Owner_Name,Custom label to be displayed for owner's name field.,Owner Name
+Managed - Installed,Text_Panel_Group_New,Text for selecting a record type in the New Relationship Group panel.,Select a record type
+Managed - Installed,Text_RMD,RMD card header,Upcoming RMDs ({0})
+Managed - Installed,Text_Turning_Age,Turning age prefix for Birthday card,Turning {0}
+Managed - Installed,Text_Upload_File,File Name,Attachment
+Managed - Installed,Wizard_Step_Account_Details,Wizard step for individual details.,Account Details
+Managed - Installed,Wizard_Step_Contact_Details,Wizard step for individual details.,Contact Details
+Managed - Installed,Wizard_Step_Group_Details,Wizard step for relationship group details.,Details
+Managed - Installed,Wizard_Step_Group_Members_Relationships,Wizard step for relationship group members and relationships.,Members & Relationships
+Managed - Installed,Wizard_Step_Individual_Details,Wizard step for individual details.,Individual Details
+Managed - Installed,Wizard_Step_Number,Step Information on the wizard step.,({0} of {1})
+Managed - Installed,Wizard_Step_Relationship_Group_Details,Wizard step for relationship group details,Group Details

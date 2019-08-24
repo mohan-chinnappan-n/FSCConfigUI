@@ -38,6 +38,22 @@ div.branding-actions.actionMenu
    display:none;
 }
 
+/* increase height of the household edit wizard page */
+div.panel.slds-modal.slds-fade-in-open>div.modal-container.slds-modal__container
+>div.modal-body.scrollable.slds-modal__content.slds-p-around--medium {
+    height: 800px;
+}
+
+div.actionMenu.popupTargetContainer.uiPopupTarget.uiMenuList.uiMenuList--default
+>div.branding-actions.actionMenu
+
+{
+    height: 400px; 
+}
+
+
+
+
 
 
  	

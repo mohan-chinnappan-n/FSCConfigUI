@@ -153,3 +153,21 @@ div.FinServInputDataGrid:nth-child(1)>div>div.test-id__section.slds-section.slds
     margin-left: -280px;
 
 }
+
+
+div.slds-popover.FinServRelationshipsTreeLeaf>div>div.leaf-header>div.slds-m-top--x-small>span.slds-badge
+{
+    visibility:hidden;
+
+}
+
+div.slds-popover.FinServRelationshipsTreeLeaf>div>div.leaf-header>div.slds-m-top--x-small>span
+::after {
+    content: " Primary Household";
+    visibility:visible;
+    padding: 0px;
+    display:  inline-block;
+    white-space: pre;
+    margin-left: 10px;
+
+}
