@@ -1,4 +1,4 @@
-Name,Description,Value,
+Type,Name,Description,Value
 Managed - Installed,Button_Label_Add_Account,Add Account button in visualization component,+ Add Account
 Managed - Installed,Button_Label_Add_Contact,Add Contact button in visualization component,+ Add Contact
 Managed - Installed,Button_Label_Add_Group,New Group button in visualization component,+ Add Group
