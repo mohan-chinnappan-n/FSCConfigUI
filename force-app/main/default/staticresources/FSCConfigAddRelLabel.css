@@ -16,13 +16,15 @@ div.slds-popover.FinServRelationshipsTreeLeaf>div.slds-p-horizontal--x-small.sld
    border-radius: 4px;
    background-color: white;
    display:  inline-block;
-   margin-top:-20px;
    text-align: center;
    white-space: pre;
 
-   padding-left: 10px;
-   padding-right:10px;
-   margin-left:-10px;
+
+   padding-left: 18px;
+   padding-right:18px;
+   margin-left:-75px;
+   margin-top:10px
+
 
 }
 
