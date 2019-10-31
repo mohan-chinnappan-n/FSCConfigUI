@@ -1,3 +1,5 @@
+/* selector for the  household */
+
 div[data-component-id=FinServ_relationshipMap]>div>div>
 ul>li.tree-leaf>div>
 div.slds-popover.FinServRelationshipsTreeLeaf>div.slds-p-horizontal--x-small.slds-p-bottom--small>div
@@ -28,7 +30,7 @@ div.slds-popover.FinServRelationshipsTreeLeaf>div.slds-p-horizontal--x-small.sld
 
 }
 
-/* another selector for the same button */
+/* selector for the  Account */ 
 
 div[data-component-id=FinServ_relationshipMap]>div>div.tree>ul>li.tree-leaf>li>ul>ul.tree-branch>li:nth-child(1)>span>div
 >div.slds-p-horizontal--x-small.slds-p-bottom--small>div>button {
