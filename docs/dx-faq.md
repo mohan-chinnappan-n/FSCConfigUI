@@ -27,9 +27,12 @@ $ sfdx force:user:list -u MyScratchOrg
      ALIAS         USERNAME                       PROFILE NAME          USER ID
 ───  ────────────  ─────────────────────────────  ────────────────────  ──────────────────
 (A)  MyScratchOrg  test-rxwnugw8bnff@example.com  System Administrator  0051h000002ZIqIAAW
-## add a testuser1 to the scratch org
 
+#-----------------------------------------
+# add a testuser1 to the scratch org
 # let us create a user testuser1 with a email me@mohansun.org
+#-----------------------------------------
+
 $  sfdx force:user:create username=testuser1@my.org email=me@mohansun.org -u MyScratchOrg
 Successfully created user "testuser1@my.org" with ID [0051h000002k61pAAA] for org 00D1h0000005Hm3EAE.
 You can see more details about this user by running "sfdx force:user:display -u testuser1@my.org".
