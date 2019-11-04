@@ -1,6 +1,6 @@
 ##  FAQ
 
-### How add users into my scratch org?
+### How add users into scratch org?
 
 ```
 #-----------------------------------------
