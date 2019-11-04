@@ -54,3 +54,7 @@ $ sfdx force:user:list -u MyScratchOrg
 
 
 ```
+
+### Doc reference
+
+- [Scratch Org Users](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_scratch_orgs_users.htm)
