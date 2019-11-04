@@ -1,4 +1,4 @@
-## DX FAQ
+##  FAQ
 
 ### How add users into my scratch org?
 
