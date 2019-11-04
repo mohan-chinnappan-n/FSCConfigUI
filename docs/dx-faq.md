@@ -1,6 +1,6 @@
 ## DX FAQ
 
-### How add a user in my scratch org?
+### How add users into my scratch org?
 
 ```
 #-----------------------------------------
