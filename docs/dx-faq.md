@@ -45,7 +45,7 @@ $ sfdx force:user:display -u testuser1@my.org
 === User Description
 KEY           VALUE
 ────────────  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-Access Token  00D1h0000005Hm3!ARgAQN9IMhPcOgHaDJIK1zF0ILA3_NyMCtD7qdUL3uDmVLkB_ABQId1UjSHn5Iqv1ToIt.TBh0VNQzUZti0BtrkIAmKuUcCu
+Access Token  00D1h0000005Hm3!....
 Id            0051h000002k61pAAA
 Instance Url  https://power-agility-4450-dev-ed.cs79.my.salesforce.com
 Login Url     https://CS79.salesforce.com
