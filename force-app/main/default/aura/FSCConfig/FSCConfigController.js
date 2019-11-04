@@ -6,7 +6,9 @@
             alert('SAVE Called');
         });
       */
-        console.log('doInit');
+        // in PROD disable window.console 
+        console = {}; 
+        // console.log('doInit');
     }
          
 })
