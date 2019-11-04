@@ -1,5 +1,6 @@
 <aura:component implements="lightning:backgroundUtilityItem,flexipage:availableForAllPageTypes" 
                 access="global" >
+  <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
   <!--	Last Modified for FSC	__--> 
     <aura:attribute name="addGroupButton"  default="false" type="Boolean" />
     <aura:attribute name="addBackButton"  default="false"  type="Boolean" />
