@@ -6,8 +6,8 @@
             alert('SAVE Called');
         });
       */
-        // in PROD disable window.console 
-        console = {}; 
+        // in PROD window.console.log does nop
+        console.log = function () { }; 
         // console.log('doInit');
     }
          
