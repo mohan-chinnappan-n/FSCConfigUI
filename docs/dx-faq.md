@@ -3,6 +3,9 @@
 ### How add a user in my scratch org?
 
 ```
+#-----------------------------------------
+# list my orgs
+#-----------------------------------------
 
 $ sfdx force:org:list 
 === Orgs
@@ -15,7 +18,10 @@ $ sfdx force:org:list
   ──────────────  ───────────────────  ─────────────────────────────  ──────────────────  ───────────────
   MyScratchOrg    mchinnappan Company  test-rxwnugw8bnff@example.com  00D1h0000005Hm3EAE  2019-11-14
 
+#-----------------------------------------
 # list the users in the scratch org
+#-----------------------------------------
+
 $ sfdx force:user:list -u MyScratchOrg
 === Users in org 00D1h0000005Hm3EAE
      ALIAS         USERNAME                       PROFILE NAME          USER ID
@@ -28,7 +34,9 @@ $  sfdx force:user:create username=testuser1@my.org email=me@mohansun.org -u MyS
 Successfully created user "testuser1@my.org" with ID [0051h000002k61pAAA] for org 00D1h0000005Hm3EAE.
 You can see more details about this user by running "sfdx force:user:display -u testuser1@my.org".
 
+#-----------------------------------------
 # let us see the user details for this user
+#-----------------------------------------
 
 $ sfdx force:user:display -u testuser1@my.org 
 === User Description
@@ -42,8 +50,9 @@ Org Id        00D1h0000005Hm3EAE
 Profile Name  Standard User
 Username      testuser1@my.org
 
-
+#-----------------------------------------
 # Let us list the users in this scratch org
+#-----------------------------------------
 
 $ sfdx force:user:list -u MyScratchOrg
 === Users in org 00D1h0000005Hm3EAE
