@@ -1,0 +1,42 @@
+<aura:component controller="AccountController" 
+                implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+ 
+    <aura:attribute type="Account[]" name="acctList"/>
+    <aura:attribute name="acctCols" type="List"/>
+    <aura:attribute name="lmt" type="Integer" default="5"/>
+    
+    <aura:attribute name="selectedRows" type="Object[]"/>
+     <aura:attribute name="selIds" type="String[]"/>
+    <aura:attribute name="maxRowSelection" type="Integer" default="5"/>
+    <aura:attribute name="selectedRowsCount" type="Integer" default="0"/>
+    
+    <aura:attribute name="sendStatus" type="String" default="NA"/>
+    
+    
+    
+    <aura:handler name="init"  value="{!this}" action="{!c.fetchAccts}"/>
+    
+    <h2>Selected Rows: {! v.selectedRowsCount }</h2>
+    <h3>Send Status: {! v.sendStatus} </h3>
+    
+    
+    <lightning:button
+                      label="Send"
+                      variant="brand"
+                      onclick="{! c.sendSelection }"
+                      disabled="{! v.selectedRowsCount == 0}"
+                      />
+    <lightning:datatable data="{! v.acctList }"
+                         columns="{! v.acctCols }"
+                         keyField="id"
+                         hideCheckboxColumn="false"
+                         showRowNumberColumn="true"
+                         
+                         
+                         
+                         maxRowSelection="{! v.maxRowSelection }"
+                         onrowselection="{! c.updateSelected }"
+                         
+                         />
+    
+</aura:component>

@@ -1,0 +1,26 @@
+public class AccountController{
+    @AuraEnabled
+    public static List <Account> fetchAccounts(Integer  lmt ) {
+        
+        System.debug('limit: ' + lmt);
+         
+        List<Account> accList = [SELECT Id, Name, 
+                                         Phone, Industry, Type, Website
+                                         FROM Account 
+                                         LIMIT :lmt 
+                                ];
+       
+       return accList;
+    }
+    
+    @AuraEnabled
+    public static String  sendAccounts(String[]  accts ) {
+        
+        System.debug('accts:' + accts);
+        return 'SUCCESS';
+        
+    }
+    
+        
+        
+}
