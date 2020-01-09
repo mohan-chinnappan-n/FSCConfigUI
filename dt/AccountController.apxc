@@ -17,7 +17,42 @@ public class AccountController{
     public static String  sendAccounts(String[]  accts ) {
         
         System.debug('accts:' + accts);
-        return 'SUCCESS';
+        // send to backend by Service API call... here
+        FinApp_Settings__c finAppSettings = FinApp_Settings__c.getOrgDefaults();
+        
+        /* Stock Quote service is called to show the http callout here
+          Make sure:
+          1. Put your API Key in custom settings as FinApp_Settings__c.APIKey__c
+		  2. CSP trusted sites has this site:https://www.alphavantage.co
+		  3. Remote sitesetting has this url: https://www.alphavantage.co
+
+        */
+        
+        
+        String keyword = 'MSFT';
+        // if got this account id then search for CRM else the search for the default MSFT
+        //  Change this logic to suit your requirements
+        if (accts[0] == '0016g000006LS7ZAAW'){ 
+            keyword = 'CRM';
+        }
+        Http http = new Http();
+        HttpRequest request = new HttpRequest();
+        
+    
+        String apiKey = finAppSettings.APIKey__c;
+        String url = 'https://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords='
+                             + keyword + '&apikey=' + apiKey;
+        System.debug('url: ' + url);
+        request.setEndpoint(url);
+        request.setMethod('GET');
+        HttpResponse response = http.send(request);
+        // If the request is successful, parse the JSON response.
+        System.debug('statusCode: ' + response.getStatusCode());
+        if (response.getStatusCode() == 200) {    
+            return response.getBody();
+        }  
+        return 'Call to the service failed!';
+     
         
     }
     

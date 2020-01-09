@@ -17,7 +17,11 @@
     <aura:handler name="init"  value="{!this}" action="{!c.fetchAccts}"/>
     
     <h2>Selected Rows: {! v.selectedRowsCount }</h2>
-    <h3>Send Status: {! v.sendStatus} </h3>
+    <h3>Send Response: </h3>
+        
+     <textarea cols='80' rows='10'>
+         {! v.sendStatus}
+     </textarea> 
     
     
     <lightning:button

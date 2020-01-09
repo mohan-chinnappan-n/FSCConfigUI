@@ -6,3 +6,6 @@
 ### Demo of the app 
 ![demo2](demo/datatable-demo-2.gif)
 
+### Demo of the app with Apex HTTP Callout 
+![demo2](demo/datatable-demo-3.gif)
+
