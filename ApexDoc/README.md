@@ -4,6 +4,8 @@
 ### Usage
 
 ```
+java -jar target/ApexDoc-1.2.0-SNAPSHOT.jar
+
 ApexDoc - a tool for generating documentation from Salesforce Apex code class files.
 
 
