@@ -6,7 +6,6 @@
 ```
 ApexDoc - a tool for generating documentation from Salesforce Apex code class files.
 
-    Invalid Arguments detected.  The correct syntax is:
 
 apexdoc -s <source_directory> [-t <target_directory>] [-g <source_url>] [-h <homefile>] [-a <authorfile>] [-p <scope>]
 
