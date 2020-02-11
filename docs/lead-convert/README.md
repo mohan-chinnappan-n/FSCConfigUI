@@ -31,14 +31,17 @@ trigger leadConvert on LCTest__e  (after insert) {
   "msg__c": "Convert"
 }
 ```
+### Publish script
 ![pub-1](img/pub-1.png)
+
+
 ![pub-2](img/pub-2.png)
 
 ### Account Creation
 ![acct](img/acct-creation.png)
 
 ### Contact Creation
-![contact](img/contact-creation-1.png)
+![contact](img/contact-creation.png)
 
 
 
