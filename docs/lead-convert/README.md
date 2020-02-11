@@ -44,6 +44,7 @@ trigger leadConvert on LCTest__e  (after insert) {
 ![contact](img/contact-creation.png)
 
 
-
+### Lead Settings
+![lead settings](img/lead-settings.png)
 
 
