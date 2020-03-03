@@ -1,3 +1,4 @@
+"sobjectName","sobjectLabel","name","label","type","length","nillable","referenceTo","relationshipName","unique","updateable","inlineHelpText","picklistValues","externalId"
 "ContentWorkspacePermission","Library Permission","PermissionsAddComment","Add Comment","boolean",0,false,"[]",,false,true,,"[]",false
 "ContentWorkspacePermission","Library Permission","PermissionsModifyComments","Modify Comments","boolean",0,false,"[]",,false,true,,"[]",false
 "ContentWorkspacePermission","Library Permission","PermissionsTagContent","Tag Content","boolean",0,false,"[]",,false,true,,"[]",false

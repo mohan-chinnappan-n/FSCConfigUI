@@ -1,3 +1,4 @@
+"sobjectName","sobjectLabel","name","label","type","length","nillable","referenceTo","relationshipName","unique","updateable","inlineHelpText","picklistValues","externalId"
 "ProcessInstance","Process Instance","Status","Status","picklist",40,false,"[]",,false,false,,"[""Approved"",""Rejected"",""Recalled"",""Fault"",""Pending"",""Hold"",""Reassigned"",""Submitted"",""No Response""]",false
 "ProcessInstance","Process Instance","CompletedDate","Completed Date","datetime",0,true,"[]",,false,false,,"[]",false
 "ProcessInstance","Process Instance","LastActorId","User ID","reference",18,true,"[""User""]","LastActor",false,false,,"[]",false

@@ -1,3 +1,4 @@
+"sobjectName","sobjectLabel","name","label","type","length","nillable","referenceTo","relationshipName","unique","updateable","inlineHelpText","picklistValues","externalId"
 "ImageShare","Image Share","UserOrGroupId","User/Group ID","reference",18,false,"[""Group"",""User""]","UserOrGroup",false,false,,"[]",false
 "ImageShare","Image Share","AccessLevel","Custom Object Access","picklist",40,false,"[]",,false,true,,"[""Read Only"",""Read/Write"",""Owner""]",false
 "ImageShare","Image Share","RowCause","Row Cause","picklist",40,true,"[]",,false,false,,"[""Owner"",""Manual Sharing"",""Sharing Rule"",""Account Sharing"",""Associated record owner or sharing"",""Person Contact"",""Sales Team"",""Territory Assignment Rule"",""Territory Manual"",""Territory Manual"",""Territory Sharing Rule"",""Territory assignment for forecasting and reporting"",""Guest User Sharing Rule"",""Associated guest user sharing"",""Associated Guest User Sharing"",""Survey Sharing Rule""]",false

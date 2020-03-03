@@ -1,3 +1,4 @@
+"sobjectName","sobjectLabel","name","label","type","length","nillable","referenceTo","relationshipName","unique","updateable","inlineHelpText","picklistValues","externalId"
 "FinServ__Alert__Share","Share: Alert","IsDeleted","Deleted","boolean",0,false,"[]",,false,false,,"[]",false
 "sobjectName","sobjectLabel","name","label","type","length","nillable","referenceTo","relationshipName","unique","updateable","inlineHelpText","picklistValues","externalId"
 "FinServ__Alert__c","Alert","Id","Record ID","id",18,false,"[]",,false,false,,"[]",false

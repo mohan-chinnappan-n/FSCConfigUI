@@ -1,3 +1,4 @@
+"sobjectName","sobjectLabel","name","label","type","length","nillable","referenceTo","relationshipName","unique","updateable","inlineHelpText","picklistValues","externalId"
 "BusinessMilestone","Business Milestone","SourceSystemIdentifier","Source System Identifier","string",255,true,"[]",,true,true,,"[]",false
 "BusinessMilestone","Business Milestone","SourceSystem","Source System","string",255,true,"[]",,false,true,,"[]",false
 "BusinessMilestone","Business Milestone","MilestoneSiteId","Location ID","reference",18,true,"[""Location""]","MilestoneSite",false,true,,"[]",false

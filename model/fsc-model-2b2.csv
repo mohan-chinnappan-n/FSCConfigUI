@@ -1,3 +1,4 @@
+"sobjectName","sobjectLabel","name","label","type","length","nillable","referenceTo","relationshipName","unique","updateable","inlineHelpText","picklistValues","externalId"
 "ServiceTerritoryWorkTypeHistory","Service Territory Work Type History","CreatedById","Created By ID","reference",18,false,"[""User""]","CreatedBy",false,false,,"[]",false
 "ServiceTerritoryWorkTypeHistory","Service Territory Work Type History","CreatedDate","Created Date","datetime",0,false,"[]",,false,false,,"[]",false
 "ServiceTerritoryWorkTypeHistory","Service Territory Work Type History","Field","Changed Field","picklist",255,false,"[]",,false,false,,"[""Created."",""Feed event"",""Individual Merged"",""Owner (Accepted)"",""Owner (Assignment)"",""Record locked."",""Record unlocked."",""Service Territory"",""Work Type""]",false

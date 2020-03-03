@@ -1,3 +1,4 @@
+"sobjectName","sobjectLabel","name","label","type","length","nillable","referenceTo","relationshipName","unique","updateable","inlineHelpText","picklistValues","externalId"
 "MutingPermissionSet","Muting Permission Set","PermissionsManageCases","Manage Cases","boolean",0,false,"[]",,false,true,,"[]",false
 "MutingPermissionSet","Muting Permission Set","PermissionsMassInlineEdit","Mass Edits from Lists","boolean",0,false,"[]",,false,true,,"[]",false
 "MutingPermissionSet","Muting Permission Set","PermissionsManageSolutions","Manage Published Solutions","boolean",0,false,"[]",,false,true,,"[]",false
