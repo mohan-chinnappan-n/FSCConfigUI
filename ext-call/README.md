@@ -71,10 +71,7 @@
         xhr.onload = function() {
             if(this.status === 200) {
                 const response = JSON.parse(this.responseText);
-                console.log(response);
- 
                 if(response.status  === 'success') {
-                    console.log('GOT Dog Picture: ' + response.message)
                     component.set('v.dogImg', response.message);
                      
                 }
