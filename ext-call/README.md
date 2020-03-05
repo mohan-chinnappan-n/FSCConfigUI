@@ -1,7 +1,7 @@
 ## How to make External Service Call in Aura Components
 
 
-![ext-call](img/ext-call.gif)
+![ext-call](img/ext-call-1.gif)
 
 
 ### App (Perf.app)
@@ -72,3 +72,6 @@
 })
 
 ```
+
+### CSP Trusted Sites
+![csp trs](img/csp-ts.png)
