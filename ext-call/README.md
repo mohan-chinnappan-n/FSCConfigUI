@@ -64,11 +64,27 @@
 
 ``` js
 ({
-   getDogPic: function(cmp, event, helper) {
-        helper.getDogPicService(cmp);
+	getDogPicService :  function(component) {
+        const xhr = new XMLHttpRequest();
+        const url = 'https://dog.ceo/api/breeds/image/random';
+        xhr.open('GET', url, true);
+        xhr.onload = function() {
+            if(this.status === 200) {
+                const response = JSON.parse(this.responseText);
+                console.log(response);
+ 
+                if(response.status  === 'success') {
+                    console.log('GOT Dog Picture: ' + response.message)
+                    component.set('v.dogImg', response.message);
+                     
+                }
+                 
+               
+            }
+        };
+        xhr.send();
     }
-    
-    
+	
 })
 
 ```
