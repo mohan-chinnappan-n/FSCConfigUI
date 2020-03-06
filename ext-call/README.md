@@ -39,7 +39,7 @@
 	           Performance Best Practice:
                Ref: https://mohan-chinnappan-n2.github.io/2019/lex/bp/perf-bp.html
             -->
-              <aura:if isTrue="{!v.timenow !='sometime' }">
+            <aura:if isTrue="{!v.timenow !='sometime' }">
                   <div>Current Time: {!v.timenow}</div>  
             </aura:if>
              <aura:if isTrue="{!v.dogImg !='someimg' }">
