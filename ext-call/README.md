@@ -1,7 +1,7 @@
 ## How to make External Service Call in Aura Components
 
 
-![ext-call](img/ext-call-3.gif)
+![ext-call](img/ext-call-4.gif)
 
 
 ### App (Perf.app)
@@ -16,19 +16,22 @@
 
 ``` xml
 <aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
-  
-   <aura:attribute name="dogImg" default="someimg" type="String" />
-   <aura:attribute name="dogImg2" default="someimg" type="String" />
+    <aura:attribute name="dogImg" default="someimg" type="String" />
+    <aura:attribute name="dogImg2" default="someimg" type="String" />
     
-   <aura:attribute name="timenow" default="sometime" type="String" />
-   
+    <aura:attribute name="timenow" default="sometime" type="String" />
+    
+    <aura:attribute name="pt" default="somept" type="String" />
+    <aura:attribute name="ptPostResult" default="someptpostresult" type="String" />
+    
+    
     <lightning:recordForm
                           recordId="0016g00000B6BSHAA3"
                           objectApiName="Account"
                           layoutType="Compact" mode="readonly"
                           columns="2"/>
-     
-     <lightning:card footer="Dogs are from Dog API!" title="Awesome Dogs">
+    
+    <lightning:card footer="Dogs are from Dog API!" title="Awesome Dogs">
         <aura:set attribute="actions">
             <lightning:button variant="brand"  title="Get Doc Pictures"  
                               label="Get New Dogs" 
@@ -36,20 +39,43 @@
         </aura:set>
         <span class="slds-p-horizontal_small">
             <!--
-	           Performance Best Practice:
+            Performance Best Practice:
                Ref: https://mohan-chinnappan-n2.github.io/2019/lex/bp/perf-bp.html
             -->
             <aura:if isTrue="{!v.timenow !='sometime' }">
-                  <div>Current Time: {!v.timenow}</div>  
+                <div>Current Time: {!v.timenow}</div>  
             </aura:if>
-             <aura:if isTrue="{!v.dogImg !='someimg' }">
-                  <img src="{!v.dogImg}" class="dog" />
+            <aura:if isTrue="{!v.dogImg !='someimg' }">
+                <img src="{!v.dogImg}" class="dog" />
             </aura:if>
             
-             <aura:if isTrue="{!v.dogImg2 !='someimg' }">
-                  <img src="{!v.dogImg2}" class="dog" />
+            <aura:if isTrue="{!v.dogImg2 !='someimg' }">
+                <img src="{!v.dogImg2}" class="dog" />
             </aura:if>
-         </span>
+            
+        </span>
+    </lightning:card>
+    
+    
+    <lightning:card footer="pt" title="performance.timing">
+        <aura:set attribute="actions">
+            <lightning:button variant="brand"  title="POST performance.timing to RUM Server "  
+                              label="POST PT" 
+                              onclick="{! c.postPT }"/>
+        </aura:set>
+        <span class="slds-p-horizontal_small">
+            <aura:if isTrue="{!v.pt !='somept' }">
+                <textarea class='code' rows="30" cols="80">
+                    {!v.pt}
+                </textarea>
+                
+                <aura:if isTrue="{!v.pt !='someptpostresult' }">
+                    <p>Results: {!v.ptPostResult}</p>
+                </aura:if>
+                
+            </aura:if>
+            
+        </span>
     </lightning:card>
     
     
@@ -60,21 +86,25 @@
 
 ``` js
 ({
-  getDogPic: function(cmp, event, helper) {
+
+
+    getDogPic: function(cmp, event, helper) {
         helper.getDogPicXHR(cmp);
         helper.getDogPicFetch(cmp);
         helper.getTimeFetch(cmp);
-
+    }
+    
+    ,postPT: function(cmp, event, helper) {
         // post to RUM server
         helper.postPTFetch(cmp);
-  }
-
+    }
 })
 ```
 
 ### Helper (PerfCompHelper.js)
 
 ``` js
+
 
 ({
     // the  xhr way
@@ -106,9 +136,8 @@
           })
          
     }
-
-  // GET timenow from RUM server 
- ,getTimeFetch :  function(component) {
+  // GET timenow from RUM server            
+  ,getTimeFetch :  function(component) {
         const url = 'https://mohansun-rum.herokuapp.com/time'; 
         fetch(url)
           .then((response) => {
@@ -118,28 +147,28 @@
              component.set('v.timenow', data.time);    
           })
          
-    }
-
+  }
   // POST   performance.timing to RUM server            
   ,postPTFetch :  function(component) {
       const url = 'https://mohansun-rum.herokuapp.com/pt'; 
-      const data = { "pt": performance.timing }
+      const data = { "pt": performance.timing , "time": new Date()};
+      component.set('v.pt', JSON.stringify(data, null, 4));
       fetch(url, {
           method: 'POST',
-          headers: {
-            'Content-Type': 'text/plain',
-          },
+          headers: { 'Content-Type': 'text/plain' },
           body: JSON.stringify(data),
         })
         .then((response) => response.json())
         .then((data) => {
-          console.log('Success:', data);
+          component.set('v.ptPostResult', 'POST to RUM server success!')
         })
         .catch((error) => {
-          console.error('Error:', error);
+          component.set('v.ptPostResult', 'POST to RUM server failed: ' + error);
         });
          
   }
+              
+              
 })
 ```
 
