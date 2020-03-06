@@ -20,30 +20,39 @@
     
   
    <aura:attribute name="dogImg" default="someimg" type="String" />
+   <aura:attribute name="dogImg2" default="someimg" type="String" />
     
-
-
+  
     <lightning:recordForm
                           recordId="0016g00000B6BSHAA3"
                           objectApiName="Account"
                           layoutType="Compact" mode="readonly"
                           columns="2"/>
-    
-    
-    <lightning:button variant="brand" label="Get Doc Picture" 
-                      title="Get Doc Picture" 
-                      onclick="{! c.getDogPic }" />
-    
-    
-    <img src="{!v.dogImg}"/>
-    
- 
-    
-    
+     
+     <lightning:card footer="Dogs are from Dog API!" title="Awesome Dogs">
+        <aura:set attribute="actions">
+            <lightning:button variant="brand"  title="Get Doc Pictures"  
+                              label="Get New Dogs" 
+                              onclick="{! c.getDogPic }"/>
+        </aura:set>
+        <span class="slds-p-horizontal_small">
+            <!--
+	           Performance Best Practice:
+               Ref: https://mohan-chinnappan-n2.github.io/2019/lex/bp/perf-bp.html
+            -->
+             <aura:if isTrue="{!v.dogImg !='someimg' }">
+                  <img src="{!v.dogImg}" class="dog" />
+            </aura:if>
+            
+             <aura:if isTrue="{!v.dogImg2 !='someimg' }">
+                  <img src="{!v.dogImg2}" class="dog" />
+            </aura:if>
+         
+         </span>
+    </lightning:card>
     
     
 </aura:component>
-
 
 ```
 
@@ -51,10 +60,8 @@
 
 ``` js
 ({
-   getDogPic: function(cmp, event, helper) {
-        helper.getDogPicService(cmp);
-    }
-    
+   helper.getDogPicXHR(cmp);
+   helper.getDogPicFetch(cmp); 
     
 })
 
@@ -63,27 +70,38 @@
 ### Helper (PerfCompHelper.js)
 
 ``` js
+
 ({
-	getDogPicService :  function(component) {
+    // the  xhr way
+	getDogPicXHR :  function(component) {
         const xhr = new XMLHttpRequest();
-        const url = 'https://dog.ceo/api/breeds/image/random';
+        const url = 'https://dog.ceo/api/breeds/image/random'; 
         xhr.open('GET', url, true);
         xhr.onload = function() {
             if(this.status === 200) {
                 const response = JSON.parse(this.responseText);
                 if(response.status  === 'success') {
-                    component.set('v.dogImg', response.message);
-                     
-                }
-                 
-               
+                    component.set('v.dogImg', response.message);    
+                } 
             }
         };
         xhr.send();
     }
-	
+    
+    // the fetch api way
+   , getDogPicFetch :  function(component) {
+       
+        const url = 'https://dog.ceo/api/breeds/image/random'; 
+        fetch(url)
+          .then((response) => {
+            return response.json();
+          })
+          .then((data) => {
+             component.set('v.dogImg2', data.message);    
+          })
+         
+    }
 })
-
 ```
 
 ### CSP Trusted Sites
