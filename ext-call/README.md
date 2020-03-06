@@ -64,6 +64,9 @@
         helper.getDogPicXHR(cmp);
         helper.getDogPicFetch(cmp);
         helper.getTimeFetch(cmp);
+
+        // post to RUM server
+        helper.postPTFetch(cmp);
   }
 
 })
@@ -116,8 +119,32 @@
           })
          
     }
+
+  // POST   performance.timing to RUM server            
+  ,postPTFetch :  function(component) {
+      const url = 'https://mohansun-rum.herokuapp.com/pt'; 
+      const data = { "pt": performance.timing }
+      fetch(url, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'text/plain',
+          },
+          body: JSON.stringify(data),
+        })
+        .then((response) => response.json())
+        .then((data) => {
+          console.log('Success:', data);
+        })
+        .catch((error) => {
+          console.error('Error:', error);
+        });
+         
+  }
 })
 ```
+
+### POSTed performance.timing data at RUM server
+![post rum](img/pt-post-1.png)
 
 ### CSP Trusted Sites
 
