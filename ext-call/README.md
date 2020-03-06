@@ -1,7 +1,7 @@
 ## How to make External Service Call in Aura Components
 
 
-![ext-call](img/ext-call-2.gif)
+![ext-call](img/ext-call-3.gif)
 
 
 ### App (Perf.app)
@@ -15,14 +15,13 @@
 ### Component (PerfComp.cmp)
 
 ``` xml
-
 <aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
-    
   
    <aura:attribute name="dogImg" default="someimg" type="String" />
    <aura:attribute name="dogImg2" default="someimg" type="String" />
     
-  
+   <aura:attribute name="timenow" default="sometime" type="String" />
+   
     <lightning:recordForm
                           recordId="0016g00000B6BSHAA3"
                           objectApiName="Account"
@@ -40,6 +39,9 @@
 	           Performance Best Practice:
                Ref: https://mohan-chinnappan-n2.github.io/2019/lex/bp/perf-bp.html
             -->
+              <aura:if isTrue="{!v.timenow !='sometime' }">
+                  <div>Current Time: {!v.timenow}</div>  
+            </aura:if>
              <aura:if isTrue="{!v.dogImg !='someimg' }">
                   <img src="{!v.dogImg}" class="dog" />
             </aura:if>
@@ -47,13 +49,11 @@
              <aura:if isTrue="{!v.dogImg2 !='someimg' }">
                   <img src="{!v.dogImg2}" class="dog" />
             </aura:if>
-         
          </span>
     </lightning:card>
     
     
 </aura:component>
-
 ```
 
 ### Controller (PerfCompController.js)
@@ -62,7 +62,7 @@
 ({
    helper.getDogPicXHR(cmp);
    helper.getDogPicFetch(cmp); 
-    
+   helper.getTimeFetch(cmp);   
 })
 
 ```
@@ -101,8 +101,24 @@
           })
          
     }
+
+ // get the current time from the rum server 
+ ,getTimeFetch :  function(component) {
+        const url = 'https://mohansun-rum.herokuapp.com/time'; 
+        fetch(url)
+          .then((response) => {
+            return response.json();
+          })
+          .then((data) => {
+             component.set('v.timenow', data.time);    
+          })
+         
+    }
 })
 ```
 
 ### CSP Trusted Sites
-![csp trs](img/csp-ts.png)
+
+- ![csp trs](img/csp-ts.png)
+
+- ![csp beacon](img/beacon-server.png)
