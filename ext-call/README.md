@@ -60,11 +60,13 @@
 
 ``` js
 ({
-   helper.getDogPicXHR(cmp);
-   helper.getDogPicFetch(cmp); 
-   helper.getTimeFetch(cmp);   
-})
+  getDogPic: function(cmp, event, helper) {
+        helper.getDogPicXHR(cmp);
+        helper.getDogPicFetch(cmp);
+        helper.getTimeFetch(cmp);
+    }
 
+})
 ```
 
 ### Helper (PerfCompHelper.js)
