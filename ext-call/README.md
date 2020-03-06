@@ -64,7 +64,7 @@
         helper.getDogPicXHR(cmp);
         helper.getDogPicFetch(cmp);
         helper.getTimeFetch(cmp);
-    }
+  }
 
 })
 ```
