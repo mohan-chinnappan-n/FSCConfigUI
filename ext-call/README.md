@@ -107,7 +107,7 @@
          
     }
 
- // get the current time from the rum server 
+  // GET timenow from RUM server 
  ,getTimeFetch :  function(component) {
         const url = 'https://mohansun-rum.herokuapp.com/time'; 
         fetch(url)
