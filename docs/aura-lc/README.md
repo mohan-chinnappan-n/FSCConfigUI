@@ -30,8 +30,8 @@
 
 - Finally, the aura:doneRendering event is fired at the end of the rendering lifecycle.
 
-### Refernces
+### References
 
 - [Events Fired During the Rendering Lifecycle](https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/components_lifecycle.htm)
-
+- [Handle the render Event](https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/js_render_handler.htm)
 
