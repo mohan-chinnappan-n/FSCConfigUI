@@ -1,0 +1,12 @@
+Title: Aura Component Life Cycle
+App->Framework:Need Comp
+Framework->Framework: Check in Cache
+Framework->Server: get Comp Config if not in Cache
+Framework->Framework:creates: \n - comp def \n - entire parent hierarchy\n - facets within those components \n  -  any comp deps (attributes,interfaces,ctrs,actions \n
+Note right of Framework: 
+Framework->comp: INIT
+Framework->comp: render
+Framework->comp: afterRender
+Framework->comp: unrender
+
+Note right of Server: 
