@@ -24,10 +24,13 @@
 ![comp tree](https://developer.salesforce.com/docs/resources/img/en-us/224.0?doc_id=dev_guides%2Faura%2Fimages%2Fcomponent_creation.png&folder=lightning)
 
 - The framework fires a render event, enabling you to interact with the DOM tree after the framework’s rendering service has inserted DOM elements
+    - Handle this event to perform post-processing on the DOM or react to component rendering or rerendering. 
+    - ```<aura:handler name="render" value="{!this}" action="{!c.onRender}"/>```
+
 
 - Finally, the aura:doneRendering event is fired at the end of the rendering lifecycle.
 
-### References
+### Refernces
 
 - [Events Fired During the Rendering Lifecycle](https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/components_lifecycle.htm)
 
