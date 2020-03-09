@@ -7,6 +7,7 @@
 
 ![aura lc-1](img/aura-lc-seq.png)
 
+### Sample App
 ![app](https://developer.salesforce.com/docs/resources/img/en-us/224.0?doc_id=dev_guides%2Faura%2Fimages%2Fnesting.png&folder=lightning)
 
 - The rendering lifecycle happens once in the lifetime of a component unless the component gets explicitly unrendered.
