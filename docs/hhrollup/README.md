@@ -33,7 +33,7 @@
 - When the rollup for the household happens the value Rollup_Toggle__c is updated to trigger the rollup 
 ![rollup toggle](img/toggled-values-1.png) 
 
-- Make sure: ***Rollup_Toggle__c** does not get updated during daily 
+- Make sure: **Rollup_Toggle__c** does not get updated during daily bulk load 
 
 ### Component  HHRollup.cmp
 
