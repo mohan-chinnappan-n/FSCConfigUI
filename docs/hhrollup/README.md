@@ -79,6 +79,8 @@
 
 ### Apex Controller HHRollupCtrl
 
+- Note: The filter condition can be customized to meet the customer needs
+
 ```java
 public with sharing class HHRollupCtrl {
     @AuraEnabled
