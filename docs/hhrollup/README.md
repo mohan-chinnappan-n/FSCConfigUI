@@ -36,31 +36,16 @@
 
 <aura:component controller='HHRollupCtrl'
                 implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
-    
     <aura:attribute name="recordId" type="String" />
     <aura:attribute name="status" type="String" default="none" />
+    <!-- <lightning:button variant="brand"  title="Perform Household Rollup "  label="Perform Household Rollup" onclick="{! c.performRollup }"/> -->
     
-    <!-- 
-    <lightning:button variant="brand"  title="Perform Household Rollup "  
-                      label="Perform Household Rollup" 
-                      onclick="{! c.performRollup }"/>
-    -->
-    
-     <aura:handler name='init' value='{!this}' action='{!c.performRollup}' 
-                  description = 'Performs Household Rollup' />
-   
-    
-    
-    
+    <aura:handler name='init' value='{!this}' action='{!c.performRollup}' description = 'Performs Household Rollup' />
     <lightning:card footer="FSC Household Rollup" title="">
         <aura:if isTrue="{!v.status !='none' }">
-            <span class="slds-p-horizontal_small">
-                <p>{!v.status}</p>
-            </span>
+            <span class="slds-p-horizontal_small"> <p>{!v.status}</p> </span>
         </aura:if>
     </lightning:card>
-    
-    
 </aura:component>
 
 ```
@@ -76,7 +61,7 @@
         });
         action.setCallback(this, function(a){
             var state = a.getState(); // get the response state
-            if(state == 'SUCCESS') {
+            if(state === 'SUCCESS') {
                 component.set('v.status', a.getReturnValue());
             }
         });
@@ -89,14 +74,13 @@
 
 ```java
 public with sharing class HHRollupCtrl {
-   @AuraEnabled
+    @AuraEnabled
     public static String toggle(String accountId) {
         String status = 'Going to do rollup';
         FinServ__FinancialAccount__c[] fas = [
             SELECT Id, Rollup_Toggle__c
                     FROM FinServ__FinancialAccount__c
                     WHERE FinServ__PrimaryOwner__c= :accountId OR FinServ__JointOwner__c = :accountId
-            
         ];
 
         for (FinServ__FinancialAccount__c fa : fas) {
