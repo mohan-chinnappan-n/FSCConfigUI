@@ -1,8 +1,8 @@
 ## FSC Household Rollup for the given Household in realtime
 
 ### Overview
-- System performs the rollup required for the Household the user currently viewing
-- Make use of the FSC RBL configs to trigger the required rollups for the household in context 
+- System performs on-demand rollup required for the Household the user currently viewing
+- Makes use of the out-of-the-box FSC RBL configs to trigger the required rollups for the household in context 
 
 
 ### Demo
@@ -14,14 +14,19 @@
 
 ### Setup requirements
 
-- We have used this feature for FinServ__FinancialAccount__c related RBLS (FinServ__RollupByLookupConfig__c)
+1. We have used this feature for FinServ__FinancialAccount__c related RBLS (FinServ__RollupByLookupConfig__c)
+
+- One-time step up via script ( DX can be used) to update the FinServ__UpdateOnChange__c in FinServ__RollupByLookupConfig__c object
+    - Currently done for the records in FinServ__RollupByLookupConfig__c  ```WHERE FinServ__FromObject__c = 'FinancialAccount__c```   
+    - FinServ__ProcessType__c is set to "Realtime
+    - FinServ__Active__c is set to True
 
 - ![RBL_FA](img/RBL-config-FA-1.png)
 
 - Example RBL:
 - ![RBL2](img/rbl-2.png)
 
-- Custom Field **Rollup_Toggle__c** needs to be created in the object FinServ__FinancialAccount__c
+2. Custom Field **Rollup_Toggle__c** needs to be created in the object FinServ__FinancialAccount__c
 ![toggle rollup](img/fa-field-rolluptoggle.png)
 
 
