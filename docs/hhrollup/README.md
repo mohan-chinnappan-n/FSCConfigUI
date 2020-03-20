@@ -5,11 +5,7 @@
 - Makes use of the out-of-the-box FSC RBL configs to trigger the required rollups for the household in context 
 
 
-### Assumptions
-- Since the rollup are calculated on-demand basis
-    - List view or FSC App for EA or Salesforce reports covering across the houseolds may be inconsistent as some household may have old rollup values
-
-  
+ 
 ### Demo
 ![Demo](img/HH-Rollup-2.gif)
 
@@ -109,6 +105,11 @@ public with sharing class HHRollupCtrl {
 
 ![app builder](img/app-builder-2.png)
 
+###  Limitations
+- Since the rollup are calculated on-demand basis
+    - List view or FSC App for EA or Salesforce reports covering across the houseolds may be inconsistent as some household may have old rollup values
+
+ 
 ### TODOs
 - We can make the Rollups can happen only once a day (by a custom field last_hh_rolup_calc_date__c in the Account record for the household)
 - The component should check this field, if it is beyond update period (example: 24 hours, or less than today, can be put in a custom settings) then rollup will be triggered
