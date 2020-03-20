@@ -4,6 +4,7 @@
 - System performs on-demand rollup required for the Household the user currently viewing
 - Makes use of the out-of-the-box FSC RBL configs to trigger the required rollups for the household in context 
 
+![seq](img/fsc-rollup-seq-1.png)
 
  
 ### Demo
