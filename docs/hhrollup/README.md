@@ -79,7 +79,7 @@
 
 ### Apex Controller HHRollupCtrl
 
-- Note: The filter condition can be customized to meet the customer needs
+- Note: The filter condition can be customized to meet the customer business needs
 
 ```java
 public with sharing class HHRollupCtrl {
