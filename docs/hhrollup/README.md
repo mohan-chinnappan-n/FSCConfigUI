@@ -115,6 +115,10 @@ public with sharing class HHRollupCtrl {
 - The component should check this field, if it is beyond update period (example: 24 hours, or less than today, can be put in a custom settings) then rollup will be triggered
     - currently rollup for the household in context  is triggerd eveytime household is visited by the user
 
+### Component options
+- This component can be written as face-less
+    - Currently it has rollup completion status, which can be disabled
+
 ### References
 
 - [FinServ__RollupByLookupConfig__c](https://mohan-chinnappan-n.github.io/sfdc/fs-cloud/csv-viewer_fsc.html?f=FinServ__RollupByLookupConfig__c)
