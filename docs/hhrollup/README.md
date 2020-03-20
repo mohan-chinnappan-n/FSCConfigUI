@@ -5,6 +5,11 @@
 - Makes use of the out-of-the-box FSC RBL configs to trigger the required rollups for the household in context 
 
 
+### Assumptions
+- Since the rollup are calculated on-demand basis
+    - List view or FSC App for EA or Salesforce reports covering across the houseolds may be inconsistent  rollup as some household may have old rollup values
+
+  
 ### Demo
 ![Demo](img/HH-Rollup-2.gif)
 
