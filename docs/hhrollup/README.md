@@ -33,6 +33,7 @@
 - When the rollup for the household happens the value Rollup_Toggle__c is updated to trigger the rollup 
 ![rollup toggle](img/toggled-values-1.png) 
 
+- Make sure: ***Rollup_Toggle__c** does not get updated during daily 
 
 ### Component  HHRollup.cmp
 
@@ -103,6 +104,10 @@ public with sharing class HHRollupCtrl {
 
 ![app builder](img/app-builder-2.png)
 
+### TODOs
+- We can make the Rollups can happen only once a day (by a custom field last_hh_rolup_calc_date__c in the Account record for the household)
+- The component should check this field, if it is beyond update period (example: 24 hours, or less than today, can be put in a custom settings) then rollup will be triggered
+    - currently rollup is triggerd eveytime household is visited by the user
 
 ### References
 
