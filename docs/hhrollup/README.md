@@ -113,7 +113,7 @@ public with sharing class HHRollupCtrl {
 ### TODOs
 - We can make the Rollups can happen only once a day (by a custom field say ```last_hh_rolup_calc_date__c``` in the Account record for the household)
 - The component should check this field, if it is beyond update period (example: 24 hours, or less than today, can be put in a custom settings) then rollup will be triggered
-    - currently rollup is triggerd eveytime household is visited by the user
+    - currently rollup for the household in context  is triggerd eveytime household is visited by the user
 
 ### References
 
