@@ -30,6 +30,10 @@
 ![toggle rollup](img/fa-field-rolluptoggle.png)
 
 
+- When the rollup for the household happens the value Rollup_Toggle__c is updated to trigger the rollup 
+![rollup toggle](img/toggled-values-1.png) 
+
+
 ### Component  HHRollup.cmp
 
 ```xml
@@ -98,3 +102,15 @@ public with sharing class HHRollupCtrl {
 ### App Builder
 
 ![app builder](img/app-builder-2.png)
+
+
+### References
+
+- [FinServ__RollupByLookupConfig__c](https://mohan-chinnappan-n.github.io/sfdc/fs-cloud/csv-viewer_fsc.html?f=FinServ__RollupByLookupConfig__c)
+- [FinServ__FinancialAccount__c](https://mohan-chinnappan-n.github.io/sfdc/fs-cloud/csv-viewer_fsc.html?f=FinServ__FinancialAccount__c)
+- [Account](https://mohan-chinnappan-n.github.io/sfdc/fs-cloud/csv-viewer_fsc.html?f=Account)
+- [FSC Data Model interactive](https://mohan-chinnappan-n.github.io/sfdc/fs-cloud/model-fsc-224.html)
+- [FinServ__RollupByLookupConfig__c](https://mohan-chinnappan-n.github.io/sfdc/fs-cloud/csv-viewer_fsc.html?f=FinServ__RollupByLookupConfig__c)
+- [FinServ__RollupByLookupFilterCriteria__c](https://mohan-chinnappan-n.github.io/sfdc/fs-cloud/csv-viewer_fsc.html?f=FinServ__RollupByLookupFilterCriteria__c)
+- [FSC Admin Guide](https://developer.salesforce.com/docs/atlas.en-us.financial_services_cloud_admin_guide.meta/financial_services_cloud_admin_guide/fsc_admin.htm)
+- [Rollup notes](https://mohan-chinnappan-n2.github.io/2020/fsc/rollup/rbl/fsc-rollup.html)
