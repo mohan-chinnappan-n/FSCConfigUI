@@ -113,4 +113,4 @@ public with sharing class HHRollupCtrl {
 
 ### App Builder
 
-![app builder](img/app-buillder-2.png)
+![app builder](img/app-builder-2.png)
