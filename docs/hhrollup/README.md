@@ -14,12 +14,12 @@
 
 ### Setup requirements
 
-1. We have used this feature for FinServ__FinancialAccount__c related RBLS (FinServ__RollupByLookupConfig__c)
+1. We have used this feature for ```FinServ__FinancialAccount__c``` related RBLS (```FinServ__RollupByLookupConfig__c```)
 
-- One-time step up via script ( DX can be used) to update the FinServ__UpdateOnChange__c in FinServ__RollupByLookupConfig__c object
-    - Currently done for the records in FinServ__RollupByLookupConfig__c  ```WHERE FinServ__FromObject__c = 'FinancialAccount__c```   
-    - FinServ__ProcessType__c is set to "Realtime
-    - FinServ__Active__c is set to True
+- One-time step up via script ( DX can be used) to update the ```FinServ__UpdateOnChange__c``` in ```FinServ__RollupByLookupConfig__c``` object
+    - Currently done for the records in ```FinServ__RollupByLookupConfig__c WHERE FinServ__FromObject__c = 'FinancialAccount__c```   
+    - ```FinServ__ProcessType__c``` is set to ```Realtime```
+    - ```FinServ__Active__c is``` set to ```True```
 
 - ![RBL_FA](img/RBL-config-FA-1.png)
 
