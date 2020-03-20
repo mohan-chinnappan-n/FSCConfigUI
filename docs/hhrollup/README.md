@@ -6,7 +6,7 @@
 
 
 ### Demo
-![Demo](img/HH-Rollup-1.gif)
+![Demo](img/HH-Rollup-2.gif)
 
 ### Updated Accounts - note the updated dates
 ![updated accounts](img/account-update-1.png)
