@@ -117,7 +117,7 @@ public with sharing class HHRollupCtrl {
 
 ### Component options
 - This component can be written as face-less
-    - Currently it has rollup completion status, which can be disabled
+    - Currently it has a rendering of rollup completion status, which can be disabled
 
 ### References
 
