@@ -1,9 +1,14 @@
 ## FSC Household Rollup for the given Household in realtime
 
+### Overview
+- System performs the rollup required for the Household the user currently viewing
+- Make use of the FSC RBL configs to trigger the required rollups for the household in context 
+
+
 ### Demo
 ![Demo](img/HH-Rollup-1.gif)
 
-### Updated Accounts
+### Updated Accounts - note the updated dates
 ![updated accounts](img/account-update-1.png)
 
 
