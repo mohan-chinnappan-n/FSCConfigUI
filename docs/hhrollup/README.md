@@ -133,6 +133,5 @@ public with sharing class HHRollupCtrl {
 - [FSC Data Model interactive](https://mohan-chinnappan-n.github.io/sfdc/fs-cloud/model-fsc-224.html)
 - [FinServ__RollupByLookupConfig__c](https://mohan-chinnappan-n.github.io/sfdc/fs-cloud/csv-viewer_fsc.html?f=FinServ__RollupByLookupConfig__c)
 - [FinServ__RollupByLookupFilterCriteria__c](https://mohan-chinnappan-n.github.io/sfdc/fs-cloud/csv-viewer_fsc.html?f=FinServ__RollupByLookupFilterCriteria__c)
-<hr/>
 - [FSC Admin Guide](https://developer.salesforce.com/docs/atlas.en-us.financial_services_cloud_admin_guide.meta/financial_services_cloud_admin_guide/fsc_admin.htm)
 - [Rollup notes](https://mohan-chinnappan-n2.github.io/2020/fsc/rollup/rbl/fsc-rollup.html)
