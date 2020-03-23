@@ -86,6 +86,8 @@ public with sharing class HHRollupCtrl {
     @AuraEnabled
     public static String toggle(String accountId) {
         String status = 'Going to do rollup';
+        // TODO: modify the following soql to fit the business needs
+        //       include FinServ__FinancialAccountRole__c if required
         FinServ__FinancialAccount__c[] fas = [
             SELECT Id, Rollup_Toggle__c
                     FROM FinServ__FinancialAccount__c
