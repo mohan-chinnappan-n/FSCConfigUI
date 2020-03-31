@@ -1,6 +1,6 @@
 ## How to current URI in Aura Lightning Component
 
-![uri info](img/uri-info-1)
+![uri info](img/uri-info-1.png)
 
 
 ### Component
