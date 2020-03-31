@@ -24,7 +24,7 @@
 
 ({
 	doInit : function(component, event, helper) {
-     component.set('v.currentURI', window.location.pathname);
+        component.set('v.currentURI', window.location.pathname);
 	}
 })
 
