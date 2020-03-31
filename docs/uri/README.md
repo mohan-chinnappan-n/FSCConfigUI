@@ -7,7 +7,7 @@
 
 ``` xml
 <aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
-    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
     <aura:attribute name="currentURI" default="none" type="String" />
     <p>{!v.currentURI}</p>
 </aura:component>
