@@ -1,0 +1,30 @@
+## POSTing in Apex
+
+```java
+
+Http http = new Http();
+
+HttpRequest request = new HttpRequest();
+
+request.setEndpoint('https://rumserver.com/pt');
+
+request.setMethod('POST');
+request.setHeader('Content-Type', 'application/json; charset=UTF-8');
+
+// Set the body as a JSON object
+request.setBody('{"name":"oppty_trigger", "op": "before_insert", "time": 2343432423}');
+
+HttpResponse response = http.send(request);
+// Parse the JSON response
+if (response.getStatusCode() != 201) { 
+     System.debug('The status code returned was not expected: ' + response.getStatusCode() + ' ' + response.getStatus());
+} 
+else { 
+   System.debug(response.getBody());
+}
+
+```
+
+
+
+
