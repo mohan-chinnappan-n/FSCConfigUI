@@ -1,8 +1,7 @@
 ## How to get current URI, userId, recordId, sObjectName in Aura Lightning Component
 
 ![uri info](img/get-current-uri-2.png)
-
-
+ 
 ### Component
 
 ``` xml
@@ -46,3 +45,6 @@
 })
 
 ```
+
+![uri info](img/ltng-html-un-1.png)
+ 
