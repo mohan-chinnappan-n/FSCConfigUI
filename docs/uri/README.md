@@ -30,16 +30,16 @@
 ```js
 ({
 	doInit : function(component, event, helper) {
-     component.set('v.currentURI', window.location.pathname);
-     component.set('v.userId',  $A.get( "$SObjectType.CurrentUser.Id" ));
-     const errorMsg = `
-     3/30/2020 2:20 PM : Unknown error occurred during backend processing process. System will retry over the next two to three hours. Status Code: 404
-     <br>3/30/2020 2:20 PM : System will reprocess the this  within the next hour.;
-     <br><a href='https://google.com'>Google</a>
-     
-     `;
-     component.set('v.errorMsg', errorMsg);
-     
+        component.set('v.currentURI', window.location.pathname);
+        component.set('v.userId',  $A.get( "$SObjectType.CurrentUser.Id" ));
+        const errorMsg = `
+        3/30/2020 2:20 PM : Unknown error occurred during backend processing process. System will retry over the next two to three hours. Status Code: 404
+        <br>3/30/2020 2:20 PM : System will reprocess the this  within the next hour.;
+        <br><a href='https://google.com'>Google</a>
+
+        `;
+        component.set('v.errorMsg', errorMsg);
+
         
 	}
 })
