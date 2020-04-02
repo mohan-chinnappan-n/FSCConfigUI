@@ -20,8 +20,11 @@
     <p>recordId: {!v.recordId}</p>
     <p>sObjectName: {!v.sObjectName}</p>
 
-    <aura:unescapedHtml value="{!v.errorMsg}"/>    
-    
+    <hr/>
+    <lightning:card footer="Errors" title="Error Message">
+    	<aura:unescapedHtml value="{!v.errorMsg}"/>
+    </lightning:card> 
+
 </aura:component>
 ```
 
