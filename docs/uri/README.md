@@ -44,5 +44,5 @@
     }
 })
 ```
-![uri info](img/aur-err-msg.png)
+![aura unescapehtml](img/aur-err-msg.png)
  
