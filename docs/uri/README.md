@@ -41,7 +41,7 @@
         component.set('v.errorMsg', errorMsg);
 
         
-	}
+    }
 })
 ```
 
