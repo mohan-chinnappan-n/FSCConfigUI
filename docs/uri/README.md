@@ -48,4 +48,22 @@
 })
 ```
 ![aura unescapehtml](img/aur-err-msg.png)
+
+## How to use text-overflow in aura:unescapedHtml
+
+```css
+.THIS .overflow-visible {
+  white-space: initial;
+  width:300px;
+}
+
+```
+
+```xml
+ <p class='overflow-visible'>
+    <aura:unescapedHtml  value="{!v.errorMsg}"/>
+ </p>
+```
+
+![app view](img/unescape-html-2.png)
  
