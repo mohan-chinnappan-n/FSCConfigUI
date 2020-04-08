@@ -65,5 +65,5 @@
  </p>
 ```
 
-![app view](img/unescape-html-2.png)
+![app view](img/unescape-html-3.png)
  
