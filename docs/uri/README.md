@@ -49,7 +49,7 @@
 ```
 ![aura unescapehtml](img/aur-err-msg.png)
 
-## How to use text-overflow in aura:unescapedHtml
+## How to use text-overflow for the content out of aura:unescapedHtml
 
 ```css
 .THIS .overflow-visible {
