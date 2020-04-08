@@ -64,6 +64,15 @@
     <aura:unescapedHtml  value="{!v.errorMsg}"/>
  </p>
 ```
+```js
+
+const errorMsg = `
+     3/30/2020 2:20 PM : Unknown error occurred during backend processing process. System will retry over the next two to three hours. Status Code: 404
+     3/30/2020 2:20 PM : System will reprocess the this  within the next hour.;
+     <a href='https://google.com'>Google</a>
+     
+     `;
+```
 
 ![app view](img/unescape-html-3.png)
  
