@@ -10,7 +10,7 @@
 #### In Financial Accounts tab
 ![comp](img/fa-comp-1.png)
 
-- View All Clicked
+##### View All Clicked
 ![comp](img/fa-comp-3.png)
 
 
