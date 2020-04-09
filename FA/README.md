@@ -10,6 +10,10 @@
 #### In Financial Accounts tab
 ![comp](img/fa-comp-1.png)
 
+- View All Clicked
+![comp](img/fa-comp-3.png)
+
+
 #### In App builder
 ![app builder - comp](img/fa-app-2.png)
 
