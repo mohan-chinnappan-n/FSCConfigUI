@@ -13,6 +13,9 @@
 ##### View All Clicked
 ![comp](img/fa-comp-3.png)
 
+##### Balanced Sorted 
+![comp](img/fa-comp-sorted.png)
+
 
 #### In App builder
 ![app builder - comp](img/fa-app-2.png)
