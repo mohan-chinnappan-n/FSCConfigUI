@@ -1,0 +1,21 @@
+<template>
+  <lightning-card title= {tableTitle}  icon-name="custom:custom17">
+        <template if:true={fasData}>
+            <template if:true={multiple}>
+                <lightning-input type="checkbox" label="View All" onchange={handleViewAllChange}>
+                </lightning-input>
+            </template>
+            <lightning-datatable key-field="id" data={fasData} columns={faColumns}
+                                 show-row-number-column={showRowNumber}
+                                 hide-checkbox-column="true"
+
+                                 default-sort-direction={defaultSortDirection}
+                                 sorted-direction={sortDirection}
+                                 sorted-by={sortedBy}
+                                 onsort={onHandleSort}
+
+            ></lightning-datatable>
+        </template>
+        <template if:true={error}> <p>{error}</p> </template>
+</lightning-card>
+</template>
