@@ -7,6 +7,10 @@
 
 ### Screenshots
 
+#### In App builder
+![app builder - comp](img/fa-comp-ab-2.png)
+
+
 #### In Financial Accounts tab
 ![comp](img/fa-comp-1.png)
 
@@ -20,9 +24,6 @@
 ![comp](img/fa-chart-2.png)
 
 
-
-#### In App builder
-![app builder - comp](img/fa-comp-ab-2.png)
 
 
 ### Demo
