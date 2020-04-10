@@ -3,7 +3,7 @@
 - Configurable for the required Financial Account Type
 - Built-in **View All** feature
 - Sorting on **Balance** supported
-- Graph support added
+- Doughnut Chart 
 
 ### Screenshots
 
@@ -17,7 +17,7 @@
 ![comp](img/fa-comp-sorted.png)
 
 #### Graph
-![comp](img/fa-chart2.png)
+![comp](img/fa-chart-2.png)
 
 
 
