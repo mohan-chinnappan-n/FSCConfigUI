@@ -8,9 +8,7 @@
 ### Screenshots
 
 #### In App builder
-![app builder - comp](img/fa-2-ab.png)
-
-fa-2-1.png	fa-2-ab-1.png	fa-2-d.png	fa-2-p.png	fa-2-va.png
+![app builder - comp](img/fa-2-ab-1.png)
 
 
 #### In Financial Accounts tab
