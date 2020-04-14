@@ -8,25 +8,33 @@
 ### Screenshots
 
 #### In App builder
-![app builder - comp](img/fa-comp-ab-2.png)
+![app builder - comp](img/fa-2-ab.png)
+
+fa-2-1.png	fa-2-ab-1.png	fa-2-d.png	fa-2-p.png	fa-2-va.png
 
 
 #### In Financial Accounts tab
-![comp](img/fa-comp-1.png)
+![comp](img/fa-2-1.png)
 
 ##### View All Clicked
-![comp](img/fa-comp-3.png)
+![comp](img/fa-2-va.png)
+
+#####  Details
+![comp](img/fa-2-d.png)
+
+#####  Print View
+![comp](img/fa-2-p.png)
+
+
 
 ##### Balanced Sorted 
 ![comp](img/fa-comp-sorted.png)
 
-#### Graph
-![comp](img/fa-chart-2.png)
 
 
 
 
 ### Demo
 
-![Demo of the component in action](img/fa-comp-1.gif)
+![Demo of the component in action](img/fa-comp-2.gif)
 
