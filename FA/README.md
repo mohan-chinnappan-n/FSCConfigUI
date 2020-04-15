@@ -68,7 +68,7 @@ src
 
 ```
 
-### Deploying using SFDX
+### Deploy using SFDX
 
 - Go to src folder
 
