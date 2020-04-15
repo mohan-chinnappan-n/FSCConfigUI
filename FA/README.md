@@ -36,3 +36,8 @@
 
 ![Demo of the component in action](img/fa-comp-2.gif)
 
+### Demo showing getting latest Account Balance from RESTful service
+
+![Demo of the component in action with latest Account Balance update](img/fa-comp-3.gif)
+
+
