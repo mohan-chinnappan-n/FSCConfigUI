@@ -4,7 +4,7 @@
 - Built-in **View All** feature
 - Sorting on **Balance** supported
 - Doughnut Chart 
-
+- RESTful call to get latest Account Balance
 ### Screenshots
 
 #### In App builder
