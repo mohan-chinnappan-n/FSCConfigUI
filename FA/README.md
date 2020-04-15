@@ -86,3 +86,5 @@ sfdx force:source:deploy -p force-app/main/default/lwc/faList     -u  your_usern
 sfdx force:source:deploy -p force-app/main/default/classes/FAData.cls -u  your_username.force.com 
 
 ```
+
+- Use App Builder to configure this component (faList)
