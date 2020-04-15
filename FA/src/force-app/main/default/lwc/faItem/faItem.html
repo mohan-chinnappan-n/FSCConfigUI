@@ -1,0 +1,10 @@
+<template>
+    <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+        <dl class="slds-list_horizontal slds-wrap">
+            <template for:each={farecord} for:item="rec">
+                <dt class="slds-item_label slds-truncate"  key={rec.label} title={rec.label}>{rec.label}:</dt>
+                <dd class="slds-item_detail slds-truncate" key={rec.value} > {rec.value}</dd>
+            </template>
+        </dl>
+    </div>
+</template>

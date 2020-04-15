@@ -41,3 +41,32 @@
 ![Demo of the component in action with latest Account Balance update](img/fa-comp-3.gif)
 
 
+### Source code
+```
+$ tree
+.
+└── force-app
+    └── main
+        └── default
+            ├── classes
+            │   ├── FAData.cls
+            │   └── FAData.cls-meta.xml
+            └── lwc
+                ├── faBalUtil
+                │   ├── faBalUtil.html
+                │   ├── faBalUtil.js
+                │   └── faBalUtil.js-meta.xml
+                ├── faItem
+                │   ├── faItem.html
+                │   ├── faItem.js
+                │   └── faItem.js-meta.xml
+                └── faList
+                    ├── Canvas.js
+                    ├── faList.css
+                    ├── faList.html
+                    ├── faList.js
+                    └── faList.js-meta.xml
+
+```
+
+

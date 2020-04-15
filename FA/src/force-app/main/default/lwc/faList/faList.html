@@ -1,0 +1,71 @@
+<template>
+  <lightning-card title= {tableTitle}  icon-name="custom:custom17">
+        <template if:true={fasData}>
+            <template if:true={multiple}>
+                <lightning-input type="checkbox" label="View All" onchange={handleViewAllChange}>
+                </lightning-input>
+            </template>
+            <lightning-datatable key-field="id" data={fasData} columns={faColumnsDefault}
+                                 show-row-number-column={showRowNumber}
+                                 hide-checkbox-column="true"
+
+                                 default-sort-direction={defaultSortDirection}
+                                 sorted-direction={sortDirection}
+                                 sorted-by={sortedBy}
+                                 onsort={onHandleSort}
+                                 onrowaction={handleRowAction}
+
+
+            ></lightning-datatable>
+
+        </template>
+        <template if:true={error}> <p>{error}</p> </template>
+</lightning-card>
+
+<div class="slds-grid">
+    <div class="slds-col">
+        <div class="chart slds-m-around_medium" lwc:dom="manual"> </div> 
+    </div>
+     <div class="slds-col">
+        <div class="chartlegend slds-m-around_medium" lwc:dom="manual"></div> 
+    </div>
+</div>
+
+<template if:true={showPdf}>
+    <iframe src="https://mohan-chinnappan-n2.github.io/2020/pdf/img/helloworld.pdf" style="height:40rem;width:30rem"></iframe>
+</template>
+
+<template if:true={bShowModal}>
+    <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true"
+        aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+        <div class="slds-modal__container">
+            <header class="slds-modal__header">
+                <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close"
+                    onclick={closeModal}>
+                    <lightning-icon icon-name="utility:close" alternative-text="close" variant="inverse" size="small">
+                    </lightning-icon>
+                </button>
+                <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Record Detail</h2>
+            </header>
+            <c-fa-item key={record.id} item={record} columns={faViewColumns}></c-fa-item>
+
+            <footer class="slds-modal__footer">
+                <lightning-button variant="destructive" label="Get Latest Balance" title="Get Latest Balance From Backend"
+                   onclick={handleGetBal}
+                   data-id={record.Id}
+                   data-bal={record.FinServ__Balance__c} 
+                ></lightning-button>
+                <lightning-button variant="brand" label="Close" title="Close" onclick={closeModal}></lightning-button>
+                <template if:true={newBal}> 
+                    <hr>
+                    <p>New Bal: {newBal}</p>
+                </template>
+            </footer>
+        </div>
+    </section>
+    <div class="slds-backdrop slds-backdrop_open"></div>
+
+</template>
+
+
+</template>
