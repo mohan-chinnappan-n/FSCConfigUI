@@ -231,10 +231,8 @@ export default class FaList extends LightningElement {
 
       // Action event for the details of the selected record
     handleGetBal(event) {
-        console.log('handleGetBal');
         const id = event.target.dataset.id;
         const bal = event.target.dataset.bal;
-        console.log(id, bal);
         this.fabu.getBal(id,bal)
         .then (nb => {
             this.newBal = nb;
