@@ -39,7 +39,7 @@
 - [Event Handling Lifecycle](https://developer.salesforce.com/docs/atlas.en-us.lightning.meta/lightning/events_overview.htm)
 - [doneRendering](https://developer.salesforce.com/docs/component-library/bundle/aura:doneRendering/documentation)
 ### Demo
-![demo](img/lex-lc-1.gif)
+![demo](img/lex-lc-2.gif)
 
 ### Component
 ```xml
