@@ -3,7 +3,8 @@
 1. [Features](#features)
 2. [Screenshots](#screenshots)
 3. [Demos](#demos)
-4. [Deploying using DX](#deploying)
+4. [Source code](#src)
+5. [Deploying using DX](#deploying)
 
 
 ------------------------------
@@ -68,7 +69,7 @@
 ![Demo of the component showing summary feature](img/fa-summary-1.gif )
 
 
-<a name="deploying"></a>
+<a name="src"></a>
 ### Source code
 ```
 src
@@ -95,7 +96,7 @@ src
                     └── faList.js-meta.xml
 
 ```
-
+<a name="deploying"></a>
 ### Deploy using SFDX
 
 - Go to src folder
