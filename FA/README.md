@@ -29,6 +29,9 @@
 ##### Balanced Sorted 
 ![comp](img/fa-comp-sorted.png)
 
+##### Summary feature
+![summary](img/fa-summary-1.png)
+
 
 
 
