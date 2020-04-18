@@ -1,11 +1,20 @@
 ## Component to show the Financial Accounts in FSC 
 
+1. [ Features. ](#features)
+2. [ Screenshots. ](#screenshots)
+3. [ Demos](#demos)
+
+<a name="features"></a>
+### Features
 - Configurable for the required Financial Account Type
 - Built-in **View All** feature
 - Sorting on **Balance** supported
 - Doughnut Chart 
 - RESTful call to get latest Account Balance
 - Summary support (grid or table)
+
+
+<a name="screenshots"></a>
 ### Screenshots
 
 #### In App builder
@@ -42,8 +51,8 @@
 
 
 
-
-### Demo
+<a name=screenshots"></a>
+### Demos
 
 ![Demo of the component in action](img/fa-comp-2.gif)
 
