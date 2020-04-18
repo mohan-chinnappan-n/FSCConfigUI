@@ -33,7 +33,7 @@
 ![comp](img/fa-2-va.png)
 
 #####  Details
-![comp](img/fa-datail-2.png)
+![comp](img/fa-datail-4.png)
 
 #####  Print View
 ![comp](img/fa-2-p.png)
