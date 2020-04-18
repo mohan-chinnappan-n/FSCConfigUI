@@ -23,6 +23,7 @@
             <property name="showSync" type="Boolean" default="false" label="Want to show sync?"/>
             <property name="showDetails" type="Boolean" default="false" label="Want to show details?"/>
 
+            <property name="showSummary" type="Boolean" default="false" label="Want to show summary?"/>
 
 
 

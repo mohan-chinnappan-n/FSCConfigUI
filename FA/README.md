@@ -5,6 +5,7 @@
 - Sorting on **Balance** supported
 - Doughnut Chart 
 - RESTful call to get latest Account Balance
+- Summary support
 ### Screenshots
 
 #### In App builder
@@ -39,6 +40,10 @@
 ### Demo showing getting latest Account Balance from RESTful service
 
 ![Demo of the component in action with latest Account Balance update](img/fa-comp-3.gif)
+
+### Demo showing summary feature
+![Demo of the component showing summary feature](img/fa-summary-1.gif )
+
 
 
 ### Source code

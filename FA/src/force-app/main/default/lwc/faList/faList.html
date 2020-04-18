@@ -1,5 +1,14 @@
 <template>
-  <lightning-card title= {tableTitle}  icon-name="custom:custom17">
+
+ <template if:true={showSummary}>
+    <lightning-card title="Summary"  icon-name="custom:custom17">
+        <lightning-datatable key-field="FinServ__FinancialAccountType__c" data={balSum} columns={faSummaryColumns}
+        show-row-number-column={showRowNumber}
+        hide-checkbox-column="true" ></lightning-datatable>
+    </lightning-card>
+ </template>
+ 
+ <lightning-card title= {tableTitle}  icon-name="custom:custom17">
         <template if:true={fasData}>
             <template if:true={multiple}>
                 <lightning-input type="checkbox" label="View All" onchange={handleViewAllChange}>
@@ -20,6 +29,7 @@
 
         </template>
         <template if:true={error}> <p>{error}</p> </template>
+
 </lightning-card>
 
 <div class="slds-grid">

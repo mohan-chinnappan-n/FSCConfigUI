@@ -33,14 +33,17 @@ export default class FaList extends LightningElement {
     @api showPdf = false;
     @api showDetails = false;
     @api showSync = false;
+    @api showSummary = false;
 
     @track tableTitle
     
     // FA data
     @track count;
+    @track balSum;
     @track multiple;
     @track recCount;
     @track error;
+
     
     @track fasData;
     @track allFasData;
@@ -84,6 +87,14 @@ export default class FaList extends LightningElement {
 
        
     ];
+
+    faSummaryColumns = [
+        { label: 'Type', fieldName: 'FinServ__FinancialAccountType__c' },
+        { label: 'Total', fieldName: 'total', type: 'currency',  sortable: true,
+           cellAttributes: { alignment: 'right' } 
+        },
+
+    ]
 
     // specs for the optional columns
     colSpecs = {
@@ -144,6 +155,31 @@ export default class FaList extends LightningElement {
             // show only required on the bootstrap
             this.fasData  = this.allFasData.slice(0,this.limit ? this.limit : 10);
             this.error = undefined;
+           
+            // summing
+
+            // group by
+            const gby = this.allFasData.reduce((acc, curr) => {
+                if(!acc[curr.FinServ__FinancialAccountType__c]) acc[curr.FinServ__FinancialAccountType__c] = []; //If this FinServ__FinancialAccountType__c wasn't previously stored
+                acc[curr.FinServ__FinancialAccountType__c].push(curr);
+                return acc;
+            },{});
+            // sum the groups
+            const sums = [];
+            Object.keys(gby).forEach(key => {
+                let amounts = []; 
+                gby[key].forEach(item => amounts.push(item.FinServ__Balance__c));
+                sums.push ({FinServ__FinancialAccountType__c:key, total: amounts.reduce( (a,b) => a+b, 0)});
+            });
+            // grand totaling
+            const totals = []; 
+            sums.forEach(item => totals.push(item.total));
+            const gtotal = totals.reduce( (a,b) => a+b, 0);
+            sums.push({FinServ__FinancialAccountType__c:'Grand Total', total : gtotal});
+            
+            this.balSum =  sums;
+
+
         } else if (error) {
             this.error = error;
             this.contacts = undefined;
