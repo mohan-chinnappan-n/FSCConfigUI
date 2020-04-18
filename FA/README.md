@@ -1,9 +1,10 @@
 ## Component to show the Financial Accounts in FSC 
 
-1. [ Features. ](#features)
-2. [ Screenshots. ](#screenshots)
-3. [ Demos](#demos)
+1. [Features](#features)
+2. [Screenshots](#screenshots)
+3. [Demos](#demos)
 
+<hr>
 <a name="features"></a>
 ### Features
 - Configurable for the required Financial Account Type
