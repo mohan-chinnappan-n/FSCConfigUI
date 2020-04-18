@@ -35,6 +35,7 @@ export default class FaList extends LightningElement {
     @api showDetails = false;
     @api showSync = false;
     @api showSummary = false;
+    @api summaryType = 'table';
 
     @track tableTitle
     
@@ -59,6 +60,14 @@ export default class FaList extends LightningElement {
     @track bShowModal = false;
 
     @track newBal;
+
+    get tableFormat() {
+        return  this.summaryType === 'table' ? true : false;
+    }
+    get gridFormat() {
+         return  this.summaryType === 'grid' ? true : false;
+    }
+
 
 
     // for view columns
@@ -178,13 +187,16 @@ export default class FaList extends LightningElement {
             Object.keys(gby).forEach(key => {
                 let amounts = []; 
                 gby[key].forEach(item => amounts.push(item.FinServ__Balance__c));
-                sums.push ({FinServ__FinancialAccountType__c:key, total: amounts.reduce( (a,b) => a+b, 0)});
+                sums.push ({FinServ__FinancialAccountType__c:key, 
+                    total: amounts.reduce( (a,b) => a+b, 0)});
             });
             // grand totaling
             const totals = []; 
             sums.forEach(item => totals.push(item.total));
             const gtotal = totals.reduce( (a,b) => a+b, 0);
             sums.push({FinServ__FinancialAccountType__c:'Grand Total', total : gtotal});
+
+            sums.forEach(item => item['totalf'] = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(item.total));
             
             this.balSum =  sums;
 

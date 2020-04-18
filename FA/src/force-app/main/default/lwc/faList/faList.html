@@ -1,11 +1,35 @@
 <template>
 
  <template if:true={showSummary}>
+
     <lightning-card title="Summary"  icon-name="custom:custom17">
+    <template if:true={tableFormat}>
         <lightning-datatable key-field="FinServ__FinancialAccountType__c" data={balSum} columns={faSummaryColumns}
         show-row-number-column={showRowNumber}
         hide-checkbox-column="true" ></lightning-datatable>
+    </template>
+
+    <template if:true={gridFormat}> 
+    
+    <div class="slds-grid">
+        <template for:each={balSum} for:item="item">
+            <div class="slds-col"  key={item.FinServ__FinancialAccountType__c}>
+            <lightning-layout>
+                <lightning-layout-item>
+                    {item.FinServ__FinancialAccountType__c} :
+                </lightning-layout-item>
+                <lightning-layout-item padding="horizontal-small">
+                    {item.totalf}
+                </lightning-layout-item>
+            </lightning-layout>
+        </div>
+        </template>
+        <hr>
+    </div>
+    </template>
     </lightning-card>
+
+
  </template>
  
  <lightning-card title= {tableTitle}  icon-name="custom:custom17">

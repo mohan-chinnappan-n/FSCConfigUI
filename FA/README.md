@@ -29,8 +29,12 @@
 ##### Balanced Sorted 
 ![comp](img/fa-comp-sorted.png)
 
-##### Summary feature
+##### Summary feature (grid or table format)
 ![summary](img/fa-summary-1.png)
+
+![summary-grid](img/fa-summary-grid.png)
+
+![summary-opts](img/fa-summary-ab-3.png)
 
 
 
