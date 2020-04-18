@@ -1,6 +1,6 @@
 /*
 -------------------------------------------
-   FaItem has features:
+   FABalUtil has features:
    - get the updated balance from the external RESTFul service
       by passing id and current balance to get new balance
 
