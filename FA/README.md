@@ -30,10 +30,11 @@
 ![comp](img/fa-comp-sorted.png)
 
 ##### Summary feature (grid or table format)
-![summary](img/fa-summary-1.png)
-
 - Summary grid
 ![summary-grid](img/fa-summary-grid.png)
+
+- Summary table
+![summary](img/fa-summary-1.png)
 
 - Summary setup in App Builder 
 ![summary-opts](img/fa-summary-ab-3.png)
