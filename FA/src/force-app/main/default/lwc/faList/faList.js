@@ -7,8 +7,9 @@
    - Graphing - donut chart
    - Detail view support for the selected record
         - Getting latest Account Balance from via REST Call
+   - Account Summary
    
-   mohan chinnappan (apr-09-2020)
+   (mohan chinnappan, apr-09-2020, creation)
    MIT License
 -------------------------------------------
 */
