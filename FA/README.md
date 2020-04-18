@@ -5,7 +5,7 @@
 - Sorting on **Balance** supported
 - Doughnut Chart 
 - RESTful call to get latest Account Balance
-- Summary support
+- Summary support (grid or table)
 ### Screenshots
 
 #### In App builder
@@ -32,8 +32,10 @@
 ##### Summary feature (grid or table format)
 ![summary](img/fa-summary-1.png)
 
+- Summary grid
 ![summary-grid](img/fa-summary-grid.png)
 
+- Summary setup in App Builder 
 ![summary-opts](img/fa-summary-ab-3.png)
 
 
