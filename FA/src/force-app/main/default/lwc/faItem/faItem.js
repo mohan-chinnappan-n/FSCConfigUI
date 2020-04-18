@@ -5,8 +5,8 @@ import {LightningElement, api} from 'lwc';
    FaItem has features:
    - Simply render given item columns details
    - Since it does not know about the given record, can be used for any objects record
-   
-   mohan chinnappan (apr-09-2020)
+
+   (mohan chinnappan,apr-09-2020, creation)
    MIT License
 -------------------------------------------
 */
