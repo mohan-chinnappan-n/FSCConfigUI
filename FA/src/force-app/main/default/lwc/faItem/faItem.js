@@ -19,7 +19,10 @@ export default class FAItem extends LightningElement {
   get farecord () {
      let outRecord = [];
      this.columns.forEach(col => {
-        outRecord.push( {label: col.label, name: col.name, value: this.item[col.name]});
+        outRecord.push( {label: col.label, name: col.name, 
+              value: col.type === 'currency' ? 
+                    new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(this.item[col.name]) 
+                    : this.item[col.name]});
      });
      return outRecord;
   }
