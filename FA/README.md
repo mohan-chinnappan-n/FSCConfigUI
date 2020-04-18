@@ -56,7 +56,7 @@
 
 
 
-<a name=screenshots"></a>
+<a name="demos"></a>
 ### Demos
 
 ![Demo of the component in action](img/fa-comp-2.gif)
