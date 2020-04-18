@@ -24,6 +24,7 @@
             <property name="showDetails" type="Boolean" default="false" label="Want to show details?"/>
 
             <property name="showSummary" type="Boolean" default="false" label="Want to show summary?"/>
+            <property name="summaryType" type="String" default="table" label="Format to show the summary (grid or table)?"/>
 
 
 
