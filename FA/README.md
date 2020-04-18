@@ -103,16 +103,16 @@ src
 
 - Deploy lwc using these lines
 ```
-sfdx force:source:deploy -p force-app/main/default/lwc/faBalUtil  -u  your_username.force.com
-sfdx force:source:deploy -p force-app/main/default/lwc/faItem     -u  your_username.force.com
-sfdx force:source:deploy -p force-app/main/default/lwc/faList     -u  your_username.force.com
+sfdx force:source:deploy -p force-app/main/default/lwc/faBalUtil  -u  your_username@somedomain.com
+sfdx force:source:deploy -p force-app/main/default/lwc/faItem     -u  your_username@somedomain.com
+sfdx force:source:deploy -p force-app/main/default/lwc/faList     -u  your_username@somedomain.com
 
 ```
 
 - Deploy Apex Controller using this line
 
 ```
-sfdx force:source:deploy -p force-app/main/default/classes/FAData.cls -u  your_username.force.com 
+sfdx force:source:deploy -p force-app/main/default/classes/FAData.cls -u  your_username@somedomain.com 
 
 ```
 
