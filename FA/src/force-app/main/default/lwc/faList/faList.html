@@ -14,6 +14,7 @@
                 <lightning-input type="checkbox" label="View All" onchange={handleViewAllChange}>
                 </lightning-input>
             </template>
+            <template if:true={hasData}>
             <lightning-datatable key-field="id" data={fasData} columns={faColumnsDefault}
                                  show-row-number-column={showRowNumber}
                                  hide-checkbox-column="true"
@@ -26,6 +27,11 @@
 
 
             ></lightning-datatable>
+            </template>
+            <template if:false={hasData}>
+                <p>Has no data!</p>
+
+            </template>
 
         </template>
         <template if:true={error}> <p>{error}</p> </template>

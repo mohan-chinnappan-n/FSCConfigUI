@@ -47,6 +47,7 @@ export default class FaList extends LightningElement {
     
     @track fasData;
     @track allFasData;
+    @track hasData = false;
    
   
     // sorting 
@@ -140,6 +141,7 @@ export default class FaList extends LightningElement {
        let printUrl;
        if (data) {
             this.count = data.length;
+            this.hasData = true;
             // render table title based on the count of the records
             if (this.count > 1) {
                 this.tableTitle = `${this.recordTypeName}s(${this.count})`;
@@ -157,6 +159,12 @@ export default class FaList extends LightningElement {
             this.error = undefined;
            
             // summing
+
+            if (this.count < 1) {
+                this.showSummary = false;
+                this.hasData = false;
+                return;
+            }
 
             // group by
             const gby = this.allFasData.reduce((acc, curr) => {
