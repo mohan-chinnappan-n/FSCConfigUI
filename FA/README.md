@@ -4,7 +4,8 @@
 2. [Screenshots](#screenshots)
 3. [Demos](#demos)
 
-<hr>
+------------------------------
+
 <a name="features"></a>
 ### Features
 - Configurable for the required Financial Account Type
