@@ -73,7 +73,7 @@ export default class FaList extends LightningElement {
     // for view columns
     faViewColumns = [
         {label: 'Name', name: 'Name'},
-        {label: 'Balance', name: 'FinServ__Balance__c'},
+        {label: 'Balance', name: 'FinServ__Balance__c', type:'currency'},
         {label: 'Ownership', name: 'FinServ__Ownership__c'},
         {label: 'Account Type', name: 'FinServ__FinancialAccountType__c'},
         {label: 'Opened Date', name: 'FinServ__OpenDate__c'},
@@ -292,10 +292,11 @@ export default class FaList extends LightningElement {
         const bal = event.target.dataset.bal;
         this.fabu.getBal(id,bal)
         .then (nb => {
-            this.newBal = nb;
+            this.newBal = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(nb); 
         })
         .error( err => {
-            console.log(err);
+            console.error(err);
+            this.error = err;
         });
         
     }
