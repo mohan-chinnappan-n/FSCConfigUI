@@ -1,6 +1,6 @@
 ### Encrypting the  FinServ__FinancialAccount__c.FinServ__FinancialAccountNumber__c 
 
-- This field is marked as ExternId
+- This field is marked as External Id
 ![FA A#](img/fa-acct-number-eid.png)
 
 - To encrypt custom fields that have the Unique or External ID attribute, you can only use deterministic encryption. [Refer](https://help.salesforce.com/articleView?id=security_pe_custom_fields.htm&type=5)
