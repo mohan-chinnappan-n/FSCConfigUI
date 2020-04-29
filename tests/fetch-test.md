@@ -2,12 +2,10 @@
 ``` js
 // the function to be in the bal.js  
 window.getBal = async (id, bal) => {
-
   // url may be a localhost server
   const url = `https://mohansun-rum.herokuapp.com/bal/${id}/${bal}`; 
   let response = await fetch(url);
-  let data = await response.json()
-  return data;
+  return await response.json()
 }
 
 
