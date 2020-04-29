@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+</head>
+<body>
+
+<textarea id='bal'></textarea>   
+<script>
+
+const id = '100';
+const bal = '300';
+
+
+async function getBal(id, bal) {
+  const url = `https://mohansun-rum.herokuapp.com/bal/${id}/${bal}`; 
+  let response = await fetch(url);
+  let data = await response.json()
+  return data;
+}
+
+getBal(id,bal).then (data => {
+    document.getElementById('bal').value = JSON.stringify(data);
+    console.log(data);
+});
+
+</script> 
+</body>
+</html>
