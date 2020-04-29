@@ -21,7 +21,7 @@ getBal(id,bal).then (data => {
 ```
 
 
-###  --------------------------- STEPS ----------
+###  STEPS 
 
 - add this lib.js into static resources (say bal)
 - add this url to 
