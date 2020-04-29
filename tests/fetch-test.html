@@ -13,7 +13,7 @@ const id = '100';
 const bal = '300';
 
 
-async function getBal(id, bal) {
+window.getBal = async (id, bal) => {
   const url = `https://mohansun-rum.herokuapp.com/bal/${id}/${bal}`; 
   let response = await fetch(url);
   let data = await response.json()
