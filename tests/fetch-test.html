@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Test</title>
+    <title>Fetch Test in Aura</title>
 </head>
 <body>
 
@@ -13,7 +13,6 @@
 
 // the function to be in the bal.js  
 window.getBal = async (id, bal) => {
-
   // url may be a localhost server
   const url = `https://mohansun-rum.herokuapp.com/bal/${id}/${bal}`; 
   let response = await fetch(url);
@@ -32,16 +31,16 @@ getBal(id,bal).then (data => {
 
 /* --------------------------- STEPS ----------
 
-add this lib.js into static resources (say bal)
-add this url to 
+- add this lib.js into static resources (say bal)
+- add this url to 
     - CSP 
     - remote site settings
 
-In the component have script require tag:
+- In the component have script require tag:
 
 <ltng:require scripts="{!$Resource.bal}" afterScriptsLoaded="{!c.afterScriptsLoaded}" />
 
-In the component controller:
+- In the component controller:
 
 {{
 
@@ -54,6 +53,7 @@ In the component controller:
 
 }}
 
+----------------------------------------------
 */
 </script> 
 </body>
