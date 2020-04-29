@@ -23,7 +23,8 @@ async function getBal(id, bal) {
 getBal(id,bal).then (data => {
     document.getElementById('bal').value = JSON.stringify(data);
     console.log(data);
-});
+}).catch(e => console.log(e));
+;
 
 </script> 
 </body>
