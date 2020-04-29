@@ -3,28 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <title>Fetch Test in Aura</title>
+
+<style>
+h3 {
+font-family:Helvetica Neue, Arial;
+}
+textarea {
+ background-color: black;
+ color:white;
+ border-radius:5px;
+ font-family: Monaco;
+ padding:10px;
+}
+body {
+  margin:20px;
+}
+</style>
 </head>
 <body>
 
-<h3>Example to show how to wrap a API callout (in case of localhost serving situations) in javascript as a function to be called in the aura controller methods</h3>
+<h3>
+Example to show how to wrap a API callout (in case of localhost serving situations)<br/> 
+in javascript as a function to be called in the aura client-side controller methods
+
+</h3>
 <textarea rows='3' cols='40' id='bal'></textarea>   
 <script>
 
 
 // the function to be in the bal.js  
-window.getBal = async (id, bal) => {
+window.getBal = async (url) => {
   // url may be a localhost server
-  const url = `https://mohansun-rum.herokuapp.com/bal/${id}/${bal}`; 
   let response = await fetch(url);
   return await response.json()
 }
 
-
 const id = 100;
 const bal = 300;
-getBal(id,bal).then (data => {
+const url = `https://mohansun-rum.herokuapp.com/bal/${id}/${bal}`; 
+
+getBal(url).then (data => {
     document.getElementById('bal').value = JSON.stringify(data);
-    console.log(data);
 }).catch(e => console.log(e));
 
 
@@ -44,7 +63,11 @@ getBal(id,bal).then (data => {
 {{
 
  afterScriptsLoaded: function(cmp, event, helper) {
-   window.getBal(100,200).then (data => {
+   const id = 100;
+   const bal = 300;
+   const url = `https://mohansun-rum.herokuapp.com/bal/${id}/${bal}`; 
+   
+   window.getBal(url).then (data => {
    console.log(data);
    // do things with 'data' 
  }
