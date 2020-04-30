@@ -1,19 +1,20 @@
 
 ``` js
 // the function to be in the bal.js  
-window.getBal = async (id, bal) => {
-  // url may be a localhost server
-  const url = `https://mohansun-rum.herokuapp.com/bal/${id}/${bal}`; 
+window.getBal = async (url) => {
   let response = await fetch(url);
   return await response.json()
 }
+//---------------
 
-
+// usage
 const id = 100;
 const bal = 300;
-getBal(id,bal).then (data => {
+// url may be a localhost server
+const url = `https://mohansun-rum.herokuapp.com/bal/${id}/${bal}`; 
+
+getBal(url).then (data => {
     document.getElementById('bal').value = JSON.stringify(data);
-    console.log(data);
 }).catch(e => console.log(e));
 
 ```
@@ -34,11 +35,14 @@ getBal(id,bal).then (data => {
 ``` js
 {{
 
- afterScriptsLoaded: function(cmp, event, helper) {
-   window.getBal(100,200).then (data => {
-   console.log(data);
-   // do things with 'data' 
- }
+afterScriptsLoaded: function(cmp, event, helper) {
+   const id = 100;
+   const bal = 300;
+   const url = `https://mohansun-rum.herokuapp.com/bal/${id}/${bal}`; 
+   window.getBal(url).then (data => {
+        console.log(data);
+        // do things with 'data' 
+   }).catch(e => console.log(e));
 
 
 }}
