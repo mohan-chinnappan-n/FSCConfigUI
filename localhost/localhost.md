@@ -27,7 +27,13 @@ window.getBal = async () => {
 }
 
 ```
-i
+### Static Resource for bal.js
+- ![static resources](img/static-resources-bal.png)
+
+### CSP for localhost server
+- ![CSP](img/csp-localhost.png)
+
+
 ### Component controller
 
 ```js
