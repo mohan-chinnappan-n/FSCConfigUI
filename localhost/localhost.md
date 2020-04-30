@@ -48,6 +48,6 @@ window.getBal = async () => {
 
 ```
 
-### If the localhost is self-signed you will get this warning in browser address bar
+### If the localhost is self-signed you will get this 'Not Secure'  warning in browser address bar
 
 ![localhost self-signed](img/localhost-ssl-1.png)
