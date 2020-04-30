@@ -32,9 +32,7 @@ i
   ({
 
         afterScriptsLoaded: function (cmp, event, helper) {
-   	        window.getBal().then(data => {
-               cmp.set('v.bal', JSON.stringify(data)); 
-            });
+   	        window.getBal().then(data => { cmp.set('v.bal', JSON.stringify(data)); });
         },
 
   )}
