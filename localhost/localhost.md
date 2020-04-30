@@ -32,7 +32,7 @@ i
   ({
 
         afterScriptsLoaded: function (cmp, event, helper) {
-   			window.getBal().then(data => {
+   	        window.getBal().then(data => {
                cmp.set('v.bal', JSON.stringify(data)); 
             });
         },
@@ -41,6 +41,6 @@ i
 
 ```
 
-### If the localhost is self-signed you get this  in browser
+### If the localhost is self-signed you will get this warning in browser address bar
 
 ![localhost self-signed](img/localhost-ssl-1.png)
