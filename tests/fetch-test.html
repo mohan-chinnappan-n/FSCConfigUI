@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Fetch Test in Aura</title>
     <link rel="stylesheet" href="css/app.css">
+    <script src="js/bal.js"></script>
 </head>
 <body>
 
@@ -16,22 +17,8 @@ in javascript as a function to be called in the aura client-side controller meth
 <script>
 
 
-// the function to be in the bal.js  
-window.getBal = async (url) => {
-  // url may be a localhost server
-  let response = await fetch(url);
-  return await response.json()
-}
-///-----------
-
-
-
 // usage example
-const id = 100;
-const bal = 300;
-const url = `https://mohansun-rum.herokuapp.com/bal/${id}/${bal}`; 
-
-getBal(url).then (data => {
+getBal().then (data => {
     document.getElementById('bal').value = JSON.stringify(data);
 }).catch(e => console.log(e));
 
@@ -52,11 +39,8 @@ getBal(url).then (data => {
 {{
 
  afterScriptsLoaded: function(cmp, event, helper) {
-   const id = 100;
-   const bal = 300;
-   const url = `https://mohansun-rum.herokuapp.com/bal/${id}/${bal}`; 
    
-   window.getBal(url).then (data => {
+   window.getBal().then (data => {
    console.log(data);
    // do things with 'data' 
  }
