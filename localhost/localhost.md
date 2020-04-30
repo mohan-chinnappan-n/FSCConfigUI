@@ -1,4 +1,7 @@
 
+## How to fetch data from a localhost server in Aura component 
+
+### Component
 
 
 ``` xml 
