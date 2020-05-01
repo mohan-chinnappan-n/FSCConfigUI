@@ -59,7 +59,7 @@ DESCRIPTION
 - run the testing on a scratch org
 
 ```
-sfdx force:lightning:test:run -a navapp -r json -d testout  -u  mohan.chinnappan.n-q2x9@force.com -f conf/conf.json
+sfdx force:lightning:test:run -a navapp -r json -d testout  -u your_targerusername -f conf/conf.json
 ```
 
 - if you run it on non-scratch org you will get the following error:
