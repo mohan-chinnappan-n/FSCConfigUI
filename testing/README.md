@@ -76,4 +76,11 @@ sfdx force:lightning:test:run -a navapp -r json -d testout  -u your_targeruserna
 
 ```
 
+### Documents
+- [Lightning Testing Service (LTS)](https://github.com/forcedotcom/LightningTestingService)
+- [Write Tests for Your Lightning Components](https://trailhead.salesforce.com/en/content/learn/modules/unit-testing-on-the-lightning-platform/lightning-component-tests)
+- [Getting Started with the Lightning Testing Service](https://developer.salesforce.com/blogs/2018/04/getting-started-with-the-lightning-testing-service.html)
+- [Headless Testing with PhantomJS](https://phantomjs.org/headless-testing.html)
+
+
 
