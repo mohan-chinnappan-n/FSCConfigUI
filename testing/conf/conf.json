@@ -1,0 +1,6 @@
+  {
+   "webdriverio":{
+       "desiredCapabilities": { "browserName": "phantomjs" },
+       "port": "9000"
+   }
+ } 
