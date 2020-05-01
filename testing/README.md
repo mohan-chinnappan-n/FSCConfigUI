@@ -63,8 +63,8 @@ sfdx force:lightning:test:run -a navapp -r json -d testout  -u your_targeruserna
 ```
 
 - if you run it on non-scratch org you will get the following error:
-```
-
+``` js
+{
   "status": 1,
   "name": "scratchOrgOnly",
   "message": "Lightning Testing Service can only run in scratch orgs, because tests can permanently change org data.",
