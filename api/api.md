@@ -1,4 +1,4 @@
-### API version
+### REST API versions
 
 ```json
 [
