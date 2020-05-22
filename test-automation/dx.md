@@ -116,14 +116,14 @@ Code coverage percentage is a calculation of the number of covered lines  (#cl) 
 
 - Good Test case should have:
 
-Positive case with 
+- Positive case with 
    - single record
    - multiple records
-Negative case with 
+- Negative case with 
     - single record
     - multiple records
-Testing with different users:
+- Testing with different users:
    This simulates: if the running user is different, code should not break
-See this [example](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_testing_example.htm) showing how it covers all of the above requirements:
+- See this [example](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_testing_example.htm) showing how it covers all of the above requirements:
 
 https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_testing_example.htm 
