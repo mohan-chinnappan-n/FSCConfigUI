@@ -62,7 +62,8 @@ FROM ApexTestRunResult
 
 - Running the query
 
+```  
 $ sfdx mohanc:tooling:query  -q testquery.soql -f json -u  mohan.chinnappan.n-dcmc@org.com
 
-- Here you will see the json output of the test results
-
+#  Here you will see the json output of the test results
+```
