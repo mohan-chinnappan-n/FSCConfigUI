@@ -1,6 +1,7 @@
 1. [Using DX plugin to view the ApexTestRunResult](#dx)
 2. [Code Coverage Best Practices](#bp)
 
+<hr/>
 <a name='dx'></a>
 ## Using DX plugin to view the ApexTestRunResult
 
