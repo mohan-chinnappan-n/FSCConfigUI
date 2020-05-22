@@ -1,3 +1,7 @@
+1. [Using DX plugin to view the ApexTestRunResult](#dx)
+2. [Code Coverage Best Practices](#bp)
+
+<a name='dx'></a>
 ## Using DX plugin to view the ApexTestRunResult
 
 - Describe ApexTestRunResult
@@ -69,7 +73,8 @@ $ sfdx mohanc:tooling:query  -q testquery.soql -f json -u  mohan.chinnappan.n-dc
 ```
 
 
-
+<a name='bp'></a>
+ 
 ## Code Coverage Best Practices
 ### Consider the following code coverage tips and best practices.
 #### Code Coverage General Tips
