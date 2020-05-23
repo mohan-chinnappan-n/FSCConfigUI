@@ -72,6 +72,9 @@ $ sfdx mohanc:tooling:query  -q testquery.soql -f json -u  mohan.chinnappan.n-dc
 #  Here you will see the json output of the test results
 ```
 
+#### References
+
+[Tooling API Objects](https://developer.salesforce.com/docs/atlas.en-us.api_tooling.meta/api_tooling/reference_objects_list.htm)
 
 <a name='bp'></a>
  
