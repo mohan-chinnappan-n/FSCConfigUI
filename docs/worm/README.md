@@ -80,3 +80,5 @@ Total number of records retrieved: 28.
 
 2. If we introudce a configuration flag in the settings:
     - Make  ```ContentVersion.Checksum ``` immutable 
+
+- Once implemented it has to be certified as WORM compliant 
