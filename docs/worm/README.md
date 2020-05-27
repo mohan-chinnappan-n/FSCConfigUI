@@ -71,27 +71,52 @@ ID                  CONTENTDOCUMENTID   TITLE                                   
 0685w00000BFCe4AAH  0695w00000ApxvMAAR  Untitled Note                                 d97623d172f087d9640da9acd38830ff  S                7            null        H       /services/data/v48.0/sobjects/ContentVersion/0685w00000BFCe4AAH/VersionData
 0685w00000BL4efAAD  0695w00000AzVLHAA3  Apex Unit Testing Guide & Best Practices      bea284e62d6e76ee602472064709e398  S                110077       null        C       /services/data/v48.0/sobjects/ContentVersion/0685w00000BL4efAAD/VersionData
 Total number of records retrieved: 28.
-```
+
+$ sfdx force:data:soql:query -q "SELECT Id, VersionNumber, ContentDocumentId,Title, Checksum,ContentLocation,ContentSize,ContentUrl, Origin FROM ContentVersion"      -u mohan.chinnappan.n@org.com
+ID                  VERSIONNUMBER  CONTENTDOCUMENTID   TITLE                                         CHECKSUM                          CONTENTLOCATION  CONTENTSIZE  CONTENTURL  ORIGIN
+──────────────────  ─────────────  ──────────────────  ────────────────────────────────────────────  ────────────────────────────────  ───────────────  ───────────  ──────────  ──────
+0685w00000BFCe7AAH  1              0695w00000ApxvUAAR  RB_Console_appicon                            6a9feb620cabbd41034e2e6d92c2b6e8  S                6565         null        H
+0685w00000BFCe8AAH  1              0695w00000ApxvVAAR  RB_appicon                                    ae9e31f0a1da8aab7408494c88d8cd9e  S                6339         null        H
+0685w00000BFCe9AAH  1              0695w00000ApxvWAAR  Wealth_Console_appicon                        d3535612c6f4e8b920cb0235262991c1  S                6654         null        H
+0685w00000BFCeAAAX  1              0695w00000ApxvXAAR  Wealth_appicon                                c3be3c8b5e0c3d9d133d95aacc451e76  S                6156         null        H
+0685w00000BFCeBAAX  1              0695w00000ApxvYAAR  Insurance_Console_appicon                     49375551f9afb7ecdc4f2210814490b7  S                6541         null        H
+0685w00000BFCeCAAX  1              0695w00000ApxvOAAR  money_bag                                     9defcfffd15d7fee884bb7b735d3f465  S                1495         null        C
+0685w00000BFCeDAAX  1              0695w00000ApxvPAAR  close                                         b67b981094c76ea6fa3d460480e08148  S                283          null        C
+0685w00000BFCeEAAX  1              0695w00000ApxvQAAR  money_bag                                     9defcfffd15d7fee884bb7b735d3f465  S                1495         null        C
+0685w00000BFCeFAAX  1              0695w00000ApxvRAAR  close                                         b67b981094c76ea6fa3d460480e08148  S                283          null        C
+0685w00000BFCeGAAX  1              0695w00000ApxvSAAR  money_bag                                     9defcfffd15d7fee884bb7b735d3f465  S                1495         null        C
+0685w00000BFCeHAAX  1              0695w00000ApxvTAAR  close                                         b67b981094c76ea6fa3d460480e08148  S                283          null        C
+0685w00000BFCe6AAH  1              0695w00000ApxvNAAR  Enhancing Client Trust (Sample)               c43d618994f68f81af73886065aa954b  S                286275       null        H
+0685w00000BFCdrAAH  1              0695w00000ApxvGAAR  Rachel's Investment Ideas (Sample)            f836f89ae8760c12f6857cdd6d83e818  S                106          null        H
+0685w00000BFCe5AAH  2              0695w00000ApxvGAAR  Rachel's Investment Ideas (Sample)            497abd91a4503563e895bcd920368b3b  S                71           null        H
+0685w00000BFCdsAAH  1              0695w00000ApxvHAAR  Untitled Note                                 d97623d172f087d9640da9acd38830ff  S                7            null        H
+0685w00000BFCdtAAH  1              0695w00000ApxvIAAR  Untitled Note                                 d97623d172f087d9640da9acd38830ff  S                7            null        H
+0685w00000BFCduAAH  2              0695w00000ApxvHAAR  Possible change in order (Sample)             2ecf03a097ea5e3ce4626559a3e5ac18  S                108          null        H
+0685w00000BFCdvAAH  2              0695w00000ApxvIAAR  Meeting with Howard Jones re: order (Sample)  f960901125473f1f71f713f7cc66b182  S                269          null        H
+0685w00000BFCdwAAH  1              0695w00000ApxvJAAR  Untitled Note                                 d97623d172f087d9640da9acd38830ff  S                7            null        H
+0685w00000BFCdxAAH  2              0695w00000ApxvJAAR  Final Steps (Sample)                          6bedd582a8aaadb2012c61b6588146e6  S                204          null        H
+0685w00000BFCdyAAH  1              0695w00000ApxvKAAR  Untitled Note                                 d97623d172f087d9640da9acd38830ff  S                7            null        H
+0685w00000BFCdzAAH  2              0695w00000ApxvKAAR  Upgrade to X-series (Sample)                  16246670e8e76a973481f5ad334637b7  S                110          null        H
+0685w00000BFCe0AAH  1              0695w00000ApxvLAAR  Untitled Note                                 d97623d172f087d9640da9acd38830ff  S                7            null        H
+0685w00000BFCe1AAH  2              0695w00000ApxvLAAR  Delay in order (Sample)                       270ed6ef472f172206059af18b82cb0f  S                163          null        H
+0685w00000BFCe2AAH  3              0695w00000ApxvIAAR  Meeting with Howard Jones re: order (Sample)  f960901125473f1f71f713f7cc66b182  S                269          null        H
+0685w00000BFCe3AAH  4              0695w00000ApxvIAAR  Meeting with Howard Jones re: order (Sample)  f960901125473f1f71f713f7cc66b182  S                269          null        H
+0685w00000BFCe4AAH  1              0695w00000ApxvMAAR  Untitled Note                                 d97623d172f087d9640da9acd38830ff  S                7            null        H
+0685w00000BL4efAAD  1              0695w00000AzVLHAA3  Apex Unit Testing Guide & Best Practices      bea284e62d6e76ee602472064709e398  S                110077       null        C
+Total number of records retrieved: 28.
+
 
 ### Metadata
 
 - [ContentVersion Metadata](https://mohan-chinnappan-n.github.io/sfdc/fs-cloud/csv-viewer_fsc.html?f=ContentVersion)
 
 
-## Possible Solutions
+## Possible Solution
 
-0. ConventVersion allows multiple versions to upload for the same doc so it is by design, immutable. If we like to prevent the second version to be uploaded after the first version is uploaded,  a trigger on ContentVersion (beforeInsert) can be written to achieve this.
+ ConventVersion allows multiple versions to upload for the same doc so it is by design, immutable. If we like to prevent the second version to be uploaded after the first version is uploaded,  a trigger on ContentVersion (beforeInsert) can be written to achieve this.
+```
+ if Convent.VersionNumber != 1  do_not_allow_insert
+
+```
  
-1. If we support validation on the attachments (ContentVersion), we can achieve WORM to some level.
-    - With validation rule, we can block the overwrite of the document.
-    - example ```NOT(ISBLANK(PRIORVALUE( ContentVersion.Checksum)))```
 
-    - Currently this Checksum field is not exposed in Object Manager and not visible in Validataion Rules
-    - ![ContentVersion](img/ContentVersion.png)
-    - ![ContentVersion VR](img/ContentVersion-VR.png)
-
-
-2. If we introudce a configuration flag in the settings:
-    - Make  ```ContentVersion.Checksum ``` immutable 
-
-- Once implemented it has to be certified as WORM compliant 
