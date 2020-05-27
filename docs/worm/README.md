@@ -78,5 +78,5 @@ Total number of records retrieved: 28.
     - With validation rule, we can block the overwrite of the document.
     - example ```NOT(ISBLANK(PRIORVALUE( ContentVersion.Checksum)))```
 
-2. If we a configuration flag in the settings:
+2. If we introudce a configuration flag in the settings:
     - Make  ```ContentVersion.Checksum ``` immutable 
