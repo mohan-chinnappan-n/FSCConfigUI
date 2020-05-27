@@ -116,9 +116,5 @@ Total number of records retrieved: 28.
 ## Possible Solution
 
  ConventVersion allows multiple versions to upload for the same doc so it is by design, immutable. If we like to prevent the second version to be uploaded after the first version is uploaded,  a trigger on ContentVersion (beforeInsert) can be written to achieve this.
-```
- if Convent.VersionNumber != 1  do_not_allow_insert
-
-```
  
 
