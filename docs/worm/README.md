@@ -80,6 +80,8 @@ Total number of records retrieved: 28.
 
 ## Possible Solutions
 
+0. ConventVersion allows multiple versions to upload for the same doc so it is by design, immutable. If we like to prevent the second version to be uploaded after the first version is uploaded,  a trigger on ContentVersion (beforeInsert) can be written to achieve this.
+ 
 1. If we support validation on the attachments (ContentVersion), we can achieve WORM to some level.
     - With validation rule, we can block the overwrite of the document.
     - example ```NOT(ISBLANK(PRIORVALUE( ContentVersion.Checksum)))```
