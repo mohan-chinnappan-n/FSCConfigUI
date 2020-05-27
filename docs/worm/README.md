@@ -74,6 +74,6 @@ Total number of records retrieved: 28.
 ```
 ## Possible Solution
 
-- If we support validation on the attachments, we can achieve WORM to some level.
+- If we support validation on the attachments (ContentVersion), we can achieve WORM to some level.
 - With validation rule, we can block the overwrite of the document.
 - example ```NOT(ISBLANK(PRIORVALUE( ContentVersion.Checksum)))```
