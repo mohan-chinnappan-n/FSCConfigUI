@@ -85,8 +85,8 @@ Total number of records retrieved: 28.
     - example ```NOT(ISBLANK(PRIORVALUE( ContentVersion.Checksum)))```
 
     - Currently this Checksum field is not exposed in Object Manager and not visible in Validataion Rules
-    - ![ContentVersion](img/ContentVersion.png]
-    - ![ContentVersion VR](img/ContentVersion-VR.png]
+    - ![ContentVersion](img/ContentVersion.png)
+    - ![ContentVersion VR](img/ContentVersion-VR.png)
 
 
 2. If we introudce a configuration flag in the settings:
