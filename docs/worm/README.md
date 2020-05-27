@@ -72,8 +72,11 @@ ID                  CONTENTDOCUMENTID   TITLE                                   
 0685w00000BL4efAAD  0695w00000AzVLHAA3  Apex Unit Testing Guide & Best Practices      bea284e62d6e76ee602472064709e398  S                110077       null        C       /services/data/v48.0/sobjects/ContentVersion/0685w00000BL4efAAD/VersionData
 Total number of records retrieved: 28.
 ```
-## Possible Solution
+## Possible Solutions
 
-- If we support validation on the attachments (ContentVersion), we can achieve WORM to some level.
-- With validation rule, we can block the overwrite of the document.
+1. If we support validation on the attachments (ContentVersion), we can achieve WORM to some level.
+    - With validation rule, we can block the overwrite of the document.
     - example ```NOT(ISBLANK(PRIORVALUE( ContentVersion.Checksum)))```
+
+2. If we a configuration flag in the settings:
+    - Make ContentVersion.Checksum immutable 
