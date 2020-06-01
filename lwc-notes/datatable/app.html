@@ -1,0 +1,19 @@
+<template>
+	<div style="height: 300px;">
+		<lightning-datatable key-field="id" data={data} columns={columns} onrowselection={handleRowAction}>
+		</lightning-datatable>
+	</div>
+
+	<template if:true={selectedRows}>
+		<input type="text" onchange={handleCommentInput} placeholder="comment here"/> 
+    <template if:true={comment}>
+    <lightning-button variant='brand' label='Update Comment' class="slds-m-left_x-small"
+        onclick={handleComment}
+        icon-name="utility:comments"
+
+        ></lightning-button>
+    </template>
+       
+ </template>
+
+</template>
