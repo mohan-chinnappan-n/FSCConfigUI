@@ -5,6 +5,9 @@
 [Demo in playground](https://developer.salesforce.com/docs/component-library/tools/playground/eHtjcHR8J/15/edit)
 
 
+### Demo
+![demo](lwc-dt-1.gif)
+
 ### Markup - app.html
 ```html
 <template>
