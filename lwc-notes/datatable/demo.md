@@ -1,4 +1,4 @@
-## Code to show how add a comment to multiple selected records in ightning-datatable
+## LWC: How add a comment to multiple selected records in ightning-datatable
 
 
 ### In playground
