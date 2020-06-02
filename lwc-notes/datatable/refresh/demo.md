@@ -91,12 +91,7 @@ export default class FruitMgmt extends LightningElement {
         return refreshApex(this._myFruits);
       })
       .catch((error) => {
-        this.message =
-          "Error received: code" +
-          error.errorCode +
-          ", " +
-          "message " +
-          error.body.message;
+         console.log(error);
       });
   }
   
