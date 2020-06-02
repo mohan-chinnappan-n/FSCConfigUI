@@ -55,9 +55,7 @@ const columns = [
 
 export default class FruitMgmt extends LightningElement {
   columns = columns;
-
   myFruits;
-
   _myFruits;
 
   @wire(getFruits)
@@ -67,8 +65,7 @@ export default class FruitMgmt extends LightningElement {
       this.myFruits = result.data;
       this.error = undefined;
     } else if (result.error) {
-      this.error = result.error;
-      this.parameters = undefined;
+      console.log(result.error);
     }
   }
 
