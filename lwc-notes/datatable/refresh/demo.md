@@ -12,7 +12,7 @@
 
 ### Demo
 
-- [demo](img/lwc-dt-2.gif)
+- ![demo](img/lwc-dt-2.gif)
 
 ### fruitMgmt.html
 ```html
