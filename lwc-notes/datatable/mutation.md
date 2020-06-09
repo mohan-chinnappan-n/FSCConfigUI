@@ -25,7 +25,7 @@
 ```
 
 
-### handler code
+### Handler code
 ```js
 
   handleCommentSearch(event) {
