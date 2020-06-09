@@ -1,6 +1,6 @@
 ## Aggregate query in Apex for LWC datatable
 
-- ![Demo](img/lwc-dt-4.gif]
+- ![Demo](img/lwc-dt-4.gif)
 
 
 ### Apex code
