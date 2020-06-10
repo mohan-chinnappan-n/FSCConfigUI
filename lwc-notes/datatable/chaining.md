@@ -30,9 +30,6 @@
     });
   }
 
-  renderedCallback(){
-
-  }
 
 ```
 
