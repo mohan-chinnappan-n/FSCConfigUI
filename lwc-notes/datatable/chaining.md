@@ -2,7 +2,7 @@
 
 ### Demo
 
-![demo](img/lwc-dt-chaining.gif)
+![demo](img/lwc-dt-chaining-2.gif)
 
 ### code
 
