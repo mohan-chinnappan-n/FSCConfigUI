@@ -4,9 +4,40 @@
 
 ![demo](img/lwc-dt-chaining-2.gif)
 
+
+### Markup
+
+```
+
+     <div style="height: 200px;">
+            <lightning-datatable key-field="id" data={myFruits} columns={columns}
+            onrowselection={handleRowAction}>
+            </lightning-datatable>
+            
+            <input type="text" onchange={handleCommentInput} placeholder="comment here" />
+            <lightning-button variant='success' label='Search Comment' class="slds-m-left_x-small"
+                onclick={handleCommentSearch} icon-name="utility:search"></lightning-button>
+     </div>
+
+```
 ### code
 
 ```js
+
+
+const columns = [
+  { label: "Id", fieldName: "Id", type: "Id" },
+  { label: "Name", fieldName: "Name" },
+  { label: "Comments", fieldName: "Comments__c" },
+  {
+    label: "Qty",
+    fieldName: "Qty__c",
+    type: "number",
+    cellAttributes: { alignment: "left" }
+  },
+  { label: "WHName", fieldName: "WHName" }
+];
+
 
   handleCommentSearch(event) {
     getFruitsSearch({
