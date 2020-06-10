@@ -93,5 +93,17 @@ const columns = [
    
    }
 
+   // simulated aggregate query
+   @AuraEnabled(cacheable=true)
+   public static Decimal  getQty(String name) { 
+     List<AggregateResult> result = [
+           SELECT SUM(Qty__c) sqty FROM Fruit__c  WHERE Name=:name GROUP BY Name
+      ];
+      if (result.size() > 0) {
+           Decimal sqty =  (Decimal) result[0].get('sqty');  
+           return sqty * 1.1;
+      } else return null;
+
+   }
 ```
 
