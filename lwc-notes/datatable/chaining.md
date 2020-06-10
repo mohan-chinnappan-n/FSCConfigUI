@@ -8,7 +8,7 @@
 
 ```js
 
- handleCommentSearch(event) {
+  handleCommentSearch(event) {
     getFruitsSearch({
       comment: this.comment
     }).then((result) => {
@@ -19,17 +19,21 @@
         ...rec,
         WHName: rec.Warehouse__r.Name // add new fields here
       }));
-
+     
+      // prepare for Promise.all call
+      let promises = [];
       this._mappedFruits.forEach( (rec, index) => {
-      augment( {name: rec.Name})
-      .then ( aResult => {
-           rec.WHName += ' ' +  aResult;
-           this.myFruits = this._mappedFruits;
+        promises.push( augment( {name: rec.Name}));
       });
-    });
+      Promise.all(promises).then((values) => {
+        values.forEach( (value, index) => {
+           this._mappedFruits[index].WHName = ' ' +  value; 
+        });
+        this.myFruits = this._mappedFruits;
+      }); 
+
     });
   }
-
 
 ```
 
