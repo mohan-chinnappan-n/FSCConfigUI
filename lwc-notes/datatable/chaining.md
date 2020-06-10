@@ -31,7 +31,7 @@
         });
         this.myFruits = this._mappedFruits;
       }); 
-
+      // TODO: error handling
     });
   }
 
