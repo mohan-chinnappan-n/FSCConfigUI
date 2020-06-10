@@ -77,6 +77,21 @@ const columns = [
         return name + 'WOW';
    }
 
+  @AuraEnabled(cacheable=true)
+   public static List<Fruit__c>  getFruitsSearch(String comment){ 
+        List <Fruit__c> fruitList = new List<Fruit__c>();
+        string query = 'SELECT Id, Name, Comments__c, Qty__c, Warehouse__r.Name  FROM Fruit__c' ; 
+        if( !String.isEmpty(comment) ){
+            query += ' WHERE Comments__c LIKE ' + '\'%'+ comment + '%\'';
+        }
+        fruitList = Database.query(query);
+        for (Fruit__c fruit: fruitList) {
+              fruit.Qty__c = getQty(fruit.Name); // get the aggregated value
+        }
+        return fruitList;
+   
+   
+   }
 
 ```
 
