@@ -71,6 +71,7 @@ const columns = [
 ### Apex
 
 ```java
+public with sharing class FruitMgmt {
 
  @AuraEnabled(cacheable=true)
    public static String augment(String name) {
@@ -105,5 +106,6 @@ const columns = [
       } else return null;
 
    }
+}
 ```
 
