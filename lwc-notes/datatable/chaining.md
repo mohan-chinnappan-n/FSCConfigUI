@@ -1,4 +1,4 @@
-## Promise Chaining 
+## Promise Chaining with Promise.all
 
 ### Demo
 
