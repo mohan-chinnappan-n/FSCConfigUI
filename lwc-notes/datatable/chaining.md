@@ -27,7 +27,7 @@
       });
       Promise.all(promises).then((values) => {
         values.forEach( (value, index) => {
-           this._mappedFruits[index].WHName = ' ' +  value; 
+           this._mappedFruits[index].WHName += ' ' +  value; 
         });
         this.myFruits = this._mappedFruits;
       }); 
