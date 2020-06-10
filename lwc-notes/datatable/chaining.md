@@ -7,7 +7,7 @@
 
 ### Markup
 
-```
+```html
 
      <div style="height: 200px;">
             <lightning-datatable key-field="id" data={myFruits} columns={columns}
