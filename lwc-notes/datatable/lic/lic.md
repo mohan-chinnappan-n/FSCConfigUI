@@ -5,6 +5,6 @@
 
 
 ### With chart
-![License Info with chart](img/lic-4-graph.png)
+![License Info with chart](img/lic-5-graph.png)
 
 
