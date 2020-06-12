@@ -1,10 +1,6 @@
-## Datatables to show User License and Permission Set Licenses Info
+## User License and Permission Set Licenses Info
 
-
-![License Info](img/lic-1.png)
-
-
-### With chart
-![License Info with chart](img/lic-5-graph.png)
+### Demo
+![License Info with chart](img/lwc-licmgmt-1.gif)
 
 
