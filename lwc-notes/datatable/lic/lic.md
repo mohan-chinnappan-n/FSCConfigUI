@@ -2,3 +2,9 @@
 
 
 ![License Info](img/lic-1.png)
+
+
+### With chart
+![License Info with chart](img/lic-2-graph.png)
+
+
