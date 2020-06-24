@@ -72,7 +72,8 @@ Total number of records retrieved: 16.
 ### Create a Custom Report Type for Salesforce User Licenses
 
 - NOTE permission need for this operation
-    - To create and update custom report types [Help Doc](https://help.salesforce.com/articleView?id=reports_defining_report_types.htm&type=5)
+    - To create and update custom report types
+    - [Help Doc](https://help.salesforce.com/articleView?id=reports_defining_report_types.htm&type=5)
 
 - Here's how to create a custom report type to display licenses used by each User in your organization:
 
