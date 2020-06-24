@@ -100,6 +100,9 @@ Total number of records retrieved: 16.
 - [Knowledge Article:Create a Custom Report Type for Salesforce User Licenses](https://help.salesforce.com/articleView?id=000337772&type=1&mode=1)
 
 
+### Demo of the report creation
+- ![Demo of the User License Report](img/user-lic-rpt-1.gif)
+
 
 
 
