@@ -68,3 +68,38 @@ Total number of records retrieved: 16.
 
 
 ```
+
+### Create a Custom Report Type for Salesforce User Licenses
+
+- Here's how to create a custom report type to display licenses used by each User in your organization:
+
+1. Click Setup.
+2. Access Report Types:
+
+    - Salesforce Classic: Under "Build," click Create | select Report Type.
+    - Salesforce Lightning: Go to Feature Settings | Analytics | Reports & Dashboards | Select Report Types.
+
+3. Click New Custom Report Type.
+4. In the "Primary Object" field, select Users.
+5. Enter a name, label, description, and category for your new report.
+6. Select a deployment status.
+7. Click Next, then click Save.
+8. Click Edit Layout.
+9. Under "View," click Add fields related via lookup.
+10. Click Profile.
+11. Select User License, then click View related fields.
+12. Select Name, Status, and Total Licenses, then click OK.
+13. Click Save.
+14. Click the Reports tab.
+15. Click New Report.
+16. Click the folder (category) you saved your report to, then select your new User Licenses Report.
+17. Click Create.
+18. Under "Fields," drag and drop Profile: User License: Name to the report preview.
+19. Click Run Report.
+
+- [Knowledge Article:Create a Custom Report Type for Salesforce User Licenses](https://help.salesforce.com/articleView?id=000337772&type=1&mode=1)
+
+
+
+
+
