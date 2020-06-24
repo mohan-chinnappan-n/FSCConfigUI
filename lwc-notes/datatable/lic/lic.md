@@ -45,7 +45,7 @@ Total number of records retrieved: 27
 
 
 
- sfdx force:data:soql:query -u mohan.chinnappan.fsc@gmail.com -q "SELECT MasterLabel, ExpirationDate,TotalLicenses, UsedLicenses FROM PermissionSetLicense"
+$ sfdx force:data:soql:query -u mohan.chinnappan.fsc@gmail.com -q "SELECT MasterLabel, ExpirationDate,TotalLicenses, UsedLicenses FROM PermissionSetLicense"
 MASTERLABEL                                  EXPIRATIONDATE  TOTALLICENSES  USEDLICENSES
 ───────────────────────────────────────────  ──────────────  ─────────────  ────────────
 Sales Console User                           null            20
