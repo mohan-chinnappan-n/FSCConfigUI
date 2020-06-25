@@ -107,6 +107,230 @@ Total number of records retrieved: 16.
 ### Demo of the report creation
 - ![Demo of the User License Report](img/user-lic-rpt-2.gif)
 
+### How to the above result data in JSON via SFDX
 
+```bash
+
+$ sfdx force:data:soql:query -u mohan.chinnappan.fsc@gmail.com -q "SELECT user.id, user.Email, user.FirstName, user.LastName, user.profile.Name, user.Username, user.IsActive, user.profile.userLicense.TotalLicenses  FROM user, user.profile, profile.userLicense" --json
+```
+```json
+{
+  "status": 0,
+  "result": {
+    "totalSize": 9,
+    "done": true,
+    "records": [
+      {
+        "attributes": {
+          "type": "User",
+          "url": "/services/data/v48.0/sobjects/User/0053h000002fIZxAAM"
+        },
+        "Id": "0053h000002fIZxAAM",
+        "Email": "autoproc@00d3h000003yzckeau",
+        "FirstName": "Automated",
+        "LastName": "Process",
+        "Profile": null,
+        "Username": "autoproc@00d3h000003yzckeau",
+        "IsActive": true
+      },
+      {
+        "attributes": {
+          "type": "User",
+          "url": "/services/data/v48.0/sobjects/User/0053h000002fIa1AAE"
+        },
+        "Id": "0053h000002fIa1AAE",
+        "Email": "automatedclean@00d3h000003yzckeau",
+        "FirstName": null,
+        "LastName": "Data.com Clean",
+        "Profile": null,
+        "Username": "automatedclean@00d3h000003yzckeau",
+        "IsActive": true
+      },
+      {
+        "attributes": {
+          "type": "User",
+          "url": "/services/data/v48.0/sobjects/User/0053h000002moCrAAI"
+        },
+        "Id": "0053h000002moCrAAI",
+        "Email": "mohan.chinnappan.n@gmail.com",
+        "FirstName": "helpcenter",
+        "LastName": "Site Guest User",
+        "Profile": {
+          "attributes": {
+            "type": "Profile",
+            "url": "/services/data/v48.0/sobjects/Profile/00e3h000001TwmfAAC"
+          },
+          "Name": "helpcenter Profile",
+          "UserLicense": {
+            "attributes": {
+              "type": "UserLicense",
+              "url": "/services/data/v48.0/sobjects/UserLicense/1003h0000014mJTAAY"
+            },
+            "TotalLicenses": 1
+          }
+        },
+        "Username": "helpcenter@cx-mohan-developer-edition.na111.force.com",
+        "IsActive": true
+      },
+      {
+        "attributes": {
+          "type": "User",
+          "url": "/services/data/v48.0/sobjects/User/0053h000002fIZwAAM"
+        },
+        "Id": "0053h000002fIZwAAM",
+        "Email": "integration@example.com",
+        "FirstName": "Integration",
+        "LastName": "User",
+        "Profile": {
+          "attributes": {
+            "type": "Profile",
+            "url": "/services/data/v48.0/sobjects/Profile/00e3h000001QJtoAAG"
+          },
+          "Name": "Analytics Cloud Integration User",
+          "UserLicense": {
+            "attributes": {
+              "type": "UserLicense",
+              "url": "/services/data/v48.0/sobjects/UserLicense/1003h0000012Ef9AAE"
+            },
+            "TotalLicenses": 0
+          }
+        },
+        "Username": "integration@00d3h000003yzckeau.com",
+        "IsActive": true
+      },
+      {
+        "attributes": {
+          "type": "User",
+          "url": "/services/data/v48.0/sobjects/User/0053h000002fIa3AAE"
+        },
+        "Id": "0053h000002fIa3AAE",
+        "Email": "fanthony@example.com",
+        "FirstName": "Ryan",
+        "LastName": "Dobson",
+        "Profile": {
+          "attributes": {
+            "type": "Profile",
+            "url": "/services/data/v48.0/sobjects/Profile/00e3h000001QJtuAAG"
+          },
+          "Name": "Standard Platform User",
+          "UserLicense": {
+            "attributes": {
+              "type": "UserLicense",
+              "url": "/services/data/v48.0/sobjects/UserLicense/1003h0000012Ef8AAE"
+            },
+            "TotalLicenses": 30
+          }
+        },
+        "Username": "rdobs.0eueptlaeyb6.zbfqsapxqyvo@gmail.com",
+        "IsActive": true
+      },
+      {
+        "attributes": {
+          "type": "User",
+          "url": "/services/data/v48.0/sobjects/User/0053h000002fIa4AAE"
+        },
+        "Id": "0053h000002fIa4AAE",
+        "Email": "fanthony@example.com",
+        "FirstName": "Srilakshmi",
+        "LastName": "Maajid",
+        "Profile": {
+          "attributes": {
+            "type": "Profile",
+            "url": "/services/data/v48.0/sobjects/Profile/00e3h000001QJtuAAG"
+          },
+          "Name": "Standard Platform User",
+          "UserLicense": {
+            "attributes": {
+              "type": "UserLicense",
+              "url": "/services/data/v48.0/sobjects/UserLicense/1003h0000012Ef8AAE"
+            },
+            "TotalLicenses": 30
+          }
+        },
+        "Username": "sri.nbwygygqbjl3.fmssqilsqgx6@gmail.com",
+        "IsActive": true
+      },
+      {
+        "attributes": {
+          "type": "User",
+          "url": "/services/data/v48.0/sobjects/User/0053h000002fIa5AAE"
+        },
+        "Id": "0053h000002fIa5AAE",
+        "Email": "insightssecurity@example.com",
+        "FirstName": "Security",
+        "LastName": "User",
+        "Profile": {
+          "attributes": {
+            "type": "Profile",
+            "url": "/services/data/v48.0/sobjects/Profile/00e3h000001QJtvAAG"
+          },
+          "Name": "Analytics Cloud Security User",
+          "UserLicense": {
+            "attributes": {
+              "type": "UserLicense",
+              "url": "/services/data/v48.0/sobjects/UserLicense/1003h0000012Ef9AAE"
+            },
+            "TotalLicenses": 0
+          }
+        },
+        "Username": "insightssecurity@00d3h000003yzckeau.com",
+        "IsActive": true
+      },
+      {
+        "attributes": {
+          "type": "User",
+          "url": "/services/data/v48.0/sobjects/User/0053h000002fIZrAAM"
+        },
+        "Id": "0053h000002fIZrAAM",
+        "Email": "mohan.chinnappan.n@gmail.com",
+        "FirstName": "Mohan",
+        "LastName": "Chinnappan",
+        "Profile": {
+          "attributes": {
+            "type": "Profile",
+            "url": "/services/data/v48.0/sobjects/Profile/00e3h000001QJtnAAG"
+          },
+          "Name": "System Administrator",
+          "UserLicense": {
+            "attributes": {
+              "type": "UserLicense",
+              "url": "/services/data/v48.0/sobjects/UserLicense/1003h0000012Ef2AAE"
+            },
+            "TotalLicenses": 20
+          }
+        },
+        "Username": "mohan.chinnappan.fsc201@gmail.com",
+        "IsActive": true
+      },
+      {
+        "attributes": {
+          "type": "User",
+          "url": "/services/data/v48.0/sobjects/User/0053h000002fIa2AAE"
+        },
+        "Id": "0053h000002fIa2AAE",
+        "Email": "noreply@chatter.salesforce.com",
+        "FirstName": null,
+        "LastName": "Chatter Expert",
+        "Profile": {
+          "attributes": {
+            "type": "Profile",
+            "url": "/services/data/v48.0/sobjects/Profile/00e3h000001QJttAAG"
+          },
+          "Name": "Chatter Free User",
+          "UserLicense": {
+            "attributes": {
+              "type": "UserLicense",
+              "url": "/services/data/v48.0/sobjects/UserLicense/1003h0000012Ef6AAE"
+            },
+            "TotalLicenses": 5000
+          }
+        },
+        "Username": "chatty.00d3h000003yzckeau.vvveirv5y8xr@chatter.salesforce.com",
+        "IsActive": true
+      }
+    ]
+  }
+}
+```
 
 
