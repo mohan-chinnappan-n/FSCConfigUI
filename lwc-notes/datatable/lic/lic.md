@@ -374,4 +374,88 @@ $ sfdx force:data:soql:query -u mohan.chinnappan.fsc@gmail.com -q "SELECT user.i
 }
 ```
 
+### How to setup alerts sing Batch Apex and System.scheduleBatch
+
+```java
+global class LicAlert implements Database.Batchable<sObject>, Database.Stateful{  
+    // Database.Stateful - used only 
+    //  finish method needs data from the previous execute method
+    // use it carefully
+    global String query;
+    global Integer threshold;
+    global Boolean createAlert;
+    global Map<String, String> alertMap = new Map<String,String>();
+    global String emailTo = 'mohan.chinnappan.n@gmail.com';
+
+    global LicAlert( ) {
+    }
+
+    global Database.QueryLocator start(Database.BatchableContext BC){
+      return Database.getQueryLocator(query);
+   }
+
+   global void execute(Database.BatchableContext BC, List<sObject> scope){
+
+       alertMap.put('LIC1', 'License threshold info here');
+      // TODO: put your threshold logic
+      // Something like this:
+      /*
+      for(Sobject s : scope){ 
+                 // look for threshold met condition in the scope
+                 // put that in a map lic:sss (key) 
+                 //    make a string (msg) out of used: nnn, total: nnn
+                 String key = '';
+                 String msg = '';
+                 if ( (s.TotalLicenses - s.UsedLicenses ) < threshold) {
+                    key = s.Name;
+                    msg =  'used: ' + s.UsedLicenses + 'total:' + s.TotalLicenses;
+                    alertMap.put(key,msg );
+                 }
+                 
+      } 
+    */
+  }
+
+   global void finish(Database.BatchableContext BC){
+       Messaging.SingleEmailMessage mail = new Messaging.SingleEmailMessage();
+       mail.setToAddresses(new String[] { emailTo });
+       mail.setReplyTo(emailTo);
+       mail.setSenderDisplayName('License Info ');
+       mail.setSubject('License Threshold Reached');
+       String body = 'This License Usage has reached threshold limit\n Details:\n';
+       for (String key: alertMap.keySet()) {
+           body += 'key:' + key + ' msg: ' + alertMap.get(key);
+       }
+       // TODO:
+       // form the body based on your needs
+       // iterate the alertMap map to form the body
+       mail.setPlainTextBody(body);
+       Messaging.sendEmail(new Messaging.SingleEmailMessage[] { mail });
+   }
+
+
+}
+
+```
+
+### How to Use it?
+
+```java
+LicAlert la = new LicAlert();
+la.query = 'SELECT Name,Status,TotalLicenses,UsedLicenses FROM UserLicense';
+la.emailTo= 'mohan.chinnappan.n@gmail.com';
+la.threshold = 5;
+
+
+String cronID = System.scheduleBatch(la, 'license alert', 10); // 10 min from now
+CronTrigger ct = [SELECT Id, TimesTriggered, NextFireTime
+                FROM CronTrigger WHERE Id = :cronID];
+// TimesTriggered should be 0 because the job hasn't started yet.
+System.assertEquals(0, ct.TimesTriggered);
+System.debug('Next fire time: ' + ct.NextFireTime); 
+
+```
+### Sample Email
+
+![Sample Notification Email](img/lic-email-1.png) 
 
