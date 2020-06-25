@@ -107,7 +107,7 @@ Total number of records retrieved: 16.
 ### Demo of the report creation
 - ![Demo of the User License Report](img/user-lic-rpt-2.gif)
 
-### How to get the above result data in JSON via SFDX
+### How to get the above report data in JSON via SFDX
 
 - Query
 
