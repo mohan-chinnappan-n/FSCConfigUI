@@ -105,7 +105,7 @@ Total number of records retrieved: 16.
 
 
 ### Demo of the report creation
-- ![Demo of the User License Report](img/user-lic-rpt-1.gif)
+- ![Demo of the User License Report](img/user-lic-rpt-2.gif)
 
 
 
