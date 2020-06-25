@@ -118,7 +118,7 @@ user.profile.userLicense.TotalLicenses,
 user.profile.userLicense.UsedLicenses,  
 user.profile.userLicense.Status,
 user.profile.userLicense.Name
- FROM user, user.profile, profile.userLicense
+ FROM user, user.profile, user.profile.userLicense
 
 
 
@@ -131,7 +131,7 @@ $ sfdx force:data:soql:query -u mohan.chinnappan.fsc201@gmail.com -q "SELECT use
 > user.profile.userLicense.UsedLicenses,  
 > user.profile.userLicense.Status,
 > user.profile.userLicense.Name
->  FROM user, user.profile, profile.userLicense" --json
+>  FROM user, user.profile, user.profile.userLicense" --json
 ```
 ```json
 {
