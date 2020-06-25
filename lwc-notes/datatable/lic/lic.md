@@ -374,7 +374,7 @@ $ sfdx force:data:soql:query -u mohan.chinnappan.fsc@gmail.com -q "SELECT user.i
 }
 ```
 
-### How to setup alerts sing Batch Apex and System.scheduleBatch
+### How to setup alerts using Batch Apex and System.scheduleBatch
 - Note this is sample code, optimize, customize it as needed
 ```java
 global class LicAlert implements Database.Batchable<sObject>, Database.Stateful{  
