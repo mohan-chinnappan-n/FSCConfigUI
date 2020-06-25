@@ -460,4 +460,4 @@ System.debug('Next fire time: ' + ct.NextFireTime);
 <img src="img/lic-email-1.png" alt="Sample Notification Email" width='800'>
 
 ### How to run invoke this at specific times
-- Use Apex Scheduler as document [here](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_scheduler.htm)
+- Use Apex Scheduler as documented [here](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_scheduler.htm)
