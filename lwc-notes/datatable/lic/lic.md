@@ -109,9 +109,29 @@ Total number of records retrieved: 16.
 
 ### How to get the above result data in JSON via SFDX
 
+- Query
+
+```sql
+SELECT user.id, user.Email, user.FirstName, user.LastName, user.profile.Name, 
+user.Username, user.IsActive, 
+user.profile.userLicense.TotalLicenses,
+user.profile.userLicense.UsedLicenses,  
+user.profile.userLicense.Status,
+user.profile.userLicense.Name
+ FROM user, user.profile, profile.userLicense
+
+
+
+```
 ```bash
 
-$ sfdx force:data:soql:query -u mohan.chinnappan.fsc@gmail.com -q "SELECT user.id, user.Email, user.FirstName, user.LastName, user.profile.Name, user.Username, user.IsActive, user.profile.userLicense.TotalLicenses  FROM user, user.profile, profile.userLicense" --json
+
+$ sfdx force:data:soql:query -u mohan.chinnappan.fsc201@gmail.com -q "SELECT user.id, user.Email, user.FirstName, user.LastName, user.profile.Name, > user.Username, user.IsActive, 
+> user.profile.userLicense.TotalLicenses,
+> user.profile.userLicense.UsedLicenses,  
+> user.profile.userLicense.Status,
+> user.profile.userLicense.Name
+>  FROM user, user.profile, profile.userLicense" --json
 ```
 ```json
 {
@@ -166,7 +186,10 @@ $ sfdx force:data:soql:query -u mohan.chinnappan.fsc@gmail.com -q "SELECT user.i
               "type": "UserLicense",
               "url": "/services/data/v48.0/sobjects/UserLicense/1003h0000014mJTAAY"
             },
-            "TotalLicenses": 1
+            "TotalLicenses": 1,
+            "UsedLicenses": 0,
+            "Status": "Active",
+            "Name": "Guest"
           }
         },
         "Username": "helpcenter@cx-mohan-developer-edition.na111.force.com",
@@ -192,7 +215,10 @@ $ sfdx force:data:soql:query -u mohan.chinnappan.fsc@gmail.com -q "SELECT user.i
               "type": "UserLicense",
               "url": "/services/data/v48.0/sobjects/UserLicense/1003h0000012Ef9AAE"
             },
-            "TotalLicenses": 0
+            "TotalLicenses": 0,
+            "UsedLicenses": 0,
+            "Status": "Disabled",
+            "Name": "Analytics Cloud Integration User"
           }
         },
         "Username": "integration@00d3h000003yzckeau.com",
@@ -218,7 +244,10 @@ $ sfdx force:data:soql:query -u mohan.chinnappan.fsc@gmail.com -q "SELECT user.i
               "type": "UserLicense",
               "url": "/services/data/v48.0/sobjects/UserLicense/1003h0000012Ef8AAE"
             },
-            "TotalLicenses": 30
+            "TotalLicenses": 30,
+            "UsedLicenses": 2,
+            "Status": "Active",
+            "Name": "Salesforce Platform"
           }
         },
         "Username": "rdobs.0eueptlaeyb6.zbfqsapxqyvo@gmail.com",
@@ -244,7 +273,10 @@ $ sfdx force:data:soql:query -u mohan.chinnappan.fsc@gmail.com -q "SELECT user.i
               "type": "UserLicense",
               "url": "/services/data/v48.0/sobjects/UserLicense/1003h0000012Ef8AAE"
             },
-            "TotalLicenses": 30
+            "TotalLicenses": 30,
+            "UsedLicenses": 2,
+            "Status": "Active",
+            "Name": "Salesforce Platform"
           }
         },
         "Username": "sri.nbwygygqbjl3.fmssqilsqgx6@gmail.com",
@@ -270,7 +302,10 @@ $ sfdx force:data:soql:query -u mohan.chinnappan.fsc@gmail.com -q "SELECT user.i
               "type": "UserLicense",
               "url": "/services/data/v48.0/sobjects/UserLicense/1003h0000012Ef9AAE"
             },
-            "TotalLicenses": 0
+            "TotalLicenses": 0,
+            "UsedLicenses": 0,
+            "Status": "Disabled",
+            "Name": "Analytics Cloud Integration User"
           }
         },
         "Username": "insightssecurity@00d3h000003yzckeau.com",
@@ -296,7 +331,10 @@ $ sfdx force:data:soql:query -u mohan.chinnappan.fsc@gmail.com -q "SELECT user.i
               "type": "UserLicense",
               "url": "/services/data/v48.0/sobjects/UserLicense/1003h0000012Ef2AAE"
             },
-            "TotalLicenses": 20
+            "TotalLicenses": 20,
+            "UsedLicenses": 1,
+            "Status": "Active",
+            "Name": "Salesforce"
           }
         },
         "Username": "mohan.chinnappan.fsc201@gmail.com",
@@ -322,7 +360,10 @@ $ sfdx force:data:soql:query -u mohan.chinnappan.fsc@gmail.com -q "SELECT user.i
               "type": "UserLicense",
               "url": "/services/data/v48.0/sobjects/UserLicense/1003h0000012Ef6AAE"
             },
-            "TotalLicenses": 5000
+            "TotalLicenses": 5000,
+            "UsedLicenses": 1,
+            "Status": "Active",
+            "Name": "Chatter Free"
           }
         },
         "Username": "chatty.00d3h000003yzckeau.vvveirv5y8xr@chatter.salesforce.com",
