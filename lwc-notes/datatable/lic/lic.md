@@ -378,7 +378,7 @@ $ sfdx force:data:soql:query -u mohan.chinnappan.fsc@gmail.com -q "SELECT user.i
 - Note this is sample code, optimize, customize it as needed
 ```java
 global class LicAlert implements Database.Batchable<sObject>, Database.Stateful{  
-    // Database.Stateful - used only 
+    // Database.Stateful - used only when: 
     //  finish method needs data from the previous execute method
     // use it carefully
     global String query;
