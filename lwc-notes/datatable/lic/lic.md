@@ -457,5 +457,5 @@ System.debug('Next fire time: ' + ct.NextFireTime);
 ```
 ### Sample Email
 
-![Sample Notification Email](img/lic-email-1.png) 
+<img src="img/lc-email-1.png" alt="Sample Notification Email" width='800'>
 
