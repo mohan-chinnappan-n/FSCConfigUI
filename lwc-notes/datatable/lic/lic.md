@@ -126,7 +126,7 @@ user.profile.userLicense.Name
 ```bash
 
 
-$ sfdx force:data:soql:query -u mohan.chinnappan.fsc201@gmail.com -q "SELECT user.id, user.Email, user.FirstName, user.LastName, user.profile.Name, > user.Username, user.IsActive, 
+$ sfdx force:data:soql:query -u mohan.chinnappan.fsc@gmail.com -q "SELECT user.id, user.Email, user.FirstName, user.LastName, user.profile.Name, > user.Username, user.IsActive, 
 > user.profile.userLicense.TotalLicenses,
 > user.profile.userLicense.UsedLicenses,  
 > user.profile.userLicense.Status,
