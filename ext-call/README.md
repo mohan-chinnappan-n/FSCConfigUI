@@ -1,5 +1,4 @@
-## How to make External Service Call in Aura Components
-
+## How to make External Service Call in Aura Components (RUM Server usecase)
 
 ![ext-call](img/ext-call-4.gif)
 
