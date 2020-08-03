@@ -4,6 +4,9 @@
 
 - Query
 
+```
+cat isp.sql
+```
 ```sql
 SELECT Id, SubscriberPackageId, SubscriberPackage.NamespacePrefix,
       SubscriberPackage.Name, SubscriberPackageVersion.Id,
