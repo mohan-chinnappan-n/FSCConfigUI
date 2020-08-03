@@ -5,7 +5,7 @@
 - Query
 
 ```
-cat isp.sql
+$ cat isp.sql
 ```
 ```sql
 SELECT Id, SubscriberPackageId, SubscriberPackage.NamespacePrefix,
