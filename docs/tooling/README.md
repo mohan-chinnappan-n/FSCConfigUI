@@ -23,7 +23,7 @@ $ sfdx mohanc:tooling:query -q isp.sql -u mohan.chinnappan.n_ea2@gmail.com -f js
 
 - Results
 
-```json
+```
 [
   {
     attributes: {
